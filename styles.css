@@ -1,0 +1,552 @@
+/* ==============================================
+   FriendsPartyServer SimRacing - Custom Styles
+   Optimizado para Performance y Accesibilidad
+   ============================================== */
+
+/* === Variables CSS Personalizadas === */
+:root {
+  /* Colores de marca */
+  --fps-primary: #D97706;
+  --fps-secondary: #FCD34D;
+  --fps-accent: #DC2626;
+  --fps-success: #10B981;
+  --fps-warning: #F59E0B;
+  --fps-error: #EF4444;
+  
+  /* Grises optimizados */
+  --fps-gray-900: #111827;
+  --fps-gray-800: #1F2937;
+  --fps-gray-700: #374151;
+  --fps-gray-600: #4B5563;
+  --fps-gray-500: #6B7280;
+  --fps-gray-400: #9CA3AF;
+  --fps-gray-300: #D1D5DB;
+  --fps-gray-200: #E5E7EB;
+  --fps-gray-100: #F3F4F6;
+  --fps-white: #FFFFFF;
+  
+  /* Tipografía */
+  --fps-font-family: 'Inter', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  --fps-font-mono: 'JetBrains Mono', 'Fira Code', Consolas, monospace;
+  
+  /* Espaciado */
+  --fps-space-xs: 0.25rem;
+  --fps-space-sm: 0.5rem;
+  --fps-space-md: 1rem;
+  --fps-space-lg: 1.5rem;
+  --fps-space-xl: 2rem;
+  --fps-space-2xl: 3rem;
+  
+  /* Sombras */
+  --fps-shadow-sm: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+  --fps-shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+  --fps-shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+  --fps-shadow-xl: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+  
+  /* Transiciones */
+  --fps-transition-fast: 0.15s ease-out;
+  --fps-transition-normal: 0.3s ease-out;
+  --fps-transition-slow: 0.5s ease-out;
+  
+  /* Breakpoints */
+  --fps-screen-sm: 640px;
+  --fps-screen-md: 768px;
+  --fps-screen-lg: 1024px;
+  --fps-screen-xl: 1280px;
+}
+
+/* === Reset y Base === */
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  font-family: var(--fps-font-family);
+  background-color: var(--fps-gray-900);
+  color: var(--fps-gray-100);
+  line-height: 1.6;
+  margin: 0;
+  padding: 0;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* === Componentes Personalizados === */
+
+/* FPS Card Component */
+.fps-card {
+  background: var(--fps-gray-800);
+  border-radius: 0.75rem;
+  padding: var(--fps-space-lg);
+  border: 2px solid transparent;
+  box-shadow: var(--fps-shadow-md);
+  transition: all var(--fps-transition-normal);
+}
+
+.fps-card:hover {
+  border-color: var(--fps-primary);
+  box-shadow: var(--fps-shadow-xl);
+  transform: translateY(-2px);
+}
+
+.fps-card--premium {
+  border-color: var(--fps-secondary);
+  background: linear-gradient(135deg, var(--fps-gray-800) 0%, var(--fps-gray-700) 100%);
+}
+
+/* FPS Button System */
+.fps-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: var(--fps-space-sm) var(--fps-space-lg);
+  border-radius: 0.5rem;
+  font-weight: 600;
+  text-decoration: none;
+  transition: all var(--fps-transition-fast);
+  cursor: pointer;
+  border: none;
+  font-size: 1rem;
+  line-height: 1.5;
+  position: relative;
+  overflow: hidden;
+}
+
+.fps-btn:focus {
+  outline: 2px solid var(--fps-secondary);
+  outline-offset: 2px;
+}
+
+.fps-btn--primary {
+  background: linear-gradient(135deg, var(--fps-primary), var(--fps-accent));
+  color: var(--fps-white);
+}
+
+.fps-btn--primary:hover {
+  background: linear-gradient(135deg, var(--fps-accent), var(--fps-primary));
+  transform: translateY(-1px);
+  box-shadow: var(--fps-shadow-lg);
+}
+
+.fps-btn--secondary {
+  background: transparent;
+  color: var(--fps-secondary);
+  border: 2px solid var(--fps-secondary);
+}
+
+.fps-btn--secondary:hover {
+  background: var(--fps-secondary);
+  color: var(--fps-gray-900);
+}
+
+.fps-btn--success {
+  background: var(--fps-success);
+  color: var(--fps-white);
+}
+
+.fps-btn--large {
+  padding: var(--fps-space-md) var(--fps-space-xl);
+  font-size: 1.125rem;
+}
+
+/* FPS Badge System */
+.fps-badge {
+  display: inline-flex;
+  align-items: center;
+  padding: var(--fps-space-xs) var(--fps-space-sm);
+  border-radius: 9999px;
+  font-size: 0.75rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.fps-badge--live {
+  background: var(--fps-error);
+  color: var(--fps-white);
+  animation: pulse 2s infinite;
+}
+
+.fps-badge--premium {
+  background: linear-gradient(135deg, var(--fps-secondary), var(--fps-primary));
+  color: var(--fps-gray-900);
+}
+
+.fps-badge--status {
+  background: var(--fps-success);
+  color: var(--fps-white);
+}
+
+/* FPS Racing Grid */
+.fps-racing-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: var(--fps-space-lg);
+  margin: var(--fps-space-xl) 0;
+}
+
+@media (max-width: 768px) {
+  .fps-racing-grid {
+    grid-template-columns: 1fr;
+    gap: var(--fps-space-md);
+  }
+}
+
+/* FPS Server Status */
+.fps-server-status {
+  display: flex;
+  align-items: center;
+  gap: var(--fps-space-sm);
+  padding: var(--fps-space-sm);
+  border-radius: 0.5rem;
+  background: var(--fps-gray-700);
+}
+
+.fps-server-status__indicator {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background: var(--fps-success);
+  animation: pulse 2s infinite;
+}
+
+.fps-server-status__indicator--offline {
+  background: var(--fps-error);
+  animation: none;
+}
+
+.fps-server-status__indicator--maintenance {
+  background: var(--fps-warning);
+}
+
+/* FPS Ranking Table */
+.fps-ranking-table {
+  width: 100%;
+  border-collapse: collapse;
+  background: var(--fps-gray-800);
+  border-radius: 0.75rem;
+  overflow: hidden;
+  box-shadow: var(--fps-shadow-md);
+}
+
+.fps-ranking-table th {
+  background: var(--fps-gray-700);
+  color: var(--fps-secondary);
+  padding: var(--fps-space-md);
+  text-align: left;
+  font-weight: 600;
+  text-transform: uppercase;
+  font-size: 0.875rem;
+  letter-spacing: 0.05em;
+}
+
+.fps-ranking-table td {
+  padding: var(--fps-space-md);
+  border-bottom: 1px solid var(--fps-gray-700);
+}
+
+.fps-ranking-table tr:hover {
+  background: var(--fps-gray-700);
+}
+
+.fps-ranking-table .position-1 {
+  background: linear-gradient(90deg, rgba(255, 215, 0, 0.1), transparent);
+  border-left: 4px solid #FFD700;
+}
+
+.fps-ranking-table .position-2 {
+  background: linear-gradient(90deg, rgba(192, 192, 192, 0.1), transparent);
+  border-left: 4px solid #C0C0C0;
+}
+
+.fps-ranking-table .position-3 {
+  background: linear-gradient(90deg, rgba(205, 127, 50, 0.1), transparent);
+  border-left: 4px solid #CD7F32;
+}
+
+/* FPS Progress Bar */
+.fps-progress {
+  width: 100%;
+  height: 8px;
+  background: var(--fps-gray-700);
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+.fps-progress__bar {
+  height: 100%;
+  background: linear-gradient(90deg, var(--fps-primary), var(--fps-secondary));
+  transition: width var(--fps-transition-normal);
+  border-radius: inherit;
+}
+
+/* FPS Notification */
+.fps-notification {
+  position: fixed;
+  top: var(--fps-space-md);
+  right: var(--fps-space-md);
+  z-index: 1000;
+  min-width: 300px;
+  max-width: 400px;
+  padding: var(--fps-space-md);
+  border-radius: 0.75rem;
+  box-shadow: var(--fps-shadow-xl);
+  backdrop-filter: blur(10px);
+  animation: slideInRight 0.3s ease-out;
+}
+
+.fps-notification--success {
+  background: rgba(16, 185, 129, 0.9);
+  border: 1px solid var(--fps-success);
+  color: var(--fps-white);
+}
+
+.fps-notification--error {
+  background: rgba(239, 68, 68, 0.9);
+  border: 1px solid var(--fps-error);
+  color: var(--fps-white);
+}
+
+.fps-notification--warning {
+  background: rgba(245, 158, 11, 0.9);
+  border: 1px solid var(--fps-warning);
+  color: var(--fps-gray-900);
+}
+
+/* FPS Racing Animations */
+@keyframes raceStart {
+  0% { transform: translateX(-100%); opacity: 0; }
+  50% { transform: translateX(10px); opacity: 1; }
+  100% { transform: translateX(0); opacity: 1; }
+}
+
+@keyframes pulse {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.5; }
+}
+
+@keyframes slideInRight {
+  from {
+    transform: translateX(100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes slideOutRight {
+  from {
+    transform: translateX(0);
+    opacity: 1;
+  }
+  to {
+    transform: translateX(100%);
+    opacity: 0;
+  }
+}
+
+.fps-race-entry {
+  animation: raceStart 0.8s ease-out;
+}
+
+/* FPS Calculator Specific */
+.fps-calculator {
+  background: var(--fps-gray-800);
+  border-radius: 1rem;
+  padding: var(--fps-space-xl);
+  margin: var(--fps-space-xl) auto;
+  max-width: 800px;
+  box-shadow: var(--fps-shadow-xl);
+}
+
+.fps-calculator__input-group {
+  margin-bottom: var(--fps-space-lg);
+}
+
+.fps-calculator__label {
+  display: block;
+  margin-bottom: var(--fps-space-sm);
+  font-weight: 600;
+  color: var(--fps-gray-200);
+}
+
+.fps-calculator__input,
+.fps-calculator__select {
+  width: 100%;
+  padding: var(--fps-space-md);
+  border: 2px solid var(--fps-gray-600);
+  border-radius: 0.5rem;
+  background: var(--fps-gray-900);
+  color: var(--fps-gray-100);
+  font-size: 1rem;
+  transition: border-color var(--fps-transition-fast);
+}
+
+.fps-calculator__input:focus,
+.fps-calculator__select:focus {
+  outline: none;
+  border-color: var(--fps-secondary);
+  box-shadow: 0 0 0 3px rgba(252, 211, 77, 0.3);
+}
+
+.fps-calculator__input:valid {
+  border-color: var(--fps-success);
+}
+
+.fps-calculator__input:invalid {
+  border-color: var(--fps-error);
+}
+
+.fps-calculator__results {
+  background: linear-gradient(135deg, var(--fps-gray-700), var(--fps-gray-600));
+  border: 2px solid var(--fps-secondary);
+  border-radius: 1rem;
+  padding: var(--fps-space-xl);
+  margin-top: var(--fps-space-xl);
+}
+
+/* FPS Mobile Optimizations */
+@media (max-width: 768px) {
+  .fps-card {
+    padding: var(--fps-space-md);
+  }
+  
+  .fps-racing-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .fps-notification {
+    left: var(--fps-space-md);
+    right: var(--fps-space-md);
+    min-width: auto;
+  }
+  
+  .fps-calculator {
+    margin: var(--fps-space-md);
+    padding: var(--fps-space-lg);
+  }
+}
+
+/* FPS High Contrast Mode */
+@media (prefers-contrast: high) {
+  :root {
+    --fps-gray-800: #000000;
+    --fps-gray-700: #1a1a1a;
+    --fps-gray-100: #ffffff;
+  }
+  
+  .fps-btn {
+    border: 2px solid currentColor;
+  }
+}
+
+/* FPS Reduced Motion */
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+  
+  html {
+    scroll-behavior: auto;
+  }
+}
+
+/* FPS Print Styles */
+@media print {
+  .fps-btn, .fps-notification, nav {
+    display: none !important;
+  }
+  
+  .fps-card {
+    border: 1px solid #000 !important;
+    background: white !important;
+    color: black !important;
+  }
+}
+
+/* FPS Loading States */
+.fps-loading {
+  position: relative;
+  overflow: hidden;
+}
+
+.fps-loading::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.1), transparent);
+  animation: loading 1.5s infinite;
+}
+
+@keyframes loading {
+  0% { left: -100%; }
+  100% { left: 100%; }
+}
+
+/* FPS Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--fps-gray-800);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--fps-primary);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--fps-secondary);
+}
+
+/* FPS Focus Management */
+.fps-skip-link {
+  position: absolute;
+  top: -40px;
+  left: 6px;
+  background: var(--fps-primary);
+  color: white;
+  padding: 8px;
+  text-decoration: none;
+  border-radius: 4px;
+  z-index: 1001;
+}
+
+.fps-skip-link:focus {
+  top: 6px;
+}
+
+/* FPS Utility Classes */
+.fps-text-gradient {
+  background: linear-gradient(135deg, var(--fps-primary), var(--fps-secondary));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.fps-shadow-racing {
+  box-shadow: 
+    0 0 20px rgba(217, 119, 6, 0.3),
+    0 0 40px rgba(217, 119, 6, 0.2),
+    0 0 60px rgba(217, 119, 6, 0.1);
+}
+
+.fps-border-gradient {
+  border: 2px solid transparent;
+  background: linear-gradient(var(--fps-gray-800), var(--fps-gray-800)) padding-box,
+              linear-gradient(135deg, var(--fps-primary), var(--fps-secondary)) border-box;
+}
