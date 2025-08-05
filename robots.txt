@@ -1,0 +1,85 @@
+# Robots.txt para FriendsPartyServer SimRacing
+# Optimizado para posicionamiento en "Servidores de Assetto Corsa" y "Sim Racing"
+
+User-agent: *
+Allow: /
+
+# Permitir indexación completa de contenido clave
+Allow: /servers.html
+Allow: /eventos.html
+Allow: /calculadora.html
+Allow: /rankings
+Allow: /servidores-assetto-corsa-argentina
+Allow: /simracing-sudamerica
+Allow: /campeonatos-assetto-corsa
+
+# Bloquear archivos técnicos y privados
+Disallow: /assets/temp/
+Disallow: /.git/
+Disallow: /admin/
+Disallow: /private/
+Disallow: /*.log$
+Disallow: /*.json$ 
+Allow: /manifest.json
+Allow: /sitemap.xml
+
+# Permitir acceso a recursos importantes
+Allow: /assets/images/
+Allow: /styles.css
+Allow: /calculadora.js
+Allow: /sw.js
+
+# Crawl-delay para evitar sobrecarga
+Crawl-delay: 1
+
+# Bots específicos de gaming y deportes
+User-agent: Googlebot
+Allow: /
+Crawl-delay: 0
+
+User-agent: Bingbot  
+Allow: /
+Crawl-delay: 1
+
+User-agent: facebookexternalhit
+Allow: /
+
+User-agent: Twitterbot
+Allow: /
+
+User-agent: LinkedInBot
+Allow: /
+
+# Bots de gaming y deportes motor
+User-agent: SteamBot
+Allow: /
+
+User-agent: TwitchBot
+Allow: /
+
+User-agent: YoutubeBot
+Allow: /
+
+# Bloquear bots maliciosos o innecesarios
+User-agent: AhrefsBot
+Disallow: /
+
+User-agent: MJ12bot
+Disallow: /
+
+User-agent: DotBot
+Disallow: /
+
+User-agent: SemrushBot
+Disallow: /
+
+User-agent: MajesticSEO
+Disallow: /
+
+# Sitemap principal
+Sitemap: https://friendspartyserver.duckdns.org/sitemap.xml
+
+# Sitemaps específicos (cuando se implementen)
+Sitemap: https://friendspartyserver.duckdns.org/sitemap-events.xml
+Sitemap: https://friendspartyserver.duckdns.org/sitemap-servers.xml
+Sitemap: https://friendspartyserver.duckdns.org/sitemap-guides.xml

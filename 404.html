@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="es-AR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>404 - Página No Encontrada | FriendsPartyServer SimRacing</title>
+    <meta name="description" content="La página que buscas no existe. Explora nuestros servidores de Assetto Corsa y eventos SimRacing en Sudamérica.">
+    <meta name="robots" content="noindex, follow">
+    
+    <!-- Security Headers -->
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; style-src 'self' 'unsafe-inline'; img-src 'self' https://i.ibb.co data:;">
+    
+    <style>
+        body {
+            font-family: system-ui, -apple-system, sans-serif;
+            background: linear-gradient(135deg, #111827, #1F2937);
+            color: #F9FAFB;
+            margin: 0;
+            padding: 0;
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        
+        .error-container {
+            text-align: center;
+            max-width: 600px;
+            padding: 2rem;
+        }
+        
+        .error-code {
+            font-size: 8rem;
+            font-weight: bold;
+            background: linear-gradient(135deg, #D97706, #FCD34D);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            margin: 0;
+            line-height: 1;
+        }
+        
+        .error-title {
+            font-size: 2rem;
+            margin: 1rem 0;
+            color: #FCD34D;
+        }
+        
+        .error-message {
+            font-size: 1.125rem;
+            color: #D1D5DB;
+            margin-bottom: 2rem;
+            line-height: 1.6;
+        }
+        
+        .racing-gif {
+            width: 200px;
+            height: 150px;
+            margin: 2rem auto;
+            background: #374151;
+            border-radius: 1rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 4rem;
+            animation: race 2s infinite ease-in-out;
+        }
+        
+        @keyframes race {
+            0%, 100% { transform: translateX(0); }
+            50% { transform: translateX(10px); }
+        }
+        
+        .action-buttons {
+            display: flex;
+            gap: 1rem;
+            justify-content: center;
+            flex-wrap: wrap;
+            margin-top: 2rem;
+        }
+        
+        .btn {
+            padding: 0.75rem 1.5rem;
+            border-radius: 0.5rem;
+            text-decoration: none;
+            font-weight: 600;
+            transition: all 0.3s ease;
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+        
+        .btn-primary {
+            background: linear-gradient(135deg, #D97706, #DC2626);
+            color: white;
+        }
+        
+        .btn-primary:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 10px 25px rgba(217, 119, 6, 0.3);
+        }
+        
+        .btn-secondary {
+            background: transparent;
+            color: #FCD34D;
+            border: 2px solid #FCD34D;
+        }
+        
+        .btn-secondary:hover {
+            background: #FCD34D;
+            color: #111827;
+        }
+        
+        .search-box {
+            margin: 2rem 0;
+        }
+        
+        .search-input {
+            width: 100%;
+            max-width: 400px;
+            padding: 0.75rem 1rem;
+            border: 2px solid #374151;
+            border-radius: 0.5rem;
+            background: #1F2937;
+            color: #F9FAFB;
+            font-size: 1rem;
+        }
+        
+        .search-input:focus {
+            outline: none;
+            border-color: #FCD34D;
+            box-shadow: 0 0 0 3px rgba(252, 211, 77, 0.3);
+        }
+        
+        .quick-links {
+            margin-top: 3rem;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 1rem;
+        }
+        
+        .quick-link {
+            background: #374151;
+            padding: 1rem;
+            border-radius: 0.75rem;
+            text-decoration: none;
+            color: #F9FAFB;
+            transition: all 0.3s ease;
+            border: 2px solid transparent;
+        }
+        
+        .quick-link:hover {
+            border-color: #D97706;
+            transform: translateY(-2px);
+        }
+        
+        .quick-link-title {
+            font-weight: 600;
+            color: #FCD34D;
+            margin-bottom: 0.5rem;
+        }
+        
+        .quick-link-desc {
+            font-size: 0.875rem;
+            color: #D1D5DB;
+        }
+        
+        @media (max-width: 768px) {
+            .error-code {
+                font-size: 6rem;
+            }
+            
+            .error-title {
+                font-size: 1.5rem;
+            }
+            
+            .action-buttons {
+                flex-direction: column;
+                align-items: center;
+            }
+            
+            .btn {
+                width: 100%;
+                max-width: 300px;
+                justify-content: center;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="error-container">
+        <h1 class="error-code">404</h1>
+        <h2 class="error-title">🏁 ¡Te has salido de la pista!</h2>
+        
+        <div class="racing-gif">
+            🏎️💨
+        </div>
+        
+        <p class="error-message">
+            La página que buscas no existe o ha sido movida. <br>
+            Pero no te preocupes, ¡tenemos muchas carreras esperándote!
+        </p>
+        
+        <div class="search-box">
+            <input type="text" 
+                   class="search-input" 
+                   placeholder="🔍 Buscar servidores, eventos, calculadora..."
+                   id="searchInput"
+                   onkeypress="handleSearch(event)">
+        </div>
+        
+        <div class="action-buttons">
+            <a href="/" class="btn btn-primary">
+                🏠 Volver al Inicio
+            </a>
+            <a href="/servers.html" class="btn btn-secondary">
+                🖥️ Ver Servidores
+            </a>
+        </div>
+        
+        <div class="quick-links">
+            <a href="/eventos.html" class="quick-link">
+                <div class="quick-link-title">🏆 Eventos</div>
+                <div class="quick-link-desc">Próximos campeonatos y carreras</div>
+            </a>
+            
+            <a href="/calculadora.html" class="quick-link">
+                <div class="quick-link-title">🧮 Calculadora</div>
+                <div class="quick-link-desc">Estrategia de combustible y neumáticos</div>
+            </a>
+            
+            <a href="/rankings" class="quick-link">
+                <div class="quick-link-title">📊 Rankings</div>
+                <div class="quick-link-desc">Clasificaciones de pilotos</div>
+            </a>
+            
+            <a href="/redes.html" class="quick-link">
+                <div class="quick-link-title">🌐 Redes Sociales</div>
+                <div class="quick-link-desc">Únete a nuestra comunidad</div>
+            </a>
+        </div>
+        
+        <div style="margin-top: 3rem; padding: 1rem; background: rgba(59, 130, 246, 0.1); border-radius: 0.5rem; border: 1px solid #3B82F6;">
+            <p style="color: #93C5FD; margin: 0; font-size: 0.875rem;">
+                <strong>💡 Consejo:</strong> Si llegaste aquí desde un enlace externo, 
+                es posible que la URL haya cambiado. Prueba navegando desde nuestra página principal.
+            </p>
+        </div>
+    </div>
+    
+    <script>
+        // Funcionalidad de búsqueda
+        function handleSearch(event) {
+            if (event.key === 'Enter') {
+                const query = event.target.value.toLowerCase().trim();
+                
+                // Redirecciones inteligentes basadas en búsqueda
+                if (query.includes('servidor') || query.includes('server')) {
+                    window.location.href = '/servers.html';
+                } else if (query.includes('evento') || query.includes('carrera') || query.includes('campeonato')) {
+                    window.location.href = '/eventos.html';
+                } else if (query.includes('calculadora') || query.includes('estrategia') || query.includes('combustible')) {
+                    window.location.href = '/calculadora.html';
+                } else if (query.includes('ranking') || query.includes('puntos') || query.includes('clasificacion')) {
+                    window.location.href = '/rankings';
+                } else if (query.includes('discord') || query.includes('redes') || query.includes('social')) {
+                    window.location.href = '/redes.html';
+                } else if (query.includes('contacto') || query.includes('ayuda')) {
+                    window.location.href = '/contact.html';
+                } else {
+                    // Si no hay coincidencias específicas, ir al inicio
+                    window.location.href = '/';
+                }
+            }
+        }
+        
+        // Analytics para páginas 404 (cuando se implemente)
+        if (typeof gtag !== 'undefined') {
+            gtag('event', 'page_view', {
+                page_title: '404 Error',
+                page_location: window.location.href,
+                custom_parameters: {
+                    error_type: '404',
+                    referrer: document.referrer
+                }
+            });
+        }
+        
+        // Auto-focus en el campo de búsqueda
+        document.addEventListener('DOMContentLoaded', function() {
+            document.getElementById('searchInput').focus();
+        });
+    </script>
+</body>
+</html>
