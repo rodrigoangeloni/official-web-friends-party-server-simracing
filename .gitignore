@@ -98,6 +98,9 @@ cache/
 # Documentación local (no subir a GitHub - solo README.md)
 docs/
 
+# Scripts de automatización y configuración (no subir a GitHub)
+scripts/
+
 # Archivos de análisis y reportes
 coverage/
 *.lcov
