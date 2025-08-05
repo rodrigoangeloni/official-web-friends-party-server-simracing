@@ -1,14 +1,14 @@
 {
   "name": "FriendsPartyServer SimRacing",
   "short_name": "FPS SimRacing",
-  "description": "Los mejores servidores de Assetto Corsa en Sudamérica con campeonatos diarios y rankings profesionales",
+  "description": "SimRacing para toda Latinoamérica - Servidores de Assetto Corsa desde Paraguay",
   "start_url": "/",
   "display": "standalone",
   "background_color": "#111827",
   "theme_color": "#D97706",
   "orientation": "portrait-primary",
   "scope": "/",
-  "lang": "es-AR",
+  "lang": "es-PY",
   "categories": ["games", "sports", "entertainment"],
   "screenshots": [
     {
@@ -28,51 +28,51 @@
   ],
   "icons": [
     {
-      "src": "/assets/images/icon-72x72.png",
+      "src": "/assets/images/Logo-FriendsPartyServerSR.webp",
       "sizes": "72x72",
-      "type": "image/png",
+      "type": "image/webp",
       "purpose": "maskable any"
     },
     {
-      "src": "/assets/images/icon-96x96.png",
+      "src": "/assets/images/Logo-FriendsPartyServerSR.webp",
       "sizes": "96x96", 
-      "type": "image/png",
+      "type": "image/webp",
       "purpose": "maskable any"
     },
     {
-      "src": "/assets/images/icon-128x128.png",
+      "src": "/assets/images/Logo-FriendsPartyServerSR.webp",
       "sizes": "128x128",
-      "type": "image/png", 
+      "type": "image/webp", 
       "purpose": "maskable any"
     },
     {
-      "src": "/assets/images/icon-144x144.png",
+      "src": "/assets/images/Logo-FriendsPartyServerSR.webp",
       "sizes": "144x144",
-      "type": "image/png",
+      "type": "image/webp",
       "purpose": "maskable any"
     },
     {
-      "src": "/assets/images/icon-152x152.png", 
+      "src": "/assets/images/Logo-FriendsPartyServerSR.webp", 
       "sizes": "152x152",
-      "type": "image/png",
+      "type": "image/webp",
       "purpose": "maskable any"
     },
     {
-      "src": "/assets/images/icon-192x192.png",
+      "src": "/assets/images/Logo-FriendsPartyServerSR.webp",
       "sizes": "192x192", 
-      "type": "image/png",
+      "type": "image/webp",
       "purpose": "maskable any"
     },
     {
-      "src": "/assets/images/icon-384x384.png",
+      "src": "/assets/images/Logo-FriendsPartyServerSR.webp",
       "sizes": "384x384",
-      "type": "image/png",
+      "type": "image/webp",
       "purpose": "maskable any"
     },
     {
-      "src": "/assets/images/icon-512x512.png",
+      "src": "/assets/images/Logo-FriendsPartyServerSR.webp",
       "sizes": "512x512",
-      "type": "image/png",
+      "type": "image/webp",
       "purpose": "maskable any"
     }
   ],
@@ -81,10 +81,10 @@
       "name": "Ver Servidores",
       "short_name": "Servidores", 
       "description": "Acceso directo a la lista de servidores",
-      "url": "/servers.html",
+      "url": "/pages/core/servers.html",
       "icons": [
         {
-          "src": "/assets/images/shortcut-servers.png",
+          "src": "/assets/images/Logo-FriendsPartyServerSR.webp",
           "sizes": "96x96"
         }
       ]
@@ -93,10 +93,10 @@
       "name": "Próximos Eventos",
       "short_name": "Eventos",
       "description": "Ver los próximos campeonatos",
-      "url": "/eventos.html", 
+      "url": "/pages/core/eventos.html", 
       "icons": [
         {
-          "src": "/assets/images/shortcut-events.png",
+          "src": "/assets/images/Logo-FriendsPartyServerSR.webp",
           "sizes": "96x96"
         }
       ]
@@ -105,10 +105,10 @@
       "name": "Calculadora",
       "short_name": "Calc",
       "description": "Calculadora de estrategia SimRacing",
-      "url": "/calculadora.html",
+      "url": "/pages/core/calculadora.html",
       "icons": [
         {
-          "src": "/assets/images/shortcut-calc.png", 
+          "src": "/assets/images/Logo-FriendsPartyServerSR.webp", 
           "sizes": "96x96"
         }
       ]

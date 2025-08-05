@@ -1,38 +1,35 @@
 # Robots.txt para FriendsPartyServer SimRacing
-# Optimizado para posicionamiento en "Servidores de Assetto Corsa" y "Sim Racing"
+# Optimizado para SimRacing Latinoamérica desde Paraguay
 
 User-agent: *
 Allow: /
 
-# Permitir indexación completa de contenido clave
-Allow: /servers.html
-Allow: /eventos.html
-Allow: /calculadora.html
-Allow: /rankings
-Allow: /servidores-assetto-corsa-argentina
-Allow: /simracing-sudamerica
-Allow: /campeonatos-assetto-corsa
+# Permitir indexación completa de páginas principales
+Allow: /pages/core/
+Allow: /pages/info/
+Allow: /assets/
 
 # Bloquear archivos técnicos y privados
-Disallow: /assets/temp/
+Disallow: /scripts/
+Disallow: /config/
+Disallow: /docs/
+Disallow: /templates/
 Disallow: /.git/
 Disallow: /admin/
 Disallow: /private/
 Disallow: /*.log$
-Disallow: /*.json$ 
+Disallow: /*.ps1$
+
+# Permitir archivos importantes para PWA y SEO
 Allow: /manifest.json
 Allow: /sitemap.xml
-
-# Permitir acceso a recursos importantes
-Allow: /assets/images/
-Allow: /styles.css
-Allow: /calculadora.js
 Allow: /sw.js
+Allow: /robots.txt
 
 # Crawl-delay para evitar sobrecarga
 Crawl-delay: 1
 
-# Bots específicos de gaming y deportes
+# Bots específicos optimizados
 User-agent: Googlebot
 Allow: /
 Crawl-delay: 0
@@ -78,8 +75,3 @@ Disallow: /
 
 # Sitemap principal
 Sitemap: https://friendspartyserver.duckdns.org/sitemap.xml
-
-# Sitemaps específicos (cuando se implementen)
-Sitemap: https://friendspartyserver.duckdns.org/sitemap-events.xml
-Sitemap: https://friendspartyserver.duckdns.org/sitemap-servers.xml
-Sitemap: https://friendspartyserver.duckdns.org/sitemap-guides.xml

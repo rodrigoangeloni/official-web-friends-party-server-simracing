@@ -1,26 +1,27 @@
 // Service Worker para FriendsPartyServer PWA
-// Versión 1.0 - 2025
+// Versión 1.1 - 2025
 
-const CACHE_NAME = 'friendspartyserver-v1.0';
-const STATIC_CACHE = 'static-v1.0';
-const DYNAMIC_CACHE = 'dynamic-v1.0';
+const CACHE_NAME = 'friendspartyserver-v1.1';
+const STATIC_CACHE = 'static-v1.1';
+const DYNAMIC_CACHE = 'dynamic-v1.1';
 
 // Recursos críticos para cachear
 const STATIC_ASSETS = [
     '/',
     '/index.html',
-    '/servers.html',
-    '/eventos.html',
-    '/calculadora.html',
-    '/calculadora.js',
-    '/redes.html',
-    '/about.html',
-    '/contact.html',
-    '/reglamento.html',
+    '/pages/core/servers.html',
+    '/pages/core/eventos.html',
+    '/pages/core/calculadora.html',
+    '/pages/core/reglamento.html',
+    '/pages/info/redes.html',
+    '/pages/info/about.html',
+    '/pages/info/contact.html',
+    '/assets/css/main.css',
+    '/assets/js/analytics.js',
     '/manifest.json',
     '/assets/images/Logo-FriendsPartyServerSR.webp',
-    '/assets/images/favicon.ico',
-    'https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css'
+    '/assets/images/logo-principal.png',
+    'https://cdn.tailwindcss.com'
 ];
 
 // URLs que siempre deben ir a la red (APIs, contenido dinámico)
