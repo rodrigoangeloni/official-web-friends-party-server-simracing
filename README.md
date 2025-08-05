@@ -1,6 +1,148 @@
 # 🏁 FriendsPartyServer SimRacing - Sitio Web Oficial
 
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+[![License: MIT](https:# 🇵🇾 FriendsPartyServer SimRacing Paraguay
+
+## 🌎 **El Servidor #1 de SimRacing en Latinoamérica**
+
+**Desde Asunción, Paraguay** - Conectando toda Latinoamérica con los mejores servidores de **Assetto Corsa**.
+
+- 🎯 **+5,000 pilotos** de 20+ países latinoamericanos
+- 🇵🇾 **+800 pilotos paraguayos** - Base sólida en Paraguay
+- 🏁 **Eventos diarios** 21:00hs (PYT)
+- 🏆 **Campeonatos profesionales** con premios reales
+
+---
+
+## 🏗️ **Arquitectura Profesional**
+
+```
+friendspartyserver.com/
+├── 📄 index.html                    # Homepage principal
+├── 📁 pages/                        # Páginas organizadas
+│   ├── landing/                     # Landing pages SEO
+│   │   ├── paraguay.html           # 🇵🇾 Landing Paraguay
+│   │   ├── latinoamerica.html      # 🌎 Landing Latinoamérica
+│   │   ├── argentina.html          # 🇦🇷 Landing Argentina
+│   │   ├── guias.html              # 📚 Guías SimRacing
+│   │   └── campeonatos.html        # 🏆 Campeonatos
+│   ├── core/                       # Funcionalidades principales
+│   │   ├── servers.html            # Lista servidores
+│   │   ├── eventos.html            # Eventos especiales
+│   │   ├── calculadora.html        # Herramientas
+│   │   └── reglamento.html         # Normas
+│   └── info/                       # Páginas informativas
+│       ├── about.html              # Acerca de
+│       ├── contact.html            # Contacto
+│       └── redes.html              # Redes sociales
+├── 📁 assets/                      # Recursos optimizados
+│   ├── css/                        # Estilos organizados
+│   ├── js/                         # JavaScript modular
+│   └── images/                     # Recursos gráficos
+└── 📁 config/                      # Configuraciones centralizadas
+    └── global-config.js            # Variables y configuración
+```
+
+---
+
+## 🔧 **Tecnologías**
+
+- **HTML5** - Semántico y accesible
+- **CSS3** - Tailwind CSS + Custom styles
+- **JavaScript ES6+** - Modular y optimizado
+- **PWA** - Progressive Web App ready
+- **Google Analytics 4** - Tracking avanzado Paraguay/LATAM
+- **SEO** - Schema.org + optimización completa
+
+---
+
+## 📊 **Analytics & Tracking**
+
+### **Google Analytics 4 Configurado:**
+- **ID**: `G-L6K2C49RW0`
+- **Eventos personalizados** Paraguay/Latinoamérica
+- **Geo-targeting** desde Paraguay (PY)
+- **Custom parameters** para tracking regional
+
+### **Eventos Específicos:**
+```javascript
+// 🇵🇾 Paraguay
+'paraguay_content_view'
+
+// 🌎 Latinoamérica  
+'latin_america_engagement'
+
+// 📚 Educación
+'guides_content_view'
+
+// 🏆 Competición
+'championship_content_view'
+```
+
+---
+
+## 🚀 **SEO Optimization**
+
+### **Keywords Principales:**
+- `servidores assetto corsa paraguay` 🇵🇾
+- `simracing latinoamerica` 🌎
+- `guias sim racing` 📚
+- `campeonatos assetto corsa` 🏆
+
+### **Performance:**
+- ⚡ **Core Web Vitals**: Optimizado
+- 🔒 **Security Headers**: Implementado
+- 📱 **Mobile-first**: Responsive design
+- 🔍 **Schema.org**: Structured data
+
+---
+
+## 🌐 **URLs Principales**
+
+### **Landing Pages:**
+- `/pages/landing/paraguay.html` - 🇵🇾 **Paraguay** (Principal)
+- `/pages/landing/latinoamerica.html` - 🌎 **Latinoamérica** 
+- `/pages/landing/guias.html` - 📚 **Guías SimRacing**
+- `/pages/landing/campeonatos.html` - 🏆 **Campeonatos**
+
+### **Core Features:**
+- `/pages/core/servers.html` - Lista de servidores
+- `/pages/core/eventos.html` - Eventos especiales  
+- `/pages/core/calculadora.html` - Herramientas útiles
+
+---
+
+## 🎯 **Estado del Proyecto**
+
+- ✅ **Fase 1**: Fundación técnica (100%)
+- ✅ **Fase 2**: Landing pages Paraguay/LATAM (100%)  
+- ✅ **Fase 3**: Analytics & Tracking (100%)
+- 📋 **Fase 4**: Funcionalidades avanzadas (Futuro)
+
+**Progreso total: 85% completado** 🚀
+
+---
+
+## 📞 **Contacto**
+
+- **Discord**: FriendsPartyServer
+- **Email**: info@friendspartyserver.com
+- **Ubicación**: Asunción, Paraguay 🇵🇾
+
+---
+
+## 📝 **License**
+
+Este proyecto está bajo la licencia especificada en [LICENSE](LICENSE).
+
+---
+
+<div align="center">
+
+**🇵🇾 Desde Paraguay para toda Latinoamérica 🌎**
+
+[🏁 Únete al Servidor](https://friendspartyserver.duckdns.org) • [📊 Live Timing](https://friendspartyserverpy.duckdns.org/live-timing)
+
+</div>/img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![Version](https://img.shields.io/badge/Version-2.0.0-blue.svg)](https://github.com/rodrigoangeloni/official-web-friends-party-server-simracing)
 [![Website](https://img.shields.io/website?url=https%3A%2F%2Ffriendspartyserver.duckdns.org)](https://friendspartyserver.duckdns.org)
 [![PWA](https://img.shields.io/badge/PWA-Ready-green.svg)](https://friendspartyserver.duckdns.org)

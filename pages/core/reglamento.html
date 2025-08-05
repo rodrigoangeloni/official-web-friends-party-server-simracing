@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="es">
 <head>
     <!-- Meta tags idénticos a redes.html -->
@@ -29,7 +29,22 @@
     <!-- Precarga de recursos -->
     <link rel="preload" href="https://i.ibb.co/nNnx250S/00-logo-fps-transparent1.png" as="image">
     <link rel="preload" href="styles.css" as="style">
-</head>
+
+    <!-- Google Analytics 4 - FriendsPartyServer Paraguay -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-L6K2C49RW0"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-L6K2C49RW0', {
+            // Configuración específica para Paraguay/Latinoamérica
+            country: 'PY',
+            custom_map: {
+                'custom_parameter_country': 'Paraguay',
+                'custom_parameter_region': 'Latin America'
+            }
+        });
+    </script></head>
 
 <body class="bg-gray-900 text-gray-100">
     <!-- Cabecera idéntica a redes.html -->

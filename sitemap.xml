@@ -32,6 +32,60 @@
     <priority>0.9</priority>
   </url>
   
+  <!-- Landing Pages SEO - Desde Paraguay para Latinoamérica -->
+  
+  <!-- Landing Paraguay - PÁGINA PRINCIPAL REGIONAL -->
+  <url>
+    <loc>https://friendspartyserver.duckdns.org/servidores-assetto-corsa-paraguay</loc>
+    <lastmod>2025-08-05</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.98</priority>
+    <image:image>
+      <image:loc>https://i.ibb.co/nNnx250S/00-logo-fps-transparent1.png</image:loc>
+      <image:title>Servidores de Assetto Corsa Paraguay</image:title>
+      <image:caption>Desde Asunción, Paraguay para toda Latinoamérica - Los mejores servidores SimRacing</image:caption>
+    </image:image>
+  </url>
+  
+  <!-- Landing Latinoamérica - VISIÓN REGIONAL -->
+  <url>
+    <loc>https://friendspartyserver.duckdns.org/simracing-latinoamerica</loc>
+    <lastmod>2025-08-05</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.95</priority>
+    <image:image>
+      <image:loc>https://i.ibb.co/nNnx250S/00-logo-fps-transparent1.png</image:loc>
+      <image:title>SimRacing Latinoamérica</image:title>
+      <image:caption>La comunidad de SimRacing más grande de Latinoamérica - Desde Paraguay</image:caption>
+    </image:image>
+  </url>
+  
+  <!-- Landing Argentina - PAÍS HERMANO -->
+  <url>
+    <loc>https://friendspartyserver.duckdns.org/servidores-assetto-corsa-argentina</loc>
+    <lastmod>2025-08-05</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.90</priority>
+    <image:image>
+      <image:loc>https://i.ibb.co/nNnx250S/00-logo-fps-transparent1.png</image:loc>
+      <image:title>Servidores de Assetto Corsa Argentina</image:title>
+      <image:caption>Los mejores servidores de Assetto Corsa en Argentina - Desde Paraguay</image:caption>
+    </image:image>
+  </url>
+
+  <!-- Landing Campeonatos - COMPETICIÓN REGIONAL -->
+  <url>
+    <loc>https://friendspartyserver.duckdns.org/campeonatos-assetto-corsa</loc>
+    <lastmod>2025-08-05</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.95</priority>
+    <image:image>
+      <image:loc>https://i.ibb.co/nNnx250S/00-logo-fps-transparent1.png</image:loc>
+      <image:title>Campeonatos de Assetto Corsa Latinoamérica</image:title>
+      <image:caption>Campeonatos oficiales y rankings profesionales desde Paraguay</image:caption>
+    </image:image>
+  </url>
+
   <!-- Calculadora - Herramienta Única -->
   <url>
     <loc>https://friendspartyserver.duckdns.org/calculadora.html</loc>
@@ -72,44 +126,23 @@
     <priority>0.5</priority>
   </url>
   
-  <!-- Páginas adicionales para SEO específico -->
-  
-  <!-- Landing para "Servidores Assetto Corsa Argentina" -->
-  <url>
-    <loc>https://friendspartyserver.duckdns.org/servidores-assetto-corsa-argentina</loc>
-    <lastmod>2025-01-05</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  
-  <!-- Landing para "SimRacing Sudamerica" -->
-  <url>
-    <loc>https://friendspartyserver.duckdns.org/simracing-sudamerica</loc>
-    <lastmod>2025-01-05</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  
-  <!-- Landing para "Campeonatos Assetto Corsa" -->
-  <url>
-    <loc>https://friendspartyserver.duckdns.org/campeonatos-assetto-corsa</loc>
-    <lastmod>2025-01-05</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.8</priority>
-  </url>
-  
   <!-- Guías y Tutoriales -->
   <url>
     <loc>https://friendspartyserver.duckdns.org/guias-simracing</loc>
-    <lastmod>2025-01-05</lastmod>
+    <lastmod>2025-08-05</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
+    <priority>0.85</priority>
+    <image:image>
+      <image:loc>https://i.ibb.co/nNnx250S/00-logo-fps-transparent1.png</image:loc>
+      <image:title>Guías Completas de SimRacing</image:title>
+      <image:caption>Las mejores guías de SimRacing desde Paraguay para Latinoamérica</image:caption>
+    </image:image>
   </url>
   
   <!-- Rankings -->
   <url>
-    <loc>https://friendspartyserver.duckdns.org/rankings</loc>
-    <lastmod>2025-01-05</lastmod>
+    <loc>https://friendspartyserver.duckdns.org/rankings-pilotos</loc>
+    <lastmod>2025-08-05</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.7</priority>
   </url>
@@ -117,7 +150,7 @@
   <!-- Blog/Noticias -->
   <url>
     <loc>https://friendspartyserver.duckdns.org/noticias-simracing</loc>
-    <lastmod>2025-01-05</lastmod>
+    <lastmod>2025-08-05</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
