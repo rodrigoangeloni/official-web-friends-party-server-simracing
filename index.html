@@ -30,21 +30,33 @@
     <link rel="preload" href="/assets/css/main.css" as="style">
     <link rel="preload" href="/assets/images/Logo-FriendsPartyServerSR.webp" as="image">
 
+    <!-- Configuración centralizada -->
+    <script src="/config/head-config.js"></script>
+
     <!-- Google Analytics 4 - FriendsPartyServer Paraguay -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-L6K2C49RW0"></script>
     <script>
         window.dataLayer = window.dataLayer || [];
         function gtag(){dataLayer.push(arguments);}
         gtag('js', new Date());
-        gtag('config', 'G-L6K2C49RW0', {
-            // Configuración específica para Paraguay/Latinoamérica
-            country: 'PY',
-            custom_map: {
-                'custom_parameter_country': 'Paraguay',
-                'custom_parameter_region': 'Latin America'
-            }
-        });
+        
+        // Usar configuración centralizada cuando esté disponible
+        if (typeof CONFIG !== 'undefined' && typeof Utils !== 'undefined') {
+            gtag('config', CONFIG.ANALYTICS.GA4_ID, Utils.getGA4Config());
+        } else {
+            // Fallback temporal mientras se carga la configuración
+            gtag('config', 'G-L6K2C49RW0', {
+                country: 'PY',
+                custom_map: {
+                    'custom_parameter_country': 'Paraguay',
+                    'custom_parameter_region': 'Latin America'
+                }
+            });
+        }
     </script>
+
+    <!-- Analytics avanzado -->
+    <script src="/assets/js/analytics.js"></script>
 </head>
 
 <body class="bg-gray-900 text-gray-100">

@@ -1,6 +1,40 @@
 // Configuración centralizada del HEAD para todas las páginas
 // Friends Party Server SimRacing
 
+// ⚠️ CONFIGURACIÓN DE ANALYTICS - NO EXPONER IDs DIRECTAMENTE
+window.CONFIG = {
+    ANALYTICS: {
+        GA4_ID: 'G-L6K2C49RW0', // Solo para desarrollo - mover a variables de entorno en producción
+        GTM_ID: null, // Para Google Tag Manager si se implementa
+        HOTJAR_ID: null // Para Hotjar si se implementa
+    },
+    REGION: {
+        DEFAULT_COUNTRY: 'PY',
+        ORIGIN_COUNTRY_NAME: 'Paraguay',
+        REGION_NAME: 'Latin America',
+        TIMEZONE: 'America/Asuncion'
+    },
+    DOMAIN: {
+        BASE_URL: 'https://friendspartyserver.duckdns.org',
+        CDN_URL: null // Para CDN si se implementa
+    }
+};
+
+// Utilidades para Analytics
+window.Utils = {
+    getGA4Config: () => ({
+        // Configuración específica para Paraguay/Latinoamérica
+        country: CONFIG.REGION.DEFAULT_COUNTRY,
+        custom_map: {
+            'custom_parameter_country': CONFIG.REGION.ORIGIN_COUNTRY_NAME,
+            'custom_parameter_region': CONFIG.REGION.REGION_NAME
+        },
+        // Configuración de privacidad
+        anonymize_ip: true,
+        send_page_view: true
+    })
+};
+
 window.HeadConfig = {
     // Meta tags básicos
     baseMeta: {
@@ -162,19 +196,12 @@ window.HeadConfig = {
             <link rel="preload" href="/assets/css/main.css" as="style">
 
             <!-- Google Analytics 4 - FriendsPartyServer Paraguay -->
-            <script async src="https://www.googletagmanager.com/gtag/js?id=G-L6K2C49RW0"></script>
+            <script async src="https://www.googletagmanager.com/gtag/js?id=\${CONFIG.ANALYTICS.GA4_ID}"></script>
             <script>
                 window.dataLayer = window.dataLayer || [];
                 function gtag(){dataLayer.push(arguments);}
                 gtag('js', new Date());
-                gtag('config', 'G-L6K2C49RW0', {
-                    // Configuración específica para Paraguay/Latinoamérica
-                    country: 'PY',
-                    custom_map: {
-                        'custom_parameter_country': 'Paraguay',
-                        'custom_parameter_region': 'Latin America'
-                    }
-                });
+                gtag('config', CONFIG.ANALYTICS.GA4_ID, Utils.getGA4Config());
             </script>
         `;
     },

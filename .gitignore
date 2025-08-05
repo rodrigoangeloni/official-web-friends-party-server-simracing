@@ -72,6 +72,12 @@ yarn.lock
 .env.test.local
 .env.production.local
 
+# IDs y claves de servicios externos (CRÍTICO - NUNCA COMMITEAR)
+*.key
+*.secret
+*_secret.js
+*_config_prod.js
+
 # Archivos de respaldo
 *.backup
 *.bak
@@ -88,6 +94,9 @@ temp/
 temporary/
 cache/
 .cache/
+
+# Documentación local (no subir a GitHub - solo README.md)
+docs/
 
 # Archivos de análisis y reportes
 coverage/
