@@ -143,6 +143,22 @@ body {
         0 0 15px var(--racing-red);
 }
 
+.neon-text-yellow {
+    color: var(--neon-yellow);
+    text-shadow: 
+        0 0 5px var(--neon-yellow), 
+        0 0 10px var(--neon-yellow), 
+        0 0 15px var(--neon-yellow);
+}
+
+.neon-text-orange {
+    color: var(--neon-orange);
+    text-shadow: 
+        0 0 5px var(--neon-orange), 
+        0 0 10px var(--neon-orange), 
+        0 0 15px var(--neon-orange);
+}
+
 /* Bordes Neon */
 .neon-border-blue {
     border: 1px solid var(--neon-blue);
@@ -166,6 +182,54 @@ body {
         0 0 5px var(--racing-red), 
         inset 0 0 5px var(--racing-red), 
         0 0 20px var(--racing-red);
+}
+
+.neon-border-purple {
+    border: 1px solid var(--neon-purple);
+    box-shadow: 
+        0 0 5px var(--neon-purple), 
+        inset 0 0 5px var(--neon-purple), 
+        0 0 20px var(--neon-purple);
+}
+
+.neon-border-green {
+    border: 1px solid var(--neon-green);
+    box-shadow: 
+        0 0 5px var(--neon-green), 
+        inset 0 0 5px var(--neon-green), 
+        0 0 20px var(--neon-green);
+}
+
+.neon-border-yellow {
+    border: 1px solid var(--neon-yellow);
+    box-shadow: 
+        0 0 5px var(--neon-yellow), 
+        inset 0 0 5px var(--neon-yellow), 
+        0 0 20px var(--neon-yellow);
+}
+
+.neon-border-cyan {
+    border: 1px solid var(--neon-blue);
+    box-shadow: 
+        0 0 5px var(--neon-blue), 
+        inset 0 0 5px var(--neon-blue), 
+        0 0 20px var(--neon-blue);
+}
+
+.neon-border-red {
+    border: 1px solid var(--racing-red);
+    box-shadow: 
+        0 0 5px var(--racing-red), 
+        inset 0 0 5px var(--racing-red), 
+        0 0 20px var(--racing-red);
+}
+
+.neon-border-orange {
+    border: 1px solid var(--neon-orange);
+    box-shadow: 
+        0 0 5px var(--neon-orange), 
+        inset 0 0 5px var(--neon-orange), 
+        0 0 20px var(--neon-orange);
 }
 
 /* Efectos Hover Neon */
