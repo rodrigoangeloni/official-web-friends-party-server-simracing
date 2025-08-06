@@ -1,33 +1,42 @@
-# 🌟 Changelog - FriendsPartyServer SimRacing NEON
+# 🌟 Changelog - FriendsPartyServer SimRacing
 
-## [3.0.0-NEON] - 2025-08-05 🚀 TRANSFORMACIÓN TOTAL + SEO AVANZADO
+## [2.0.0] - 2025-08-05 🚀 CALCULADORA AVANZADA + MEJORAS SEO
 
-### 🎯 LANZAMIENTO MAYOR - PORTAL NEON FUTURISTA + OPTIMIZACIÓN SEO
+### 🎯 LANZAMIENTO MAYOR - CALCULADORA DE ESTRATEGIA RACING V2.0
 
-**¡Bienvenidos al futuro del SimRacing en Latinoamérica con SEO de clase mundial!**
+**¡Nueva calculadora avanzada de estrategia de carrera con soporte completo para 1-4 compuestos de neumáticos!**
 
-### ✨ **NUEVO DISEÑO NEON COMPLETO**
-- 🎨 **Sistema de colores futurista**: Paleta NEON completa con cyan (#05d9e8), pink (#ff2a6d), purple (#d300c5), racing yellow (#f1c40f)
-- 🌈 **Efectos visuales inmersivos**: Glitch effects, holographic animations, 3D transformations
-- ⚡ **Animaciones dinámicas**: Pulse effects, parallax grids, hover transformations
-- 🎭 **Tipografía futurista**: Orbitron para títulos, Inter para texto, efectos de sombra NEON
+### ✨ **NUEVA CALCULADORA DE ESTRATEGIA RACING**
+- �️ **Soporte completo para 1-4 compuestos**: MX-5 (1), GT4/GT3 (2-3), F1/F2/F3 (3), Lluvia (4+)
+- 🧮 **Algoritmos avanzados**: Cálculo óptimo de estrategia con paradas en boxes
+- 🎯 **Optimización inteligente**: Balance entre velocidad y durabilidad de neumáticos
+- 🖼️ **Iconos visuales**: Imágenes de neumáticos por tipo de compuesto (SS, S, M, H, I, W)
+- 📊 **Resultados detallados**: Stints, tiempos, combustible y consejos de carrera
+- 💡 **Guía contextual**: Ejemplos de uso por tipo de vehículo y categoría
 
-### 🏁 **PÁGINAS TRANSFORMADAS (7 PÁGINAS TOTALES)**
-- 🏠 **index.html**: Portal principal con hero NEON y efectos holográficos
-- 🏆 **eventos.html**: Campeonatos con diseño futurista y cards 3D
-- 🖥️ **servers.html**: Servidores con interfaz cyberpunk
-- 📋 **reglamento.html**: Reglas con diseño tech avanzado
-- 🧮 **calculadora.html**: Herramientas con UI futurista
-- 🌐 **redes.html**: Redes sociales con efectos NEON
-- ℹ️ **about.html**: Información con diseño immersivo
-- 📞 **contact.html**: Contacto con formulario futurista
+### 🏁 **MEJORAS EN LA INTERFAZ**
+- � **Tema Neon**: Diseño futurista con efectos holográficos
+- ⚡ **Notificaciones dinámicas**: Sistema de alertas contextual
+- � **Responsive Design**: Optimizado para móviles y tablets
+- 🎭 **Animaciones fluidas**: Transiciones suaves y efectos visuales
 
 ### 🛠️ **MEJORAS TÉCNICAS**
-- 📱 **PWA Actualizada**: Manifest.json con colores NEON y nueva identidad
-- 🎯 **SEO Optimizado**: Sitemap actualizado con terminología NEON
-- 🤖 **Robots.txt**: Configuración actualizada para nueva estructura
-- 🔒 **Seguridad Analytics**: Sistema centralizado de configuración
-- 🏷️ **Meta Tags Avanzados**: Títulos únicos, descripciones optimizadas, Open Graph completo
+- 📝 **calculadora-new.js**: Nueva implementación con 562 líneas de código optimizado
+- � **Validación avanzada**: Control de errores y datos de entrada
+- 🔧 **Modularización**: Funciones separadas por responsabilidad
+- � **Algoritmos de cálculo**: Degradación de neumáticos y tiempo promedio
+
+### 🌐 **PÁGINAS LANDING NUEVAS**
+- 🇦🇷 **Argentina**: assetto-corsa-argentina.html
+- 🇵� **Paraguay**: assetto-corsa-paraguay.html  
+- 🌎 **Latinoamérica**: assetto-corsa-sudamerica-completo.html
+
+### 📋 **ARCHIVOS ACTUALIZADOS**
+- 📖 **README.md**: Documentación actualizada v2.0
+- � **CHANGELOG.md**: Historial de cambios detallado
+- 🤖 **robots.txt**: Configuración SEO optimizada
+- 🗺️ **sitemap.xml**: Mapa del sitio actualizado
+- 📱 **manifest.json**: PWA configurada
 - 🌍 **Targeting Geográfico**: Configuración específica para Paraguay y Latinoamérica
 - ♿ **Accesibilidad**: ARIA labels y estructura semántica mejorada
 

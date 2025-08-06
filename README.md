@@ -1,7 +1,7 @@
 # 🏁 Friends Party Sim Racing - Sitio Web Oficial 🏁
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
-[![Version](https://img.shields.io/badge/Version-3.0.0-blue.svg)](https://github.com/rodrigoangeloni/official-web-friends-party-server-simracing)
+[![Version](https://img.shields.io/badge/Version-2.0.0-blue.svg)](https://github.com/rodrigoangeloni/official-web-friends-party-server-simracing)
 [![Website](https://img.shields.io/website?url=https%3A%2F%2Ffriendspartyserver.duckdns.org)](https://friendspartyserver.duckdns.org)
 [![PWA](https://img.shields.io/badge/PWA-Ready-green.svg)](https://friendspartyserver.duckdns.org)
 [![Assetto Corsa](https://img.shields.io/badge/Game-Assetto%20Corsa-red.svg)](https://friendspartyserver.duckdns.org)
@@ -30,11 +30,16 @@ Sitio web oficial de **Friends Party Sim Racing**, la comunidad líder de **serv
 
 - 🏁 **GT3 Pro Series** - Campeonatos competitivos los viernes 21:00hs
 - 🖥️ **Estado de servidores** en tiempo real con información detallada
-- 📊 **Calculadora Racing** con herramientas de setup y combustible
-- 🧮 **Herramientas de análisis** para optimización de tiempos
+- 🧮 **Calculadora de Estrategia Racing** - Nueva herramienta avanzada v2.0
+  - Soporte para 1-4 compuestos de neumáticos (MX-5, GT3, F1, F2, F3)
+  - Cálculo de estrategia óptima con paradas en boxes
+  - Algoritmos de optimización para tiempo de carrera
+  - Iconos visuales de neumáticos por tipo de compuesto
+- 📊 **Herramientas de análisis** para optimización de tiempos y combustible
 - 📱 **PWA Completa** con funcionalidad offline
 - 🎯 **Reglamentos detallados** con sistema de penalizaciones claro
 - 🌐 **Redes sociales integradas** con estadísticas de comunidad
+- 🎨 **Tema Neon** con efectos holográficos y diseño futurista
 
 ## 🛠️ Stack Tecnológico
 

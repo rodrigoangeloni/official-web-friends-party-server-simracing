@@ -1,4 +1,5 @@
-# Robots.txt para Friends Party Sim Racing
+# Robots.txt para Friends Party Sim Racing v2.0
+# Calculadora Avanzada de Estrategia Racing - Soporte 1-4 Compuestos Neumáticos
 # Assetto Corsa Paraguay Argentina Brasil Chile Uruguay Bolivia Sudamérica
 # Servidores Premium - Campeonatos F1 F2 F3 GT3 GT2 MX5 LMP Porsche Cup
 
@@ -8,7 +9,13 @@ Allow: /
 # Permitir indexación completa de páginas principales
 Allow: /pages/core/
 Allow: /pages/info/
+Allow: /pages/landing/
+Allow: /pages/seo/
 Allow: /assets/
+
+# Nueva calculadora de estrategia v2.0
+Allow: /assets/js/calculadora-new.js
+Allow: /assets/images/img-neumaticos/
 
 # Bloquear archivos técnicos y privados
 Disallow: /scripts/

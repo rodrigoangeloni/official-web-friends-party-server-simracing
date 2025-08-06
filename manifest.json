@@ -1,7 +1,7 @@
 {
-  "name": "Friends Party Sim Racing",
-  "short_name": "FPSR",
-  "description": "Servidores premium de Assetto Corsa para Latinoamérica - Campeonatos y comunidad activa desde Paraguay",
+  "name": "Friends Party Sim Racing v2.0",
+  "short_name": "FPSR v2.0",
+  "description": "Servidores premium de Assetto Corsa para Latinoamérica - Nueva calculadora de estrategia racing con soporte 1-4 compuestos",
   "start_url": "/",
   "display": "standalone",
   "background_color": "#0a0a0a",

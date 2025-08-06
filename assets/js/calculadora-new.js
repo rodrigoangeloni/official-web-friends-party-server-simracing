@@ -1,6 +1,5 @@
 // ========================================
-// CALCULADORADE CARRERA
-// Friends Pa// Mostrar nota import// Mostrar nota importante para el usuario
+// CALCULADOR// Mostrar nota importante para el usuario
 function precargarValoresDefault() {
     const nota = document.createElement('div');
     nota.className = 'neon-card neon-border-blue mb-6';
@@ -22,56 +21,9 @@ function precargarValoresDefault() {
     if (formulario) {
         formulario.parentNode.insertBefore(nota, formulario);
     }
-}rio
-function precargarValoresDefault() {
-    const nota = document.createElement('div');
-    nota.className = 'neon-card neon-border-blue mb-6';
-    nota.innerHTML = `
-        <h3 class="neon-text-blue text-xl font-bold mb-4">💡 NOTA IMPORTANTE</h3>
-        <p class="text-gray-300 text-sm leading-relaxed">
-            <strong class="text-yellow-400">Para obtener los mejores resultados, ingresa datos reales de tu simulador.</strong> 
-            Cuanto más vueltas realices con diferentes condiciones (combustible y neumáticos), mejor será la precisión de la estrategia.
-        </p>
-        <div class="mt-3 grid grid-cols-1 md:grid-cols-2 gap-2 text-xs text-gray-400">
-            <div><strong>• 1 compuesto:</strong> MX-5, clásicos</div>
-            <div><strong>• 2 compuestos:</strong> GT4, algunos GT3</div>
-            <div><strong>• 3 compuestos:</strong> F1, F2, F3</div>
-            <div><strong>• 4+ compuestos:</strong> Con lluvia</div>
-        </div>
-    `;
-    
-    const formulario = document.querySelector('.neon-card');
-    if (formulario) {
-        formulario.parentNode.insertBefore(nota, formulario);
-    }
-}ing
+}E CARRERA
+// Friends Party Server SimRacing
 // ========================================
-
-function precargarValoresDefault() {
-    const nota = document.createElement('div');
-    nota.className = 'neon-card neon-border-blue mb-6';
-    nota.innerHTML = `
-        <h3 class="neon-text-blue text-xl font-bold mb-4">💡 NOTA IMPORTANTE</h3>
-        <p class="text-gray-300 text-sm leading-relaxed">
-            <strong class="text-yellow-400">Para obtener los mejores resultados, ingresa datos reales de tu simulador.</strong> 
-            Cuanto más vueltas realices con diferentes condiciones (combustible y neumáticos), mejor será la precisión de la estrategia.
-        </p>
-        <div class="mt-4 p-3 bg-gray-800/50 rounded border border-yellow-400/30">
-            <h4 class="text-yellow-400 font-bold mb-2">🏎️ EJEMPLOS DE COMPUESTOS:</h4>
-            <div class="text-xs text-gray-400 space-y-1">
-                <p><strong>• 1 compuesto:</strong> MX-5, algunos autos clásicos</p>
-                <p><strong>• 2 compuestos:</strong> GT4, algunos GT3</p>
-                <p><strong>• 3 compuestos:</strong> F1, F2, F3, mayoría GT3</p>
-                <p><strong>• 4+ compuestos:</strong> Algunos autos especiales con neumáticos de lluvia</p>
-            </div>
-        </div>
-    `;
-    
-    const formulario = document.querySelector('.neon-card');
-    if (formulario) {
-        formulario.parentNode.insertBefore(nota, formulario);
-    }
-}
 
 
 // Variables globales
