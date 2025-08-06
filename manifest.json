@@ -1,15 +1,15 @@
 {
-  "name": "FriendsPartyServer SimRacing",
-  "short_name": "FPS SimRacing",
-  "description": "SimRacing para toda Latinoamérica - Servidores de Assetto Corsa desde Paraguay",
+  "name": "Friends Party Sim Racing",
+  "short_name": "FPSR",
+  "description": "Servidores premium de Assetto Corsa para Latinoamérica - Campeonatos y comunidad activa desde Paraguay",
   "start_url": "/",
   "display": "standalone",
-  "background_color": "#111827",
-  "theme_color": "#D97706",
+  "background_color": "#0a0a0a",
+  "theme_color": "#05d9e8",
   "orientation": "portrait-primary",
   "scope": "/",
   "lang": "es-PY",
-  "categories": ["games", "sports", "entertainment"],
+  "categories": ["games", "sports", "entertainment", "lifestyle"],
   "screenshots": [
     {
       "src": "/assets/images/screenshot-desktop.png",

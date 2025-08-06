@@ -1,0 +1,457 @@
+/* FRIENDSPARTYSERVER SIMRACING - NEON THEME */
+/* Inspirado en el diseño del NEON PORTAL */
+/* ========================================= */
+
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;700;900&display=swap');
+
+/* Variables CSS Neon */
+:root {
+    /* Colores Neon Principales */
+    --neon-blue: #05d9e8;
+    --neon-pink: #ff2a6d;
+    --neon-purple: #d300c5;
+    --neon-green: #00ff9d;
+    --neon-orange: #ff6600;
+    --neon-yellow: #ffcc00;
+    
+    /* Fondos Oscuros */
+    --dark-bg: #05010e;
+    --darker-bg: #0d0221;
+    --nav-dark: #12092a;
+    --card-bg: rgba(13, 2, 33, 0.8);
+    
+    /* Racing Colors */
+    --racing-red: #ff3333;
+    --racing-gold: #ffd700;
+    --racing-silver: #c0c0c0;
+}
+
+/* Configuración Base del Body */
+body {
+    font-family: 'Orbitron', monospace, sans-serif;
+    background-color: var(--dark-bg);
+    color: #ffffff;
+    min-height: 100vh;
+    background-image: 
+        radial-gradient(circle at 20% 50%, rgba(5, 217, 232, 0.1) 0%, transparent 50%),
+        radial-gradient(circle at 80% 20%, rgba(255, 42, 109, 0.1) 0%, transparent 50%),
+        radial-gradient(circle at 40% 80%, rgba(211, 0, 197, 0.1) 0%, transparent 50%);
+    background-attachment: fixed;
+    overflow-x: hidden;
+}
+
+/* Grid Lines Effect de Fondo */
+.grid-lines {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: 
+        linear-gradient(to right, rgba(5, 217, 232, 0.03) 1px, transparent 1px),
+        linear-gradient(to bottom, rgba(5, 217, 232, 0.03) 1px, transparent 1px);
+    background-size: 40px 40px;
+    z-index: -1;
+    pointer-events: none;
+    animation: grid-pulse 4s ease-in-out infinite;
+}
+
+@keyframes grid-pulse {
+    0%, 100% { opacity: 0.3; }
+    50% { opacity: 0.1; }
+}
+
+/* Efecto Glitch para Títulos Principales - VERSIÓN SUAVE */
+.glitch-effect {
+    position: relative;
+    color: white;
+    font-weight: 900;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.glitch-effect::before,
+.glitch-effect::after {
+    content: attr(data-text);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0.3;
+}
+
+.glitch-effect::before {
+    color: var(--neon-blue);
+    z-index: -1;
+    animation: glitch-effect 8s infinite;
+}
+
+.glitch-effect::after {
+    color: var(--neon-pink);
+    z-index: -2;
+    animation: glitch-effect 10s infinite reverse;
+}
+
+@keyframes glitch-effect {
+    0% { transform: translate(0); }
+    20% { transform: translate(-2px, 2px); }
+    40% { transform: translate(-2px, -2px); }
+    60% { transform: translate(2px, 2px); }
+    80% { transform: translate(2px, -2px); }
+    100% { transform: translate(0); }
+}
+
+/* Clases de Texto Neon - VERSIÓN SUAVE PARA TÍTULOS */
+.neon-text-blue {
+    color: var(--neon-blue);
+    text-shadow: 
+        0 0 5px var(--neon-blue), 
+        0 0 10px var(--neon-blue), 
+        0 0 15px var(--neon-blue);
+}
+
+.neon-text-pink {
+    color: var(--neon-pink);
+    text-shadow: 
+        0 0 3px var(--neon-pink), 
+        0 0 8px var(--neon-pink), 
+        0 0 12px var(--neon-pink);
+}
+
+.neon-text-purple {
+    color: var(--neon-purple);
+    text-shadow: 
+        0 0 5px var(--neon-purple), 
+        0 0 10px var(--neon-purple), 
+        0 0 15px var(--neon-purple);
+}
+
+.neon-text-green {
+    color: var(--neon-green);
+    text-shadow: 
+        0 0 3px var(--neon-green), 
+        0 0 6px var(--neon-green), 
+        0 0 10px var(--neon-green);
+}
+
+.neon-text-racing {
+    color: var(--racing-red);
+    text-shadow: 
+        0 0 5px var(--racing-red), 
+        0 0 10px var(--racing-red), 
+        0 0 15px var(--racing-red);
+}
+
+/* Bordes Neon */
+.neon-border-blue {
+    border: 1px solid var(--neon-blue);
+    box-shadow: 
+        0 0 5px var(--neon-blue), 
+        inset 0 0 5px var(--neon-blue), 
+        0 0 20px var(--neon-blue);
+}
+
+.neon-border-pink {
+    border: 1px solid var(--neon-pink);
+    box-shadow: 
+        0 0 5px var(--neon-pink), 
+        inset 0 0 5px var(--neon-pink), 
+        0 0 20px var(--neon-pink);
+}
+
+.neon-border-racing {
+    border: 1px solid var(--racing-red);
+    box-shadow: 
+        0 0 5px var(--racing-red), 
+        inset 0 0 5px var(--racing-red), 
+        0 0 20px var(--racing-red);
+}
+
+/* Efectos Hover Neon */
+.neon-hover:hover {
+    text-shadow: 
+        0 0 10px currentColor, 
+        0 0 20px currentColor, 
+        0 0 30px currentColor,
+        0 0 40px currentColor;
+    transition: all 0.3s ease;
+    transform: translateY(-2px);
+}
+
+/* Cards Neon con Efectos 3D - VERSIÓN SUAVE */
+.neon-card {
+    background: var(--card-bg);
+    backdrop-filter: blur(10px);
+    border-radius: 15px;
+    padding: 2rem;
+    transition: all 0.4s ease;
+    position: relative;
+    overflow: hidden;
+    border: 1px solid rgba(5, 217, 232, 0.3);
+}
+
+.neon-card:hover {
+    transform: translateY(-5px) scale(1.02);
+    box-shadow: 
+        0 0 20px rgba(5, 217, 232, 0.3),
+        0 10px 30px rgba(5, 217, 232, 0.15);
+    border-color: rgba(5, 217, 232, 0.6);
+}
+
+.neon-card::before {
+    content: '';
+    position: absolute;
+    top: -2px;
+    left: -2px;
+    right: -2px;
+    bottom: -2px;
+    background: linear-gradient(45deg, 
+        rgba(5, 217, 232, 0.3), 
+        rgba(255, 42, 109, 0.2), 
+        rgba(211, 0, 197, 0.2), 
+        rgba(5, 217, 232, 0.3));
+    border-radius: 15px;
+    z-index: -1;
+    animation: neon-border-rotate 12s linear infinite;
+}
+
+@keyframes neon-border-rotate {
+    0% { transform: rotate(0deg); opacity: 0.3; }
+    50% { opacity: 0.6; }
+    100% { transform: rotate(360deg); opacity: 0.3; }
+}
+
+/* Efecto Holográfico - VERSIÓN SUTIL */
+.holographic-effect {
+    position: relative;
+    overflow: hidden;
+}
+
+.holographic-effect::before {
+    content: '';
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 200%;
+    height: 200%;
+    background: linear-gradient(
+        to bottom right,
+        rgba(255, 255, 255, 0) 48%,
+        rgba(5, 217, 232, 0.1) 50%,
+        rgba(255, 255, 255, 0) 52%
+    );
+    transform: rotate(30deg);
+    animation: holographic 12s linear infinite;
+    pointer-events: none;
+}
+
+@keyframes holographic {
+    0% { transform: translateY(-100%) rotate(30deg); opacity: 0; }
+    10% { opacity: 1; }
+    90% { opacity: 1; }
+    100% { transform: translateY(100%) rotate(30deg); opacity: 0; }
+}
+
+/* Botones Neon Racing */
+.racing-button {
+    background: linear-gradient(45deg, var(--racing-red), var(--racing-gold));
+    border: none;
+    padding: 12px 24px;
+    border-radius: 25px;
+    color: #000;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    position: relative;
+    overflow: hidden;
+}
+
+.racing-button::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, 
+        transparent, 
+        rgba(255, 255, 255, 0.4), 
+        transparent);
+    transition: left 0.5s;
+}
+
+.racing-button:hover::before {
+    left: 100%;
+}
+
+.racing-button:hover {
+    transform: translateY(-3px);
+    box-shadow: 
+        0 10px 20px rgba(255, 51, 51, 0.3),
+        0 0 30px var(--racing-red);
+}
+
+/* Navegación Neon */
+.neon-nav {
+    background: rgba(18, 9, 42, 0.95);
+    backdrop-filter: blur(10px);
+    border-bottom: 2px solid var(--neon-blue);
+    box-shadow: 0 4px 20px rgba(5, 217, 232, 0.2);
+}
+
+.neon-nav a {
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: 500;
+    letter-spacing: 1px;
+    transition: all 0.3s ease;
+    position: relative;
+}
+
+.neon-nav a::after {
+    content: '';
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background: linear-gradient(90deg, var(--neon-blue), var(--neon-pink));
+    transition: width 0.3s ease;
+}
+
+.neon-nav a:hover::after {
+    width: 100%;
+}
+
+.neon-nav a:hover {
+    color: var(--neon-blue);
+    text-shadow: 0 0 10px var(--neon-blue);
+    transform: translateY(-2px);
+}
+
+/* Tarjetas de Horarios por País - MEJORADA LEGIBILIDAD */
+.country-card {
+    background: rgba(13, 2, 33, 0.9);
+    backdrop-filter: blur(10px);
+    border-radius: 10px;
+    padding: 1.5rem;
+    text-align: center;
+    transition: all 0.3s ease;
+    border: 1px solid transparent;
+    position: relative;
+}
+
+.country-card:hover {
+    transform: translateY(-3px) scale(1.01);
+    border-color: currentColor;
+    box-shadow: 0 8px 25px rgba(5, 217, 232, 0.2);
+}
+
+.country-card h3 {
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.country-card p {
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: #e2e8f0;
+}
+
+/* Clase especial para texto legible en cards */
+.card-readable-text {
+    color: #f1f5f9;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.8);
+}
+
+/* Animaciones de Pulsing - VERSIÓN SUAVE */
+.pulse-neon {
+    animation: pulse-neon 3s ease-in-out infinite alternate;
+}
+
+@keyframes pulse-neon {
+    from {
+        text-shadow: 
+            0 0 3px currentColor,
+            0 0 6px currentColor,
+            0 0 9px currentColor;
+    }
+    to {
+        text-shadow: 
+            0 0 2px currentColor,
+            0 0 4px currentColor,
+            0 0 6px currentColor;
+    }
+}
+
+/* Footer Neon */
+.neon-footer {
+    background: linear-gradient(135deg, var(--darker-bg), var(--nav-dark));
+    border-top: 2px solid var(--neon-pink);
+    position: relative;
+}
+
+.neon-footer::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 1px;
+    background: linear-gradient(90deg, 
+        transparent, 
+        var(--neon-blue), 
+        var(--neon-pink), 
+        var(--neon-purple), 
+        transparent);
+    animation: footer-glow 3s ease-in-out infinite;
+}
+
+@keyframes footer-glow {
+    0%, 100% { opacity: 0.5; }
+    50% { opacity: 1; }
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .glitch-effect {
+        font-size: 2.5rem;
+    }
+    
+    .neon-card {
+        padding: 1.5rem;
+        margin-bottom: 1rem;
+    }
+    
+    .country-card {
+        padding: 1rem;
+    }
+}
+
+/* Scrollbar Neon */
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+::-webkit-scrollbar-track {
+    background: var(--dark-bg);
+}
+
+::-webkit-scrollbar-thumb {
+    background: linear-gradient(45deg, var(--neon-blue), var(--neon-pink));
+    border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: linear-gradient(45deg, var(--neon-pink), var(--neon-purple));
+}
+
+/* Selección de Texto Neon */
+::selection {
+    background: var(--neon-blue);
+    color: var(--dark-bg);
+    text-shadow: none;
+}

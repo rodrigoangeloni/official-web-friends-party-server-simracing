@@ -1,17 +1,21 @@
 /* ==============================================
    FriendsPartyServer SimRacing - Custom Styles
    Optimizado para Performance y Accesibilidad
+   Con Efectos NEON inspirados en Portal Design
    ============================================== */
+
+/* Importar tema NEON */
+@import url('./neon-theme.css');
 
 /* === Variables CSS Personalizadas === */
 :root {
-  /* Colores de marca */
-  --fps-primary: #D97706;
-  --fps-secondary: #FCD34D;
-  --fps-accent: #DC2626;
-  --fps-success: #10B981;
-  --fps-warning: #F59E0B;
-  --fps-error: #EF4444;
+  /* Colores de marca - Modo NEON */
+  --fps-primary: #05d9e8;
+  --fps-secondary: #ff2a6d;
+  --fps-accent: #d300c5;
+  --fps-success: #00ff9d;
+  --fps-warning: #ffcc00;
+  --fps-error: #ff3333;
   
   /* Grises optimizados */
   --fps-gray-900: #111827;

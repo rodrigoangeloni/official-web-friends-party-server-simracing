@@ -1,108 +1,126 @@
-# 🏁 FriendsPartyServer SimRacing - Sitio Web Oficial
-
-[![License: MIT](https:# � FriendsPartyServer SimRacing - Sitio Web Oficial
+# 🏁 Friends Party Sim Racing - Sitio Web Oficial 🏁
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
-[![Version](https://img.shields.io/badge/Version-2.0.0-blue.svg)](https://github.com/rodrigoangeloni/official-web-friends-party-server-simracing)
+[![Version](https://img.shields.io/badge/Version-3.0.0-blue.svg)](https://github.com/rodrigoangeloni/official-web-friends-party-server-simracing)
 [![Website](https://img.shields.io/website?url=https%3A%2F%2Ffriendspartyserver.duckdns.org)](https://friendspartyserver.duckdns.org)
 [![PWA](https://img.shields.io/badge/PWA-Ready-green.svg)](https://friendspartyserver.duckdns.org)
+[![Assetto Corsa](https://img.shields.io/badge/Game-Assetto%20Corsa-red.svg)](https://friendspartyserver.duckdns.org)
 
-## 🎯 Descripción
+## 🌟 Descripción
 
-Sitio web oficial de **FriendsPartyServer SimRacing**, la comunidad líder de servidores de Assetto Corsa en **toda Latinoamérica**. Plataforma optimizada para SEO, performance y accesibilidad, diseñada para unir a los pilotos de SimRacing de toda la región.
+Sitio web oficial de **Friends Party Sim Racing**, la comunidad líder de **servidores premium de Assetto Corsa** en **toda Latinoamérica**. Plataforma optimizada para SEO, performance y experiencia de usuario, conectando pilotos desde Paraguay hasta toda Sudamérica.
 
-### 🌎 **Una Comunidad, Toda Latinoamérica**
+### � **Servidores Premium de Assetto Corsa**
 
-- � **+5,000 pilotos** de 20+ países latinoamericanos
+- 🖥️ **Servidores dedicados** con conexión estable desde Paraguay
+- � **Cobertura regional** optimizada para Argentina, Uruguay y Latinoamérica
+- ⚡ **Baja latencia** para toda Sudamérica
+- �️ **Anti-cheat activo** y moderación 24/7
+- 📊 **Estadísticas en tiempo real** de estado de servidores
+
+### 🏆 **Comunidad y Campeonatos**
+
+- 👥 **+2,500 pilotos activos** de 12+ países latinoamericanos
 - 🇵🇾 **Sede en Paraguay** - Conectando toda la región
-- � **Eventos diarios** 21:00hs (Paraguay Time)
+- 🏁 **Eventos semanales** con horarios coordinados para LATAM
 - 🏆 **Campeonatos profesionales** con premios reales
+- 🌎 **Hub regional** para el SimRacing sudamericano
 
 ### 🚀 Características Principales
 
-- � **Campeonatos Diarios** a las 21:00hs (horario Paraguay)
-- 🖥️ **Servidores Premium** con 99.9% uptime
-- � **Sistema de Rankings** y estadísticas avanzadas
-- 🧮 **Calculadora de Estrategia** para combustible y neumáticos
-- 🌎 **Cobertura Regional** para toda Latinoamérica
-- 📱 **PWA Completa** con soporte offline/img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
-[![Version](https://img.shields.io/badge/Version-2.0.0-blue.svg)](https://github.com/rodrigoangeloni/official-web-friends-party-server-simracing)
-[![Website](https://img.shields.io/website?url=https%3A%2F%2Ffriendspartyserver.duckdns.org)](https://friendspartyserver.duckdns.org)
-[![PWA](https://img.shields.io/badge/PWA-Ready-green.svg)](https://friendspartyserver.duckdns.org)
-
-## 🎯 Descripción
-
-Sitio web oficial de **FriendsPartyServer SimRacing**, la comunidad líder de servidores de Assetto Corsa en Sudamérica. Plataforma optimizada para SEO, performance y accesibilidad, diseñada para posicionarse como **#1 en Google** para las keywords "Servidores de Assetto Corsa" y "Sim Racing".
-
-### 🚀 Características Principales
-
-- 🏆 **Campeonatos Diarios** a las 21:00hs (horario Argentina)
-- 🖥️ **Servidores Premium** con 99.9% uptime
-- 📊 **Sistema de Rankings** y estadísticas avanzadas
-- 🧮 **Calculadora de Estrategia** para combustible y neumáticos
-- 🌎 **Cobertura Regional** para toda Sudamérica
-- 📱 **PWA Completa** con soporte offline
+- 🏁 **GT3 Pro Series** - Campeonatos competitivos los viernes 21:00hs
+- 🖥️ **Estado de servidores** en tiempo real con información detallada
+- 📊 **Calculadora Racing** con herramientas de setup y combustible
+- 🧮 **Herramientas de análisis** para optimización de tiempos
+- 📱 **PWA Completa** con funcionalidad offline
+- 🎯 **Reglamentos detallados** con sistema de penalizaciones claro
+- 🌐 **Redes sociales integradas** con estadísticas de comunidad
 
 ## 🛠️ Stack Tecnológico
 
-### Frontend
-- **HTML5** semántico con Schema.org
-- **CSS3** con variables personalizadas
-- **JavaScript ES6+** modular y optimizado
-- **Tailwind CSS** para diseño responsive
-- **Service Worker** para PWA
+### Frontend Moderno
+- **HTML5** semántico optimizado para SEO
+- **CSS3** con sistema de diseño responsive y efectos visuales
+- **JavaScript ES6+** para funcionalidades interactivas
+- **Tailwind CSS** para diseño consistente
+- **Service Worker** con cacheo inteligente para PWA
+
+### Experiencia Visual
+- **Efectos de iluminación** y bordes destacados
+- **Tarjetas interactivas** con hover effects
+- **Navegación intuitiva** y responsive
+- **Animaciones suaves** optimizadas para performance
+- **Grid dinámico** con efectos de paralaje
 
 ### SEO & Performance
-- **Core Web Vitals** optimizados (>90 puntos)
-- **Schema.org** para gaming/motorsports
-- **Critical CSS** inline
-- **Lazy loading** de imágenes
-- **Sitemap.xml** estructurado
+- **Core Web Vitals** optimizados (>90 puntos Lighthouse)
+- **Meta tags específicos** para Assetto Corsa y SimRacing
+- **Palabras clave estratégicas** enfocadas en "servidores Assetto Corsa"
+- **Sitemap.xml** actualizado para mejor indexación
+- **Lazy loading** de imágenes optimizado
 
-### Seguridad
-- **Content Security Policy (CSP)**
-- **Headers de seguridad HTTP**
-- **Sanitización de inputs**
-- **Validación robusta**
+### Seguridad y Analytics
+- **Content Security Policy (CSP)** actualizado
+- **Headers de seguridad HTTP** configurados
+- **Google Analytics 4** centralizado y securizado
+- **Validación robusta** en formularios de contacto
 
-## 📁 Estructura del Proyecto (SIMPLIFICADA)
+## 📁 Estructura del Proyecto
 
 ```
 friendspartyserver.duckdns.org/
-├── 📄 index.html                 # Página principal
-├── � pages/                     # Páginas organizadas
+├── 📄 index.html                 # Portal principal
+├── 📁 pages/                     # Páginas del sitio
 │   ├── core/                     # Funcionalidades principales
-│   │   ├── servers.html          # Lista de servidores
-│   │   ├── eventos.html          # Eventos y campeonatos
-│   │   ├── calculadora.html      # Calculadora de estrategia
-│   │   └── reglamento.html       # Normas y reglas
+│   │   ├── servers.html          # Estado de servidores en tiempo real
+│   │   ├── eventos.html          # Calendario de campeonatos
+│   │   ├── calculadora.html      # Herramientas de racing
+│   │   └── reglamento.html       # Normas y penalizaciones
 │   └── info/                     # Páginas informativas
-│       ├── about.html            # Acerca de
-│       ├── contact.html          # Contacto
-│       └── redes.html            # Redes sociales
+│       ├── about.html            # Historia y equipo
+│       ├── contact.html          # Formulario de contacto
+│       └── redes.html            # Redes sociales y estadísticas
 ├── 📁 assets/                    # Recursos optimizados
-│   ├── css/                      # Estilos organizados
+│   ├── css/
+│   │   ├── main.css              # Estilos base del sitio
+│   │   └── neon-theme.css        # Sistema de efectos visuales
 │   ├── js/                       # JavaScript modular
-│   └── images/                   # Recursos gráficos
+│   └── images/                   # Recursos gráficos optimizados (WebP)
 ├── 📁 config/                    # Configuraciones centralizadas
-├── � scripts/                   # Scripts de automatización
-├── � templates/                 # Plantillas reutilizables
+│   ├── global-config.js          # Configuración global
+│   └── head-config.js            # Analytics seguros
 ├── ❌ 404.html                   # Página de error personalizada
-├── 🔧 sw.js                      # Service Worker
-├── � manifest.json              # Manifest PWA  
-├── �️ sitemap.xml               # Sitemap SEO
+├── 🔧 sw.js                      # Service Worker para PWA
+├── 🌐 manifest.json              # Manifest PWA optimizado
+├── 🗺️ sitemap.xml               # Sitemap SEO actualizado
 ├── 🤖 robots.txt                 # Configuración de bots
-└── 📚 README.md                  # Este archivo
+└── 📚 README.md                  # Documentación del proyecto
 ```
+
+## 🎨 Sistema Visual
+
+### Paleta de Colores
+- **Azul Principal**: `#05d9e8` - Navegación y textos principales
+- **Rosa Acento**: `#ff2a6d` - Títulos y elementos destacados
+- **Púrpura**: `#d300c5` - Enlaces y elementos interactivos
+- **Amarillo Racing**: `#f1c40f` - Elementos relacionados con carreras
+- **Verde**: `#00ff88` - Estados positivos y confirmaciones
+
+### Efectos Visuales
+- **Grid animado** con efectos de paralaje
+- **Tarjetas con hover** y transformaciones suaves
+- **Bordes iluminados** para destacar contenido importante
+- **Animaciones de entrada** optimizadas para performance
+- **Responsive design** adaptado para dispositivos móviles
 
 ## 🚀 Instalación y Configuración
 
 ### Requisitos Previos
-- Servidor web (Apache, Nginx, o similar)
+- Servidor web con soporte HTML5, CSS3 y JavaScript ES6+
 - HTTPS habilitado (requerido para PWA)
-- Soporte para headers personalizados
+- Soporte para headers de seguridad personalizados
 
-### Instalación
+### Instalación Rápida
 
 1. **Clonar el repositorio**
 ```bash
@@ -112,184 +130,188 @@ cd official-web-friends-party-server-simracing
 
 2. **Configurar headers de seguridad** (Apache)
 ```apache
-# .htaccess
-Header always set Content-Security-Policy "default-src 'self'; script-src 'self' 'unsafe-inline' https://cdn.jsdelivr.net; style-src 'self' 'unsafe-inline' https://cdn.jsdelivr.net; img-src 'self' https://i.ibb.co https://img.buymeacoffee.com data:;"
+# .htaccess para seguridad optimizada
+Header always set Content-Security-Policy "default-src 'self'; script-src 'self' 'unsafe-inline' https://cdn.jsdelivr.net https://www.googletagmanager.com; style-src 'self' 'unsafe-inline' https://cdn.jsdelivr.net; img-src 'self' https://*.webp data:;"
 Header always set X-Frame-Options "DENY"
 Header always set X-Content-Type-Options "nosniff"
-Header always set X-XSS-Protection "1; mode=block"
 Header always set Referrer-Policy "strict-origin-when-cross-origin"
 ```
 
-3. **Configurar HTTPS** (requerido para Service Worker)
+3. **Verificar funcionalidad**
 ```bash
-# Ejemplo con Let's Encrypt
-certbot --apache -d friendspartyserver.duckdns.org
+# Servidor local recomendado
+npx http-server -p 8000 -a localhost --cors
 ```
 
-4. **Subir archivos** al servidor web
-
-### Configuración para Desarrollo
+### Configuración de Desarrollo
 
 ```bash
-# Servidor local con Python
+# Con Python
 python -m http.server 8000
 
-# O con Node.js
-npx http-server -p 8000 -a localhost
+# Con Node.js (recomendado)
+npx http-server -p 8000 -a localhost --cors
 ```
 
-## 📊 Métricas de Performance
+## 📊 Performance Metrics
 
-### Lighthouse Scores Objetivo
-- **Performance**: >95
-- **Accessibility**: >95  
-- **Best Practices**: >95
-- **SEO**: >95
-- **PWA**: ✅ Completo
+### Lighthouse Scores
+- **Performance**: >90 (optimizado para velocidad)
+- **Accessibility**: >95 (accesibilidad mejorada)
+- **Best Practices**: >95 (implementación moderna)
+- **SEO**: >95 (meta tags optimizados para Assetto Corsa)
+- **PWA**: ✅ Completo con funcionalidad offline
 
-### Core Web Vitals
-- **LCP** (Largest Contentful Paint): <2.5s
-- **FID** (First Input Delay): <100ms
-- **CLS** (Cumulative Layout Shift): <0.1
+### Optimizaciones Implementadas
+- **Critical CSS**: Estilos importantes inline
+- **Lazy Loading**: Imágenes cargadas progresivamente
+- **JavaScript modular**: Carga condicional de funcionalidades
+- **Compresión de imágenes**: Formato WebP para mejor rendimiento
+- **Service Worker**: Cacheo inteligente para PWA
 
 ## 🎯 SEO Strategy
 
 ### Keywords Principales
-1. **"Servidores de Assetto Corsa Latinoamérica"** - Competencia: Media
-2. **"Sim Racing Paraguay"** - Competencia: Baja
-3. **"Campeonatos Assetto Corsa Sudamérica"** - Long-tail
-4. **"SimRacing para toda Latinoamérica"** - Regional
+1. **"Assetto Corsa servidores Paraguay"** - Targeting geográfico específico
+2. **"Friends Party Sim Racing"** - Nombre de marca con palabras separadas
+3. **"campeonatos Assetto Corsa Latinoamérica"** - Long-tail regional
+4. **"SimRacing comunidad Argentina Paraguay"** - Mercado principal
 
-### Contenido Optimizado
-- ✅ Meta descriptions únicas por página
-- ✅ Schema.org para gaming/motorsports
-- ✅ Títulos optimizados para SEO
-- ✅ URLs semánticas y limpias
-- ✅ Contenido unificado para toda la región
-
-### Enfoque Regional Unificado
-- 🌎 **Una sola web** para toda Latinoamérica
-- 🇵🇾 **Desde Paraguay** para el mundo
-- 🏁 **Mensaje consistente** sin fragmentación
-- 📊 **Analytics centralizados** por región
+### Optimización de Contenido
+- ✅ Meta descriptions enfocadas en Assetto Corsa y servidores
+- ✅ Títulos optimizados con palabras clave principales
+- ✅ URLs semánticas y descriptivas
+- ✅ Sitemap.xml actualizado para mejor indexación
+- ✅ Schema.org para gaming y motorsports
 
 ## 🔧 Funcionalidades Destacadas
 
-### 🧮 Calculadora de Estrategia SimRacing
-- Cálculo de combustible por vuelta
-- Estrategia de neumáticos optimizada
-- Simulación de paradas en boxes
-- Validación robusta de inputs
-- Interfaz intuitiva y responsive
+### 🧮 Calculadora Racing Interactiva
+- **Cálculo de tiempos** por pista y categoría
+- **Comparativa de récords** históricos
+- **Calculadora de combustible** con estimaciones precisas
+- **Asistente de setup** con recomendaciones
+- **Interfaz responsive** para todos los dispositivos
 
-### 📱 Progressive Web App (PWA)
-- Instalable en dispositivos móviles
-- Funcionalidad offline
-- Push notifications (preparado)
-- Cacheo inteligente de recursos
-- Iconos adaptativos
+### 📱 PWA (Progressive Web App)
+- **Instalable** como aplicación nativa
+- **Modo offline** con funcionalidad limitada
+- **Notificaciones push** preparadas para eventos
+- **Cacheo inteligente** de recursos críticos
+- **Performance optimizada** para dispositivos móviles
 
-### 🛡️ Seguridad Web
-- Content Security Policy implementado
-- Headers de seguridad HTTP
-- Sanitización de inputs XSS
-- Validación del lado cliente y servidor
-- Enlaces externos seguros
+### 🛡️ Seguridad y Analytics
+- **Configuración centralizada** en carpeta config/
+- **Google Analytics 4** con ID protegido
+- **Content Security Policy** configurado
+- **Validación de formularios** robusta
 
-## 🌐 Compatibilidad de Navegadores
+## 🌐 Compatibilidad
 
-| Navegador | Versión Mínima | PWA Support |
-|-----------|---------------|-------------|
-| Chrome    | 60+           | ✅ Completo |
-| Firefox   | 55+           | ✅ Completo |
-| Safari    | 11+           | ⚠️ Parcial  |
-| Edge      | 79+           | ✅ Completo |
+| Navegador | Versión | Funcionalidad | PWA |
+|-----------|---------|--------------|-----|
+| Chrome    | 60+     | ✅ Completa  | ✅  |
+| Firefox   | 55+     | ✅ Completa  | ✅  |
+| Safari    | 11+     | ⚡ Parcial   | ⚠️  |
+| Edge      | 79+     | ✅ Completa  | ✅  |
+| Mobile    | Moderno | 📱 Optimizada| ✅  |
 
-## 📈 Analytics y Tracking
+## 📈 Analytics
 
-### Google Analytics 4 (Configurado)
-- **ID**: `G-L6K2C49RW0`
-- **Geo-targeting** desde Paraguay (PY)
-- **Eventos personalizados** para toda Latinoamérica
-- **Custom parameters** para tracking regional unificado
+### Google Analytics 4 (Configuración Segura)
+- **ID protegido**: Configuración centralizada en `config/`
+- **Geo-targeting**: Paraguay (PY) con proyección regional  
+- **Eventos personalizados**: Tracking de interacciones específicas
+- **Custom parameters**: Seguimiento de métricas de SimRacing
 
 ```javascript
-// Eventos personalizados para SimRacing Latinoamérica
-gtag('event', 'server_join', {
-  'event_category': 'engagement',
-  'server_name': 'MX5 Cup',
-  'event_time': '21:00',
-  'region': 'Latin America'
+// Ejemplo de eventos personalizados
+gtag('event', 'servidor_view', {
+  'event_category': 'assetto_corsa',
+  'server_name': 'GT3_Pro_Series',
+  'region': 'Paraguay'
 });
 ```
 
-### Métricas Específicas
-- Tiempo en página por sección
-- Clics en enlaces de servidores
-- Uso de la calculadora de estrategia
-- Conversiones a Discord/eventos
-- Engagement por país latinoamericano
+## 🆕 Changelog Version 3.0.0
+
+### 🎨 Renovación Visual Completa
+- **Nuevo sistema de diseño** con efectos visuales modernos
+- **Paleta de colores** unificada con 5 colores principales
+- **Efectos interactivos**: Hover animations, smooth transitions
+- **Grid responsive** optimizado para todos los dispositivos
+- **Navegación mejorada** con mejor UX/UI
+
+### 🛠️ Mejoras Técnicas y SEO
+- **SEO optimizado** para "Assetto Corsa servidores"
+- **Meta tags específicos** con palabras clave estratégicas
+- **PWA actualizada** con nuevo manifest
+- **Performance mejorado** manteniendo efectos visuales
+- **Configuración de seguridad** actualizada
+
+### 🗑️ Limpieza y Optimización
+- **Eliminados**: Archivos obsoletos y backups
+- **Estructura simplificada** y mejor organizada
+- **Documentación actualizada** y SEO-friendly
+- **Código optimizado** para mejor rendimiento
 
 ## 🤝 Contribuir al Proyecto
 
-### Reportar Bugs
-1. Usar el [sistema de issues](https://github.com/rodrigoangeloni/official-web-friends-party-server-simracing/issues)
-2. Incluir detalles del navegador y dispositivo
-3. Adjuntar screenshots si es posible
+### Reportar Issues
+1. **GitHub Issues** con descripción detallada
+2. **Screenshots** si es relevante para UI/UX
+3. **Detalles del navegador** para debugging
 
-### Enviar Mejoras
-1. Fork del repositorio
-2. Crear rama feature (`git checkout -b feature/nueva-funcionalidad`)
-3. Commit con mensaje descriptivo
-4. Push a la rama (`git push origin feature/nueva-funcionalidad`)
-5. Crear Pull Request
+### Desarrollo
+1. **Fork** del repositorio
+2. **Branch**: `feature/nombre-funcionalidad`
+3. **Commit**: Mensajes descriptivos en español
+4. **Pull Request** con descripción clara
 
-### Guías de Desarrollo
-- Seguir convenciones de HTML5 semántico
-- Usar CSS BEM methodology
-- JavaScript ES6+ con manejo de errores
-- Comentarios en español para el equipo
+### Guías de Estilo
+- **CSS**: Variables personalizadas para colores
+- **JavaScript**: ES6+ con comentarios descriptivos
+- **HTML**: Semántico y accesible
+- **Comentarios**: En español para el equipo
 
 ## 📋 Roadmap 2025
 
 ### Q1 2025 ✅ (Completado)
-- [x] Refactoring completo de seguridad
-- [x] Implementación PWA
-- [x] Optimización SEO avanzada
-- [x] Calculadora mejorada
-- [x] **Simplificación de estructura** - Eliminadas landing pages
-- [x] **Rutas absolutas** - Navegación mejorada
-- [x] **Enfoque unificado** - Una web para toda Latinoamérica
+- [x] **Renovación visual completa**
+- [x] **SEO optimizado para Assetto Corsa**
+- [x] **PWA funcional**
+- [x] **Sistema de configuración segura**
 
 ### Q2 2025 🚧 (En Progreso)
-- [ ] Sistema de usuarios y perfiles
-- [ ] API de estadísticas en tiempo real
-- [ ] Integración con Discord bot
-- [ ] Blog de SimRacing
+- [ ] **Dashboard de estadísticas** para administradores
+- [ ] **Sistema de notificaciones** para eventos
+- [ ] **Integración con Discord bot** 
+- [ ] **Modo oscuro** toggleable
 
 ### Q3 2025 📋 (Planificado)
-- [ ] Streaming en vivo de eventos
-- [ ] Modo oscuro/claro
-- [ ] Multiidioma (EN/PT)
-- [ ] Sistema de notificaciones push
+- [ ] **API para estadísticas** de servidores
+- [ ] **Sistema de rankings** de pilotos
+- [ ] **Calendario avanzado** con recordatorios
+- [ ] **Perfiles de usuario** básicos
 
 ### Q4 2025 🎯 (Objetivo)
-- [ ] App móvil nativa
-- [ ] Integración con APIs de Assetto Corsa
-- [ ] Sistema de coaching online
-- [ ] Marketplace de setups
+- [ ] **App móvil nativa**
+- [ ] **Integración con telemetría** de Assetto Corsa
+- [ ] **Sistema de streaming** para eventos
+- [ ] **Marketplace de setups** comunitario
 
 ## 📞 Soporte y Contacto
 
-### Comunidad
+### Comunidad Friends Party Sim Racing
 - **Discord**: [FriendsPartyServer](https://discord.gg/friendspartyserver)
 - **Website**: [friendspartyserver.duckdns.org](https://friendspartyserver.duckdns.org)
 - **YouTube**: [@friendspartyserver](https://youtube.com/@friendspartyserver)
+- **GitHub**: [Repositorio oficial](https://github.com/rodrigoangeloni/official-web-friends-party-server-simracing)
 
-### Desarrolladores
+### Desarrolladores y Soporte Técnico
 - **GitHub Issues**: [Reportar problemas](https://github.com/rodrigoangeloni/official-web-friends-party-server-simracing/issues)
 - **Email**: contacto@friendspartyserver.org
-- **Telegram**: @FriendsPartyServerDev
+- **Discord**: Canal #soporte-tecnico
 
 ## 📄 Licencia
 
@@ -297,19 +319,22 @@ Este proyecto está bajo la Licencia MIT - ver el archivo [LICENSE](LICENSE) par
 
 ## 🙏 Agradecimientos
 
-- **Comunidad SimRacing** de Sudamérica
-- **Kunos Simulazioni** por Assetto Corsa
-- **Contributors** del proyecto
-- **Beta testers** y early adopters
+- **Comunidad SimRacing** de Latinoamérica por el apoyo constante
+- **Kunos Simulazioni** por crear Assetto Corsa
+- **Contributors** y beta testers del proyecto
+- **Comunidad de desarrolladores** que inspiran mejoras
+- **Pilotos activos** que hacen posible esta comunidad
 
 ---
 
 <div align="center">
 
-**🏁 Made with ❤️ for the SimRacing Community 🏁**
+**🏁 Desarrollado con ❤️ para la Comunidad SimRacing de Latinoamérica 🏁**
 
-**🌎 Una Comunidad, Toda Latinoamérica 🌎**
+**🌎 Friends Party Sim Racing - Conectando Toda Sudamérica 🌎**
 
-[Website](https://friendspartyserver.duckdns.org) • [Discord](https://discord.gg/friendspartyserver) • [YouTube](https://youtube.com/@friendspartyserver)
+[🚀 Visitar Sitio](https://friendspartyserver.duckdns.org) • [💬 Discord](https://discord.gg/friendspartyserver) • [📺 YouTube](https://youtube.com/@friendspartyserver)
+
+![Assetto Corsa](https://img.shields.io/badge/Powered%20by-Assetto%20Corsa-red?style=for-the-badge&logo=data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjQiIGhlaWdodD0iMjQiIHZpZXdCb3g9IjAgMCAyNCAyNCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHBhdGggZD0iTTEyIDJMMTMuMDkgOC4yNkwyMCAxTDE5IDEyTDE4IDIyTDE0IDIwTDEyIDIyTDEwIDIwTDYgMjJMNSAxMkw0IDFMMTAuOTEgOC4yNkwxMiAyWiIgZmlsbD0iI2ZmMDAwMCIvPgo8L3N2Zz4K)
 
 </div>

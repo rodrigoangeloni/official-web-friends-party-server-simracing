@@ -1,33 +1,38 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta name="description" content="Friends Party Server SimRacing - Sigue nuestras transmisiones en vivo de carreras de simulación.">
-    <meta name="keywords" content="SimRacing, live streaming, carreras en vivo, Assetto Corsa, Kick, Twitch, YouTube">
+    <meta name="description" content="Redes Sociales Friends Party Sim Racing - Únete a nuestra comunidad en Discord, YouTube, Kick, Twitch y WhatsApp. Streaming en vivo y comunidad activa.">
+    <meta name="keywords" content="Friends Party, Discord, YouTube, Kick, Twitch, WhatsApp, streaming, comunidad SimRacing, Paraguay, Argentina, Assetto Corsa">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website">
-    <meta property="og:url" content="https://friendspartyserver.duckdns.org/redes.html">
-    <meta property="og:title" content="Friends Party Server SimRacing - Transmisiones en Vivo">
-    <meta property="og:description" content="Sigue nuestras transmisiones en vivo de carreras de simulación en múltiples plataformas.">
+    <meta property="og:url" content="https://friendspartyserver.duckdns.org/pages/info/redes.html">
+    <meta property="og:title" content="Redes Sociales Friends Party Sim Racing - Comunidad">
+    <meta property="og:description" content="Conecta con la comunidad de SimRacing más activa de Latinoamérica. Discord, YouTube, streaming y más plataformas oficiales.">
     <meta property="og:image" content="https://friendspartyserver.duckdns.org/assets/images/Logo-FriendsPartyServerSR.webp">
 
     <!-- Twitter -->
     <meta property="twitter:card" content="summary_large_image">
-    <meta property="twitter:url" content="https://friendspartyserver.duckdns.org/redes.html">
-    <meta property="twitter:title" content="Friends Party Server SimRacing - Transmisiones en Vivo">
-    <meta property="twitter:description" content="Sigue nuestras transmisiones en vivo de carreras de simulación en múltiples plataformas.">
+    <meta property="twitter:url" content="https://friendspartyserver.duckdns.org/pages/info/redes.html">
+    <meta property="twitter:title" content="Redes Sociales Friends Party Sim Racing">
+    <meta property="twitter:description" content="Únete a Discord, YouTube, Kick y WhatsApp. Streaming en vivo y comunidad activa de SimRacing.">
     <meta property="twitter:image" content="https://friendspartyserver.duckdns.org/assets/images/Logo-FriendsPartyServerSR.webp">
 
-    <title>FPS SimRacing - Transmisiones en Vivo</title>
+    <title>Redes Sociales Friends Party Sim Racing | Discord YouTube Kick Twitch</title>
     <link rel="icon" type="image/x-icon" href="/assets/images/favicon.ico">
     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
     <link rel="stylesheet" href="/assets/css/main.css">
+    <link rel="stylesheet" href="/assets/css/neon-theme.css">
 
     <!-- Precarga de recursos -->
     <link rel="preload" href="/assets/css/main.css" as="style">
+    <link rel="preload" href="/assets/css/neon-theme.css" as="style">
     <link rel="preload" href="/assets/images/Logo-FriendsPartyServerSR.webp" as="image">
+
+    <!-- Configuración centralizada -->
+    <script src="/config/head-config.js"></script>
 
     <!-- Google Analytics 4 - FriendsPartyServer Paraguay -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-L6K2C49RW0"></script>
@@ -35,114 +40,362 @@
         window.dataLayer = window.dataLayer || [];
         function gtag(){dataLayer.push(arguments);}
         gtag('js', new Date());
-        gtag('config', 'G-L6K2C49RW0', {
-            // Configuración específica para Paraguay/Latinoamérica
-            country: 'PY',
-            custom_map: {
-                'custom_parameter_country': 'Paraguay',
-                'custom_parameter_region': 'Latin America'
-            }
-        });
-    </script></head>
+        
+        if (typeof CONFIG !== 'undefined' && typeof Utils !== 'undefined') {
+            gtag('config', CONFIG.ANALYTICS.GA4_ID, Utils.getGA4Config());
+        } else {
+            gtag('config', 'G-L6K2C49RW0', {
+                country: 'PY',
+                custom_map: {
+                    'custom_parameter_country': 'Paraguay',
+                    'custom_parameter_region': 'Latin America'
+                }
+            });
+        }
+    </script>
 
-<body class="bg-gray-900 text-gray-100">
-    <!-- Cabecera superior -->
-    <header class="bg-gray-800 py-6 mb-8">
-        <div class="container mx-auto text-center">
-            <img src="/assets/images/Logo-FriendsPartyServerSR.webp" alt="Logo Friends Party Server" class="mx-auto w-32 mb-4">
-            <h1 class="text-4xl font-bold">Friends Party Server "SimRacing"</h1>
-            <p class="mt-2 text-gray-400">Transmisiones en vivo de nuestras carreras</p>
+    <script src="/assets/js/analytics.js"></script>
+</head>
+
+<body>
+    <!-- Grid Lines Effect de Fondo -->
+    <div class="grid-lines"></div>
+
+    <!-- Cabecera NEON -->
+    <header class="neon-nav py-8 mb-12 relative">
+        <div class="container mx-auto text-center px-4">
+            <div class="holographic-effect mb-6">
+                <img src="/assets/images/Logo-FriendsPartyServerSR.webp" 
+                     alt="Logo de Friends Party Server SimRacing" 
+                     class="mx-auto w-40 md:w-48 transition-all duration-300 hover:scale-110">
+            </div>
+            <h1 class="glitch-effect text-4xl md:text-6xl font-bold mb-4" 
+                data-text="REDES SOCIALES">
+                REDES SOCIALES
+            </h1>
+            <h2 class="neon-text-pink text-2xl md:text-3xl font-bold uppercase tracking-wider mb-2">
+                FRIENDS PARTY SERVER
+            </h2>
+            <p class="neon-text-blue text-lg md:text-xl pulse-neon">
+                🌐 CONECTA CON LA COMUNIDAD 🌐
+            </p>
         </div>
     </header>
 
-    <!-- Navegación -->
-    <nav class="bg-gray-800 py-4 shadow-lg">
-        <div class="container mx-auto flex flex-col md:flex-row justify-center space-y-4 md:space-y-0 md:space-x-6">
-            <a href="/index.html" class="text-gray-100 hover:text-yellow-400 transition duration-300 ease-in-out py-2 px-4 rounded-md hover:bg-gray-600">INICIO</a>
-            <a href="/pages/core/reglamento.html" class="text-gray-100 hover:text-yellow-400 transition duration-300 ease-in-out py-2 px-4 rounded-md hover:bg-gray-600">NORMAS BASICAS </a>
-            <a href="/pages/core/servers.html" class="text-gray-100 hover:text-yellow-400 transition duration-300 ease-in-out py-2 px-4 rounded-md hover:bg-gray-600">SERVIDORES</a>
-            <a href="/pages/core/eventos.html" class="text-gray-100 hover:text-yellow-400 transition duration-300 ease-in-out py-2 px-4 rounded-md hover:bg-gray-600">EVENTOS</a>
-            <a href="/pages/core/calculadora.html" class="text-gray-100 hover:text-yellow-400 transition duration-300 ease-in-out py-2 px-4 rounded-md hover:bg-gray-600">CALCULADORA</a>
-            <a href="/pages/info/redes.html" class="text-gray-100 hover:text-yellow-400 transition duration-300 ease-in-out py-2 px-4 rounded-md hover:bg-gray-600">REDES</a>
-            <a href="/pages/info/about.html" class="text-gray-100 hover:text-yellow-400 transition duration-300 ease-in-out py-2 px-4 rounded-md hover:bg-gray-600">ACERCA DE</a>
-            <a href="/pages/info/contact.html" class="text-gray-100 hover:text-yellow-400 transition duration-300 ease-in-out py-2 px-4 rounded-md hover:bg-gray-600">CONTACTO</a>
+    <!-- Navegación NEON -->
+    <nav class="neon-nav py-4 shadow-lg mb-12 sticky top-0 z-50">
+        <div class="container mx-auto px-4">
+            <div class="flex flex-col lg:flex-row justify-center items-center space-y-4 lg:space-y-0 lg:space-x-8">
+                <a href="/index.html" class="neon-hover neon-text-blue font-bold">🏠 INICIO</a>
+                <a href="/pages/core/reglamento.html" class="neon-hover neon-text-pink font-bold">📋 NORMAS BÁSICAS</a>
+                <a href="/pages/core/servers.html" class="neon-hover neon-text-purple font-bold">🖥️ SERVIDORES</a>
+                <a href="/pages/core/eventos.html" class="neon-hover neon-text-green font-bold">🏁 EVENTOS</a>
+                <a href="/pages/core/calculadora.html" class="neon-hover neon-text-racing font-bold">🧮 CALCULADORA</a>
+                <a href="/pages/info/redes.html" class="neon-hover text-yellow-400 font-bold">🌐 REDES</a>
+            </div>
         </div>
     </nav>
 
-    <!-- Sección principal -->
-    <main class="container mx-auto px-4 py-12">
-        <h2 class="text-4xl font-bold text-center mb-8 animate-pulse">🎥 Live Streaming Now 🎥</h2>
+    <!-- Contenido Principal -->
+    <main class="container mx-auto px-4 py-8">
         
-        <div class="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-4xl mx-auto">
-            <!-- Tarjeta Kick -->
-            <div class="stream-card bg-gray-800 rounded-lg shadow-xl overflow-hidden transform hover:scale-105 transition-transform duration-300 border-2 border-green-500">
-                <div class="p-6 text-center">
-                    <div class="text-6xl mb-4">💚</div>
-                    <h3 class="text-2xl font-bold text-green-400 mb-2">Kick.com</h3>
-                    <p class="text-gray-300 mb-4">Transmisiones principales</p>
-                    <a href="https://kick.com/friendspartyserver" 
-                       target="_blank" 
-                       rel="noopener noreferrer"
-                       class="inline-block bg-green-600 text-white px-6 py-3 rounded-lg hover:bg-green-700 transition duration-300">
-                        Ver en Kick
+        <!-- Sección Redes Principales -->
+        <section class="mb-16">
+            <h2 class="neon-text-blue text-3xl md:text-4xl font-bold text-center mb-8 pulse-neon">
+                🚀 ÚNETE A NUESTRA COMUNIDAD
+            </h2>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <!-- Discord -->
+                <div class="neon-card neon-border-purple relative overflow-hidden group">
+                    <div class="absolute inset-0 bg-gradient-to-br from-purple-600/20 to-blue-600/20 opacity-0 group-hover:opacity-100 transition-all duration-500"></div>
+                    <div class="relative z-10">
+                        <div class="flex items-center mb-4">
+                            <div class="w-16 h-16 bg-purple-600 rounded-full flex items-center justify-center mr-4">
+                                <span class="text-3xl">💬</span>
+                            </div>
+                            <div>
+                                <h3 class="neon-text-purple text-2xl font-bold">DISCORD</h3>
+                                <p class="card-readable-text">Chat en tiempo real</p>
+                            </div>
+                        </div>
+                        
+                        <div class="space-y-3 mb-6">
+                            <p class="card-readable-text">🎮 <strong>+2,500 miembros activos</strong></p>
+                            <p class="card-readable-text">💬 <strong>Canales por categorías de carrera</strong></p>
+                            <p class="card-readable-text">🎪 <strong>Eventos y campeonatos</strong></p>
+                            <p class="card-readable-text">🔧 <strong>Soporte técnico</strong></p>
+                            <p class="card-readable-text">📊 <strong>Resultados en vivo</strong></p>
+                        </div>
+                        
+                        <a href="https://discord.gg/MvbtDSaE3c" target="_blank" 
+                           class="racing-button w-full block text-center group-hover:bg-purple-500 transition-all">
+                            ⚡ UNIRSE AL DISCORD
+                        </a>
+                    </div>
+                </div>
+
+                <!-- YouTube -->
+                <div class="neon-card neon-border-red relative overflow-hidden group">
+                    <div class="absolute inset-0 bg-gradient-to-br from-red-600/20 to-pink-600/20 opacity-0 group-hover:opacity-100 transition-all duration-500"></div>
+                    <div class="relative z-10">
+                        <div class="flex items-center mb-4">
+                            <div class="w-16 h-16 bg-red-600 rounded-full flex items-center justify-center mr-4">
+                                <span class="text-3xl">📺</span>
+                            </div>
+                            <div>
+                                <h3 class="neon-text-red text-2xl font-bold">YOUTUBE</h3>
+                                <p class="card-readable-text">Videos y highlights</p>
+                            </div>
+                        </div>
+                        
+                        <div class="space-y-3 mb-6">
+                            <p class="card-readable-text">� <strong>Highlights de carreras</strong></p>
+                            <p class="card-readable-text">� <strong>Tutoriales de setup</strong></p>
+                            <p class="card-readable-text">� <strong>Transmisiones de eventos</strong></p>
+                            <p class="card-readable-text">� <strong>Reviews de pistas</strong></p>
+                            <p class="card-readable-text">👥 <strong>Entrevistas a pilotos</strong></p>
+                        </div>
+                        
+                        <a href="https://www.youtube.com/@FriendsPartyServers" target="_blank" 
+                           class="racing-button w-full block text-center group-hover:bg-red-500 transition-all">
+                            ❤️ VER CANAL
+                        </a>
+                    </div>
+                </div>
+                <!-- WhatsApp -->
+                <div class="neon-card neon-border-green relative overflow-hidden group">
+                    <div class="absolute inset-0 bg-gradient-to-br from-green-600/20 to-emerald-600/20 opacity-0 group-hover:opacity-100 transition-all duration-500"></div>
+                    <div class="relative z-10">
+                        <div class="flex items-center mb-4">
+                            <div class="w-16 h-16 bg-green-600 rounded-full flex items-center justify-center mr-4">
+                                <span class="text-3xl">📱</span>
+                            </div>
+                            <div>
+                                <h3 class="neon-text-green text-2xl font-bold">WHATSAPP</h3>
+                                <p class="card-readable-text">Grupo comunitario</p>
+                            </div>
+                        </div>
+                        
+                        <div class="space-y-3 mb-6">
+                            <p class="card-readable-text">� <strong>Notificaciones de eventos</strong></p>
+                            <p class="card-readable-text">🔄 <strong>Comunicación rápida</strong></p>
+                            <p class="card-readable-text">📷 <strong>Fotos y videos</strong></p>
+                            <p class="card-readable-text">🤝 <strong>Coordinación de carreras</strong></p>
+                            <p class="card-readable-text">💬 <strong>Chat grupal activo</strong></p>
+                        </div>
+                        
+                        <a href="https://chat.whatsapp.com/L0HFxOazhdRHuRqaun49Y0" target="_blank" 
+                           class="racing-button w-full block text-center group-hover:bg-green-500 transition-all">
+                            📌 UNIRSE AL GRUPO
+                        </a>
+                    </div>
+                </div>
+
+                <!-- LinkTree -->
+                <div class="neon-card neon-border-racing relative overflow-hidden group">
+                    <div class="absolute inset-0 bg-gradient-to-br from-yellow-600/20 to-orange-600/20 opacity-0 group-hover:opacity-100 transition-all duration-500"></div>
+                    <div class="relative z-10">
+                        <div class="flex items-center mb-4">
+                            <div class="w-16 h-16 bg-yellow-600 rounded-full flex items-center justify-center mr-4">
+                                <span class="text-3xl">�</span>
+                            </div>
+                            <div>
+                                <h3 class="neon-text-racing text-2xl font-bold">TODOS LOS SERVERS</h3>
+                                <p class="card-readable-text">Enlaces directos</p>
+                            </div>
+                        </div>
+                        
+                        <div class="space-y-3 mb-6">
+                            <p class="card-readable-text">🖥️ <strong>Acceso directo a servidores</strong></p>
+                            <p class="card-readable-text">⚡ <strong>Enlaces actualizados</strong></p>
+                            <p class="card-readable-text">📊 <strong>Live timing integrado</strong></p>
+                            <p class="card-readable-text">🏆 <strong>Registro de campeonatos</strong></p>
+                            <p class="card-readable-text">🎮 <strong>Un clic para entrar</strong></p>
+                        </div>
+                        
+                        <a href="https://linktr.ee/FriendsPartyServer" target="_blank" 
+                           class="racing-button w-full block text-center group-hover:bg-yellow-500 transition-all">
+                            💡 LINKTR.EE
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Sección Streaming -->
+        <section class="mb-16">
+            <h2 class="neon-text-pink text-3xl md:text-4xl font-bold text-center mb-8 pulse-neon">
+                📺 STREAMING EN VIVO
+            </h2>
+            
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                <!-- Kick -->
+                <div class="neon-card neon-border-green text-center">
+                    <div class="w-20 h-20 bg-green-600 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <span class="text-4xl">💚</span>
+                    </div>
+                    <h3 class="neon-text-green text-xl font-bold mb-4">KICK</h3>
+                    <p class="card-readable-text mb-4">Streaming principal</p>
+                    <a href="https://kick.com/friendspartyserver" target="_blank" 
+                       class="racing-button inline-block">
+                        WATCH LIVE
+                    </a>
+                </div>
+
+                <!-- Twitch -->
+                <div class="neon-card neon-border-purple text-center">
+                    <div class="w-20 h-20 bg-purple-600 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <span class="text-4xl">💜</span>
+                    </div>
+                    <h3 class="neon-text-purple text-xl font-bold mb-4">TWITCH</h3>
+                    <p class="card-readable-text mb-4">AngeloniGamer</p>
+                    <a href="https://www.twitch.tv/angelonigamer" target="_blank" 
+                       class="racing-button inline-block">
+                        WATCH STREAM
+                    </a>
+                </div>
+
+                <!-- YouTube Live -->
+                <div class="neon-card neon-border-red text-center">
+                    <div class="w-20 h-20 bg-red-600 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <span class="text-4xl">❤️</span>
+                    </div>
+                    <h3 class="neon-text-red text-xl font-bold mb-4">YOUTUBE</h3>
+                    <p class="card-readable-text mb-4">En vivo y VODs</p>
+                    <a href="https://www.youtube.com/@FriendsPartyServers" target="_blank" 
+                       class="racing-button inline-block">
+                        SUSCRIBIRSE
                     </a>
                 </div>
             </div>
+        </section>
 
-            <!-- Tarjeta Twitch -->
-            <div class="stream-card bg-gray-800 rounded-lg shadow-xl overflow-hidden transform hover:scale-105 transition-transform duration-300 border-2 border-purple-500">
-                <div class="p-6 text-center">
-                    <div class="text-6xl mb-4">💜</div>
-                    <h3 class="text-2xl font-bold text-purple-400 mb-2">Twitch.tv</h3>
-                    <p class="text-gray-300 mb-4">Transmisiones alternativas</p>
-                    <a href="https://www.twitch.tv/angelonigamer" 
-                       target="_blank" 
-                       rel="noopener noreferrer"
-                       class="inline-block bg-purple-600 text-white px-6 py-3 rounded-lg hover:bg-purple-700 transition duration-300">
-                        Ver en Twitch
+        <!-- Sección Donaciones y Contacto -->
+        <section class="mb-16">
+            <h2 class="neon-text-blue text-3xl md:text-4xl font-bold text-center mb-8 pulse-neon">
+                � APOYA EL PROYECTO
+            </h2>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <!-- Donaciones -->
+                <div class="neon-card neon-border-racing text-center">
+                    <div class="w-20 h-20 bg-yellow-600 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <span class="text-4xl">☕</span>
+                    </div>
+                    <h3 class="neon-text-racing text-2xl font-bold mb-4">DONACIONES</h3>
+                    <p class="card-readable-text mb-6">
+                        Ayúdanos a mantener los servidores funcionando y mejorar la experiencia para toda la comunidad.
+                    </p>
+                    <a href="https://buymeacoffee.com/friendspartyserver" target="_blank" 
+                       class="racing-button inline-block">
+                        ☕ BUY ME A COFFEE
                     </a>
                 </div>
-            </div>
 
-            <!-- Tarjeta YouTube -->
-            <div class="stream-card bg-gray-800 rounded-lg shadow-xl overflow-hidden transform hover:scale-105 transition-transform duration-300 border-2 border-red-500">
-                <div class="p-6 text-center">
-                    <div class="text-6xl mb-4">❤️</div>
-                    <h3 class="text-2xl font-bold text-red-400 mb-2">YouTube</h3>
-                    <p class="text-gray-300 mb-4">Eventos especiales y highlights</p>
-                    <a href="https://www.youtube.com/@FriendsPartyServers" 
-                       target="_blank" 
-                       rel="noopener noreferrer"
-                       class="inline-block bg-red-600 text-white px-6 py-3 rounded-lg hover:bg-red-700 transition duration-300">
-                        Ver en YouTube
-                    </a>
+                <!-- Contacto -->
+                <div class="neon-card neon-border-blue text-center">
+                    <div class="w-20 h-20 bg-blue-600 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <span class="text-4xl">📧</span>
+                    </div>
+                    <h3 class="neon-text-blue text-2xl font-bold mb-4">CONTACTO OFICIAL</h3>
+                    <p class="card-readable-text mb-4">
+                        Para consultas oficiales, propuestas de patrocinio o soporte técnico avanzado.
+                    </p>
+                    <div class="space-y-2">
+                        <p class="card-readable-text">
+                            <strong>Email:</strong> 
+                            <a href="mailto:friendspartyserver@gmail.com" class="neon-text-blue">
+                                friendspartyserver@gmail.com
+                            </a>
+                        </p>
+                    </div>
                 </div>
             </div>
-        </div>
+        </section>
 
-        <!-- Mensaje adicional -->
-        <div class="text-center mt-12 max-w-2xl mx-auto">
-            <p class="text-xl text-gray-300 mb-4">
-                📍 ¡Síguenos en todas nuestras plataformas para no perderte ninguna carrera!<br>
-                🏁 Las transmisiones suelen ser los fines de semana por la noche (GMT-3)
-            </p>
-            <div class="bg-gray-800 p-4 rounded-lg border border-yellow-600">
-                <p class="text-yellow-400">⚠️ ¿Problemas con los enlaces?<br>
-                Contáctanos a través de nuestro <a href="contact.html" class="text-blue-400 hover:underline">formulario de contacto</a></p>
-            </div>
-        </div>
     </main>
 
-    <!-- Botón de apoyo -->
-    <a href="https://www.buymeacoffee.com/friendspartyserver" class="fixed bottom-4 right-4 z-10">
-        <img src="https://img.buymeacoffee.com/button-api/?text=Apoya%20al%20Server%20%3B%29&emoji=%F0%9F%8D%BA&slug=friendspartyserver&button_colour=FFDD00&font_colour=000000&font_family=Poppins&outline_colour=000000&coffee_colour=ffffff" alt="Apoya al Server">
-    </a>
-
-    <!-- Pie de página -->
-    <footer class="bg-blue-800 text-white py-4 text-center mt-12">
-        <p>&copy; 2025 Friends Party SimRacing. Todos los derechos reservados.</p>
+    <!-- Footer NEON -->
+    <footer class="neon-footer py-12 mt-16">
+        <div class="container mx-auto px-4 text-center">
+            <div class="mb-6">
+                <h3 class="neon-text-pink text-2xl font-bold mb-4 pulse-neon">
+                    ⚡ FRIENDS PARTY SERVER SIMRACING ⚡
+                </h3>
+                <p class="text-lg text-gray-300">
+                    La comunidad de SimRacing más grande de Sudamérica
+                </p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mb-8">
+                <div>
+                    <h4 class="neon-text-blue text-xl font-bold mb-3">NAVEGACIÓN</h4>
+                    <div class="space-y-2">
+                        <a href="/pages/core/servers.html" class="block hover:text-cyan-400 transition">Servidores</a>
+                        <a href="/pages/core/eventos.html" class="block hover:text-cyan-400 transition">Eventos</a>
+                        <a href="/pages/core/reglamento.html" class="block hover:text-cyan-400 transition">Reglamento</a>
+                    </div>
+                </div>
+                
+                <div>
+                    <h4 class="neon-text-pink text-xl font-bold mb-3">REDES SOCIALES</h4>
+                    <div class="space-y-2">
+                        <a href="#" class="block hover:text-cyan-400 transition">Discord</a>
+                        <a href="#" class="block hover:text-cyan-400 transition">YouTube</a>
+                        <a href="#" class="block hover:text-cyan-400 transition">Twitch</a>
+                    </div>
+                </div>
+                
+                <div>
+                    <h4 class="neon-text-purple text-xl font-bold mb-3">CONTACTO</h4>
+                    <div class="space-y-2">
+                        <a href="/pages/info/about.html" class="block hover:text-cyan-400 transition">Sobre Nosotros</a>
+                        <a href="/pages/info/contact.html" class="block hover:text-cyan-400 transition">Contacto</a>
+                        <a href="#" class="block hover:text-cyan-400 transition">Soporte</a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="border-t border-gray-700 pt-6">
+                <p class="text-gray-400">
+                    © 2024 Friends Party Server SimRacing. Todos los derechos reservados.
+                </p>
+            </div>
+        </div>
     </footer>
+
+    <!-- Scripts adicionales para efectos NEON -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const cards = document.querySelectorAll('.neon-card');
+            cards.forEach(card => {
+                card.addEventListener('mouseenter', function() {
+                    this.style.transform = 'translateY(-5px) scale(1.02)';
+                    this.style.transition = 'all 0.4s ease';
+                });
+                card.addEventListener('mouseleave', function() {
+                    this.style.transform = 'translateY(0) scale(1)';
+                });
+            });
+
+            const gridLines = document.querySelector('.grid-lines');
+            let ticking = false;
+            
+            function updateParallax() {
+                const scrolled = window.pageYOffset;
+                const rate = scrolled * -0.1;
+                gridLines.style.transform = `translateY(${rate}px)`;
+                ticking = false;
+            }
+
+            window.addEventListener('scroll', function() {
+                if (!ticking) {
+                    requestAnimationFrame(updateParallax);
+                    ticking = true;
+                }
+            });
+        });
+    </script>
 </body>
 </html>
-
-

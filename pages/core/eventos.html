@@ -1,33 +1,38 @@
 ﻿<!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta name="description" content="Friends Party Server SimRacing: Lista de eventos especiales en nuestros servidores de Assetto Corsa.">
-    <meta name="keywords" content="Assetto Corsa, SimRacing, Friends Party Server, eventos especiales, carreras, campeonatos, Sudamérica, Latino, Argentina, Paraguay.">
+    <meta name="description" content="Campeonatos Friends Party Sim Racing - Calendario completo de eventos diarios de Assetto Corsa. Mazda MX-5, GT2/GT3, Porsche Cup, GT4, Fórmula 3, F2 y F1.">
+    <meta name="keywords" content="Friends Party, Assetto Corsa, campeonatos, MX-5, GT3, Porsche Cup, GT4, Formula 3, F2, F1, Paraguay, Argentina, ACSR, Safety Rating">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website">
-    <meta property="og:url" content="https://friendspartyserver.duckdns.org/eventos.html">
-    <meta property="og:title" content="Friends Party Server SimRacing - Eventos Especiales">
-    <meta property="og:description" content="Lista de eventos especiales en Friends Party Server SimRacing. Únete a nuestras carreras extraordinarias.">
+    <meta property="og:url" content="https://friendspartyserver.duckdns.org/pages/core/eventos.html">
+    <meta property="og:title" content="Campeonatos Friends Party Sim Racing - Eventos Diarios Assetto Corsa">
+    <meta property="og:description" content="Únete a nuestros campeonatos diarios: MX-5 Cup, GT3 Series, Porsche Cup, GT4, F3, F2 y F1. Sistema ACSR con licencias y Safety Rating.">
     <meta property="og:image" content="https://friendspartyserver.duckdns.org/assets/images/Logo-FriendsPartyServerSR.webp">
 
     <!-- Twitter -->
     <meta property="twitter:card" content="summary_large_image">
-    <meta property="twitter:url" content="https://friendspartyserver.duckdns.org/eventos.html">
-    <meta property="twitter:title" content="Friends Party Server SimRacing - Eventos Especiales">
-    <meta property="twitter:description" content="Lista de eventos especiales en Friends Party Server SimRacing. Únete a nuestras carreras extraordinarias.">
+    <meta property="twitter:url" content="https://friendspartyserver.duckdns.org/pages/core/eventos.html">
+    <meta property="twitter:title" content="Campeonatos Friends Party Sim Racing">
+    <meta property="twitter:description" content="Eventos diarios de Assetto Corsa a las 21:00hs. MX-5, GT3, Porsche, GT4, F3, F2 y F1 con sistema de licencias.">
     <meta property="twitter:image" content="https://friendspartyserver.duckdns.org/assets/images/Logo-FriendsPartyServerSR.webp">
 
-    <title>FriendsPartyServer SimRacing - Eventos Especiales</title>
+    <title>Campeonatos Friends Party Sim Racing | Eventos Diarios Assetto Corsa</title>
     <link rel="icon" type="image/x-icon" href="/assets/images/favicon.ico">
     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
     <link rel="stylesheet" href="/assets/css/main.css">
+    <link rel="stylesheet" href="/assets/css/neon-theme.css">
 
     <!-- Precarga de recursos -->
     <link rel="preload" href="/assets/css/main.css" as="style">
+    <link rel="preload" href="/assets/css/neon-theme.css" as="style">
     <link rel="preload" href="/assets/images/Logo-FriendsPartyServerSR.webp" as="image">
+
+    <!-- Configuración centralizada -->
+    <script src="/config/head-config.js"></script>
 
     <!-- Google Analytics 4 - FriendsPartyServer Paraguay -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-L6K2C49RW0"></script>
@@ -35,112 +40,671 @@
         window.dataLayer = window.dataLayer || [];
         function gtag(){dataLayer.push(arguments);}
         gtag('js', new Date());
-        gtag('config', 'G-L6K2C49RW0', {
-            // Configuración específica para Paraguay/Latinoamérica
-            country: 'PY',
-            custom_map: {
-                'custom_parameter_country': 'Paraguay',
-                'custom_parameter_region': 'Latin America'
-            }
-        });
-    </script></head>
+        
+        if (typeof CONFIG !== 'undefined' && typeof Utils !== 'undefined') {
+            gtag('config', CONFIG.ANALYTICS.GA4_ID, Utils.getGA4Config());
+        } else {
+            gtag('config', 'G-L6K2C49RW0', {
+                country: 'PY',
+                custom_map: {
+                    'custom_parameter_country': 'Paraguay',
+                    'custom_parameter_region': 'Latin America'
+                }
+            });
+        }
+    </script>
 
-<body class="bg-gray-900 text-gray-100">
-    <!-- Cabecera superior -->
-    <header class="bg-gray-800 py-6 mb-8">
-        <div class="container mx-auto text-center">
-            <!-- Logo -->
-            <img src="/assets/images/Logo-FriendsPartyServerSR.webp" alt="Logo de Friends Party Server SimRacing" class="mx-auto w-32 mb-4">
-            <h1 class="text-4xl font-bold">Friends Party Server "SimRacing"</h1>
-            <p class="mt-2 text-gray-400">Servidores de Assetto Corsa en Sudamérica.</p>
+    <script src="/assets/js/analytics.js"></script>
+</head>
+
+<body>
+    <!-- Grid Lines Effect de Fondo -->
+    <div class="grid-lines"></div>
+
+    <!-- Cabecera NEON -->
+    <header class="neon-nav py-8 mb-12 relative">
+        <div class="container mx-auto text-center px-4">
+            <div class="holographic-effect mb-6">
+                <img src="/assets/images/Logo-FriendsPartyServerSR.webp" 
+                     alt="Logo de Friends Party Server SimRacing" 
+                     class="mx-auto w-40 md:w-48 transition-all duration-300 hover:scale-110">
+            </div>
+            <h1 class="glitch-effect text-4xl md:text-6xl font-bold mb-4" 
+                data-text="EVENTOS ESPECIALES">
+                EVENTOS ESPECIALES
+            </h1>
+            <h2 class="neon-text-pink text-2xl md:text-3xl font-bold uppercase tracking-wider mb-2">
+                FRIENDS PARTY SERVER
+            </h2>
+            <p class="neon-text-blue text-lg md:text-xl pulse-neon">
+                🏆 CAMPEONATOS Y CARRERAS EXTRAORDINARIAS 🏆
+            </p>
         </div>
     </header>
 
-    <!-- Navegación -->
-    <nav class="bg-gray-800 py-4 shadow-lg">
-        <div class="container mx-auto flex flex-col md:flex-row justify-center space-y-4 md:space-y-0 md:space-x-6">
-            <a href="/index.html" class="text-gray-100 hover:text-yellow-400 transition duration-300 ease-in-out py-2 px-4 rounded-md hover:bg-gray-600">INICIO</a>
-            <a href="/pages/core/reglamento.html" class="text-gray-100 hover:text-yellow-400 transition duration-300 ease-in-out py-2 px-4 rounded-md hover:bg-gray-600">NORMAS BASICAS </a>
-            <a href="/pages/core/servers.html" class="text-gray-100 hover:text-yellow-400 transition duration-300 ease-in-out py-2 px-4 rounded-md hover:bg-gray-600">SERVIDORES</a>
-            <a href="/pages/core/eventos.html" class="text-gray-100 hover:text-yellow-400 transition duration-300 ease-in-out py-2 px-4 rounded-md hover:bg-gray-600">EVENTOS</a>
-            <a href="/pages/core/calculadora.html" class="text-gray-100 hover:text-yellow-400 transition duration-300 ease-in-out py-2 px-4 rounded-md hover:bg-gray-600">CALCULADORA</a>
-            <a href="/pages/info/redes.html" class="text-gray-100 hover:text-yellow-400 transition duration-300 ease-in-out py-2 px-4 rounded-md hover:bg-gray-600">REDES</a>
-            <a href="/pages/info/about.html" class="text-gray-100 hover:text-yellow-400 transition duration-300 ease-in-out py-2 px-4 rounded-md hover:bg-gray-600">ACERCA DE</a>
-            <a href="/pages/info/contact.html" class="text-gray-100 hover:text-yellow-400 transition duration-300 ease-in-out py-2 px-4 rounded-md hover:bg-gray-600">CONTACTO</a>
+    <!-- Navegación NEON -->
+    <nav class="neon-nav py-4 shadow-lg mb-12 sticky top-0 z-50">
+        <div class="container mx-auto px-4">
+            <div class="flex flex-col lg:flex-row justify-center items-center space-y-4 lg:space-y-0 lg:space-x-8">
+                <a href="/index.html" class="neon-hover neon-text-blue font-bold">🏠 INICIO</a>
+                <a href="/pages/core/reglamento.html" class="neon-hover neon-text-pink font-bold">📋 NORMAS BÁSICAS</a>
+                <a href="/pages/core/servers.html" class="neon-hover neon-text-purple font-bold">🖥️ SERVIDORES</a>
+                <a href="/pages/core/eventos.html" class="neon-hover neon-text-green font-bold">🏁 EVENTOS</a>
+                <a href="/pages/core/calculadora.html" class="neon-hover neon-text-racing font-bold">🧮 CALCULADORA</a>
+                <a href="/pages/info/redes.html" class="neon-hover text-yellow-400 font-bold">🌐 REDES</a>
+            </div>
         </div>
     </nav>
 
-    <!-- Sección de evento especial único -->
-    <section class="container mx-auto px-4 py-12">
-        <h2 class="text-4xl font-bold text-center mb-8">🏆 Evento Especial Domingo - Formula 1 2025 🏆</h2>
-        <div class="max-w-2xl mx-auto">
-            <div class="event-card bg-gray-800 rounded-lg shadow-lg overflow-hidden border-2 border-yellow-500">
-                <div class="relative">
-                    <img src="/assets/images/F1-Banner.webp" alt="Formula 1 2025" class="w-full aspect-video object-cover">
-                    <div class="absolute top-0 right-0 bg-red-600 text-white px-3 py-1 rounded-bl-lg font-bold">
-                        PRÓXIMO EVENTO
+    <!-- Contenido Principal -->
+    <main class="container mx-auto px-4 py-8">
+        
+        <!-- Sección Sistema ACSR -->
+        <section class="mb-16">
+            <h2 class="neon-text-blue text-3xl md:text-4xl font-bold text-center mb-8 pulse-neon">
+                🏆 SISTEMA ACSR - LICENCIAS Y SAFETY RATING
+            </h2>
+            
+            <div class="neon-card neon-border-blue mb-8">
+                <h3 class="neon-text-pink text-2xl font-bold mb-4">📜 Sistema de Licencias</h3>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                    <div class="space-y-2">
+                        <div class="flex items-center space-x-2">
+                            <span class="neon-text-racing font-bold">🥇</span>
+                            <span class="card-readable-text"><strong>LICENCIA A</strong> - Elite (F1)</span>
+                        </div>
+                        <div class="flex items-center space-x-2">
+                            <span class="neon-text-blue font-bold">🥈</span>
+                            <span class="card-readable-text"><strong>LICENCIA B</strong> - Avanzado (F2)</span>
+                        </div>
+                        <div class="flex items-center space-x-2">
+                            <span class="neon-text-green font-bold">🥉</span>
+                            <span class="card-readable-text"><strong>LICENCIA C</strong> - Intermedio (F3, GT3, Porsche)</span>
+                        </div>
+                    </div>
+                    <div class="space-y-2">
+                        <div class="flex items-center space-x-2">
+                            <span class="neon-text-purple font-bold">🏅</span>
+                            <span class="card-readable-text"><strong>LICENCIA D</strong> - Básico (GT4)</span>
+                        </div>
+                        <div class="flex items-center space-x-2">
+                            <span class="neon-text-pink font-bold">🌟</span>
+                            <span class="card-readable-text"><strong>LICENCIA E / ROOKIE</strong> - Principiante</span>
+                        </div>
                     </div>
                 </div>
-                <div class="p-6">
-                    <div class="bg-gradient-to-r from-blue-700 to-purple-700 py-3 px-4 rounded-lg mb-4">
-                        <h3 class="text-2xl font-bold text-white">🚥 EVENTO ESPECIAL 21:00hs 🚥</h3>
+                <div class="mt-6 p-4 bg-gray-800 bg-opacity-50 rounded-lg">
+                    <p class="card-readable-text text-center">
+                        <strong class="neon-text-racing">⚠️ IMPORTANTE:</strong> 
+                        Las licencias "Provisional = Rookie" requieren completar más carreras para obtener la licencia definitiva.
+                    </p>
+                </div>
+            </div>
+
+            <div class="neon-card neon-border-green">
+                <h3 class="neon-text-green text-2xl font-bold mb-4">🛡️ Safety Rating (SR)</h3>
+                <p class="card-readable-text mb-4">
+                    Puntos que se ganan o pierden al conducir limpio o cometiendo infracciones en todos los eventos:
+                </p>
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+                    <div class="text-center p-4 bg-green-900 bg-opacity-30 rounded-lg">
+                        <span class="neon-text-green text-xl font-bold">3000+</span>
+                        <p class="text-sm text-gray-300 mt-2">Élite (F1)</p>
                     </div>
-                    <h4 class="text-3xl font-bold text-center text-blue-400 mb-6">📌📌 FORMULA 1 2025 📌📌</h4>
-                    <p class="text-gray-300 mb-6">👀 Acceso libre, Sin ACSR, Sin daños pero con penalizaciones.</p>
-                    <div class="bg-gray-700 p-4 rounded-lg mb-6">
-                        <h5 class="text-xl font-bold text-yellow-400 mb-3">⚠ Las penalizaciones serán:</h5>
-                        <ul class="space-y-2 text-gray-300">
-                            <li class="flex items-start">
-                                <span class="text-yellow-400 mr-2">🧱</span> 50kg de lastre por cortes acumulables 1 vuelta.
-                            </li>
-                            <li class="flex items-start">
-                                <span class="text-yellow-400 mr-2">🧱</span> 100kg de lastre por colisiones para ambos acumulables 2 vueltas
-                            </li>
-                        </ul>
+                    <div class="text-center p-4 bg-blue-900 bg-opacity-30 rounded-lg">
+                        <span class="neon-text-blue text-xl font-bold">2000+</span>
+                        <p class="text-sm text-gray-300 mt-2">Avanzado (F2)</p>
                     </div>
-                    <div class="bg-gray-700 p-4 rounded-lg mb-6">
-                        <h5 class="text-xl font-bold text-blue-400 mb-3">🏆 Descargas y enlaces:</h5>
-                        <ul class="space-y-3 text-gray-300">
-                            <li class="flex items-start">
-                                <span class="text-blue-400 mr-2">🚗</span>
-                                <span>Car: <a href="https://www.virtual-racing-cars.com/p/ac-formula-alpha-2024/" class="underline hover:text-blue-300" target="_blank">Formula Alpha 2024</a></span>
-                            </li>
-                            <li class="flex items-start">
-                                <span class="text-blue-400 mr-2">🎨</span>
-                                <span>Skins: <a href="http://www.mediafire.com/file/z7u1iebml81w789/fn_redbullring_2024.7z/file" class="underline hover:text-blue-300" target="_blank">Descargar Skins</a></span>
-                            </li>
-                            <li class="flex items-start">
-                                <span class="text-blue-400 mr-2">⭐</span>
-                                <span>Circuito: Spa-Francorchamps <a href="https://www.spa-francorchamps.be/en/" class="underline hover:text-blue-300" target="_blank">Ver website Circuito</a></span>
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="flex flex-col sm:flex-row justify-center gap-4 mt-6">
-                        <a href="https://friendspartyserverpy.duckdns.org/live-timing?server=0" 
-                           class="bg-blue-600 text-white px-6 py-3 rounded-lg hover:bg-blue-700 transition duration-300 text-center flex items-center justify-center" 
-                           target="_blank">
-                            <span class="mr-2">👉</span> Live Timing
-                        </a>
-                        <a href="https://acstuff.ru/s/q:race/online/join?httpPort=8081&ip=190.104.185.85" 
-                           class="bg-green-600 text-white px-6 py-3 rounded-lg hover:bg-green-700 transition duration-300 text-center flex items-center justify-center" 
-                           target="_blank">
-                            <span class="mr-2">👉</span> Entrar al Servidor
-                        </a>
+                    <div class="text-center p-4 bg-purple-900 bg-opacity-30 rounded-lg">
+                        <span class="neon-text-purple text-xl font-bold">1000+</span>
+                        <p class="text-sm text-gray-300 mt-2">Intermedio (F3)</p>
                     </div>
                 </div>
             </div>
-        </div>
-    </section>
-    
-    <!-- Botón de apoyo en la parte inferior derecha -->
-    <a href="https://www.buymeacoffee.com/friendspartyserver" class="fixed bottom-4 right-4 z-10">
-        <img src="https://img.buymeacoffee.com/button-api/?text=Apoya%20al%20Server%20%3B%29&emoji=%F0%9F%8D%BA&slug=friendspartyserver&button_colour=FFDD00&font_colour=000000&font_family=Poppins&outline_colour=000000&coffee_colour=ffffff" alt="Apoya al Server" />
-    </a>
+        </section>
 
-    <!-- Pie de Página -->
-    <footer class="bg-blue-800 text-white py-4 text-center">
-        <p>&copy; 2025 Friends Party SimRacing. Todos los derechos reservados.</p>
+        <!-- Sección Calendario Semanal -->
+        <section class="mb-16">
+            <h2 class="neon-text-pink text-3xl md:text-4xl font-bold text-center mb-8 pulse-neon">
+                � CALENDARIO SEMANAL DE CAMPEONATOS
+            </h2>
+            
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
+                
+                <!-- Lunes - MX-5 Cup -->
+                <div class="neon-card neon-border-blue">
+                    <div class="flex items-center mb-4">
+                        <span class="neon-text-racing text-3xl mr-4">🚩</span>
+                        <div>
+                            <h3 class="neon-text-blue text-2xl font-bold">LUNES 21:00hs</h3>
+                            <p class="neon-text-racing text-xl font-bold">🏁 Global Mazda MX-5 Cup</p>
+                        </div>
+                    </div>
+                    
+                    <div class="mb-6 space-y-2">
+                        <p class="card-readable-text"><strong>📝 Requisitos:</strong></p>
+                        <div class="ml-4 space-y-1">
+                            <p class="card-readable-text">✅ Licencia Rookie</p>
+                            <p class="card-readable-text">✅ Safety Rating Rookie</p>
+                        </div>
+                        
+                        <div class="mt-4 space-y-1">
+                            <p class="card-readable-text"><strong>🏁 Formato:</strong></p>
+                            <p class="card-readable-text text-sm ml-4">• Clasificación: 8 minutos</p>
+                            <p class="card-readable-text text-sm ml-4">• 1ª Carrera: 10 minutos</p>
+                            <p class="card-readable-text text-sm ml-4">• 2ª Carrera: 10 minutos</p>
+                        </div>
+                        
+                        <div class="mt-4 p-3 bg-yellow-900 bg-opacity-30 rounded-lg">
+                            <p class="text-yellow-300 text-sm">
+                                <strong>⚠️ ATENCIÓN:</strong> Los resultados de la 1ª carrera se invierten para formar la grilla de la 2ª carrera.
+                            </p>
+                        </div>
+                    </div>
+                    
+                    <div class="grid grid-cols-1 gap-2">
+                        <a href="https://friendspartyserverpy.duckdns.org/championships?server=7" 
+                           class="racing-button text-center" target="_blank">
+                            🏆 REGÍSTRATE
+                        </a>
+                        <a href="https://friendspartyserverpy.duckdns.org/live-timing?server=7" 
+                           class="neon-hover neon-text-blue text-center text-sm" target="_blank">
+                            👉 Live Timing
+                        </a>
+                        <a href="https://acstuff.ru/s/q:race/online/join?httpPort=8088&ip=190.104.185.85" 
+                           class="neon-hover neon-text-green text-center text-sm" target="_blank">
+                            🎮 ENTRAR AL SERVIDOR
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Martes - GT2/GT3 -->
+                <div class="neon-card neon-border-pink">
+                    <div class="flex items-center mb-4">
+                        <span class="neon-text-racing text-3xl mr-4">🚩</span>
+                        <div>
+                            <h3 class="neon-text-pink text-2xl font-bold">MARTES 21:00hs</h3>
+                            <p class="neon-text-racing text-xl font-bold">🏁 GT2/GT3 Kunos Series</p>
+                        </div>
+                    </div>
+                    
+                    <div class="mb-6 space-y-2">
+                        <p class="card-readable-text"><strong>📝 Requisitos:</strong></p>
+                        <div class="ml-4 space-y-1">
+                            <p class="card-readable-text">✅ Licencia C & Rookie</p>
+                            <p class="card-readable-text">✅ Safety Rating Rookie</p>
+                        </div>
+                    </div>
+                    
+                    <div class="grid grid-cols-1 gap-2">
+                        <a href="https://friendspartyserverpy.duckdns.org/championships?server=5" 
+                           class="racing-button text-center" target="_blank">
+                            🏆 REGÍSTRATE
+                        </a>
+                        <a href="https://friendspartyserverpy.duckdns.org/live-timing?server=5" 
+                           class="neon-hover neon-text-blue text-center text-sm" target="_blank">
+                            👉 Live Timing
+                        </a>
+                        <a href="https://acstuff.ru/s/q:race/online/join?httpPort=8086&ip=190.104.185.85" 
+                           class="neon-hover neon-text-green text-center text-sm" target="_blank">
+                            🎮 ENTRAR AL SERVIDOR
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Miércoles - Porsche Cup -->
+                <div class="neon-card neon-border-purple">
+                    <div class="flex items-center mb-4">
+                        <span class="neon-text-racing text-3xl mr-4">🚩</span>
+                        <div>
+                            <h3 class="neon-text-purple text-2xl font-bold">MIÉRCOLES 21:00hs</h3>
+                            <p class="neon-text-racing text-xl font-bold">🏁 Porsche Cup</p>
+                        </div>
+                    </div>
+                    
+                    <div class="mb-6 space-y-2">
+                        <p class="card-readable-text"><strong>📝 Requisitos:</strong></p>
+                        <div class="ml-4 space-y-1">
+                            <p class="card-readable-text">✅ Licencia C & Rookie</p>
+                            <p class="card-readable-text">✅ Safety Rating Rookie</p>
+                        </div>
+                    </div>
+                    
+                    <div class="grid grid-cols-1 gap-2">
+                        <a href="https://friendspartyserverpy.duckdns.org/championships?server=4" 
+                           class="racing-button text-center" target="_blank">
+                            🏆 REGÍSTRATE
+                        </a>
+                        <a href="https://friendspartyserverpy.duckdns.org/live-timing?server=4" 
+                           class="neon-hover neon-text-blue text-center text-sm" target="_blank">
+                            👉 Live Timing
+                        </a>
+                        <a href="https://acstuff.ru/s/q:race/online/join?httpPort=8085&ip=190.104.185.85" 
+                           class="neon-hover neon-text-green text-center text-sm" target="_blank">
+                            🎮 ENTRAR AL SERVIDOR
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Jueves - GT4 -->
+                <div class="neon-card neon-border-green">
+                    <div class="flex items-center mb-4">
+                        <span class="neon-text-racing text-3xl mr-4">🚩</span>
+                        <div>
+                            <h3 class="neon-text-green text-2xl font-bold">JUEVES 21:00hs</h3>
+                            <p class="neon-text-racing text-xl font-bold">🏁 GT4 European Series</p>
+                        </div>
+                    </div>
+                    
+                    <div class="mb-6 space-y-2">
+                        <p class="card-readable-text"><strong>📝 Requisitos:</strong></p>
+                        <div class="ml-4 space-y-1">
+                            <p class="card-readable-text">✅ Licencia D & Rookie</p>
+                            <p class="card-readable-text">✅ Safety Rating Rookie</p>
+                        </div>
+                    </div>
+                    
+                    <div class="grid grid-cols-1 gap-2">
+                        <a href="https://friendspartyserverpy.duckdns.org/championships?server=3" 
+                           class="racing-button text-center" target="_blank">
+                            🏆 REGÍSTRATE
+                        </a>
+                        <a href="https://friendspartyserverpy.duckdns.org/live-timing?server=3" 
+                           class="neon-hover neon-text-blue text-center text-sm" target="_blank">
+                            👉 Live Timing
+                        </a>
+                        <a href="https://acstuff.ru/s/q:race/online/join?httpPort=8084&ip=190.104.185.85" 
+                           class="neon-hover neon-text-green text-center text-sm" target="_blank">
+                            🎮 ENTRAR AL SERVIDOR
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Viernes - F3 -->
+                <div class="neon-card neon-border-blue">
+                    <div class="flex items-center mb-4">
+                        <span class="neon-text-racing text-3xl mr-4">🚩</span>
+                        <div>
+                            <h3 class="neon-text-blue text-2xl font-bold">VIERNES 21:00hs</h3>
+                            <p class="neon-text-racing text-xl font-bold">🏁 Fórmula 3</p>
+                        </div>
+                    </div>
+                    
+                    <div class="mb-6 space-y-2">
+                        <p class="card-readable-text"><strong>📝 Requisitos:</strong></p>
+                        <div class="ml-4 space-y-1">
+                            <p class="card-readable-text">✅ Licencia C & Provisional = Rookie</p>
+                            <p class="card-readable-text">✅ Safety Rating 1000 "Provisional = Rookie"</p>
+                        </div>
+                    </div>
+                    
+                    <div class="grid grid-cols-1 gap-2">
+                        <a href="https://friendspartyserverpy.duckdns.org/championships?server=2" 
+                           class="racing-button text-center" target="_blank">
+                            🏆 REGÍSTRATE
+                        </a>
+                        <a href="https://friendspartyserverpy.duckdns.org/live-timing?server=2" 
+                           class="neon-hover neon-text-blue text-center text-sm" target="_blank">
+                            👉 Live Timing
+                        </a>
+                        <a href="https://acstuff.ru/s/q:race/online/join?httpPort=8083&ip=190.104.185.85" 
+                           class="neon-hover neon-text-green text-center text-sm" target="_blank">
+                            🎮 ENTRAR AL SERVIDOR
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Sábado - F2 -->
+                <div class="neon-card neon-border-pink">
+                    <div class="flex items-center mb-4">
+                        <span class="neon-text-racing text-3xl mr-4">🚩</span>
+                        <div>
+                            <h3 class="neon-text-pink text-2xl font-bold">SÁBADO 21:00hs</h3>
+                            <p class="neon-text-racing text-xl font-bold">🏁 Fórmula 2</p>
+                        </div>
+                    </div>
+                    
+                    <div class="mb-6 space-y-2">
+                        <p class="card-readable-text"><strong>📝 Requisitos:</strong></p>
+                        <div class="ml-4 space-y-1">
+                            <p class="card-readable-text">✅ Licencia B</p>
+                            <p class="card-readable-text">✅ Safety Rating 2000 "No Rookie"</p>
+                        </div>
+                    </div>
+                    
+                    <div class="grid grid-cols-1 gap-2">
+                        <a href="https://friendspartyserverpy.duckdns.org/championships?server=1" 
+                           class="racing-button text-center" target="_blank">
+                            � REGÍSTRATE
+                        </a>
+                        <a href="https://friendspartyserverpy.duckdns.org/live-timing?server=1" 
+                           class="neon-hover neon-text-blue text-center text-sm" target="_blank">
+                            👉 Live Timing
+                        </a>
+                        <a href="https://acstuff.ru/s/q:race/online/join?httpPort=8082&ip=190.104.185.85" 
+                           class="neon-hover neon-text-green text-center text-sm" target="_blank">
+                            🎮 ENTRAR AL SERVIDOR
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Domingo - F1 -->
+                <div class="neon-card neon-border-racing">
+                    <div class="flex items-center mb-4">
+                        <span class="neon-text-racing text-3xl mr-4">🚩</span>
+                        <div>
+                            <h3 class="neon-text-racing text-2xl font-bold">DOMINGO 21:00hs</h3>
+                            <p class="neon-text-racing text-xl font-bold">🏁 Fórmula 1</p>
+                        </div>
+                    </div>
+                    
+                    <div class="mb-6 space-y-2">
+                        <p class="card-readable-text"><strong>📝 Requisitos:</strong></p>
+                        <div class="ml-4 space-y-1">
+                            <p class="card-readable-text">✅ Licencia A</p>
+                            <p class="card-readable-text">✅ Safety Rating 3000 "No Rookie"</p>
+                        </div>
+                    </div>
+                    
+                    <div class="grid grid-cols-1 gap-2">
+                        <a href="https://friendspartyserverpy.duckdns.org/championships?server=0" 
+                           class="racing-button text-center" target="_blank">
+                            � REGÍSTRATE
+                        </a>
+                        <a href="https://friendspartyserverpy.duckdns.org/live-timing?server=0" 
+                           class="neon-hover neon-text-blue text-center text-sm" target="_blank">
+                            👉 Live Timing
+                        </a>
+                        <a href="https://acstuff.ru/s/q:race/online/join?httpPort=8081&ip=190.104.185.85" 
+                           class="neon-hover neon-text-green text-center text-sm" target="_blank">
+                            🎮 ENTRAR AL SERVIDOR
+                        </a>
+                    </div>
+                </div>
+                
+            </div>
+        </section>
+
+        <!-- Sección Carreras Especiales -->
+        <section class="mb-16">
+            <h2 class="neon-text-green text-3xl md:text-4xl font-bold text-center mb-8 pulse-neon">
+                🌟 CARRERAS ESPECIALES Y DAILY RACES
+            </h2>
+            
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
+                
+                <!-- Daily Races -->
+                <div class="neon-card neon-border-green">
+                    <div class="flex items-center mb-4">
+                        <span class="neon-text-racing text-3xl mr-4">🚩</span>
+                        <div>
+                            <h3 class="neon-text-green text-2xl font-bold">TODOS LOS DÍAS 22:00hs</h3>
+                            <p class="neon-text-racing text-xl font-bold">🏁 Daily Races</p>
+                        </div>
+                    </div>
+                    
+                    <div class="mb-6 space-y-2">
+                        <p class="card-readable-text text-green-300 font-semibold">
+                            ⚡ Ideal para ganar puntos de licencia rápido - No requiere registro
+                        </p>
+                        <p class="card-readable-text"><strong>📝 Requisitos:</strong></p>
+                        <div class="ml-4 space-y-1">
+                            <p class="card-readable-text">✅ Licencia "No Requiere"</p>
+                            <p class="card-readable-text">✅ Safety Rating "No Requiere"</p>
+                        </div>
+                        
+                        <div class="mt-4 space-y-1">
+                            <p class="card-readable-text"><strong>🏁 Formato:</strong></p>
+                            <p class="card-readable-text text-sm ml-4">• Clasificación: 15 minutos</p>
+                            <p class="card-readable-text text-sm ml-4">• Carrera: 20 minutos</p>
+                        </div>
+                    </div>
+                    
+                    <div class="grid grid-cols-1 gap-2">
+                        <p class="text-green-300 text-center font-semibold">
+                            🏆 Registro "No necesario" - Solo entra y corre
+                        </p>
+                        <a href="https://friendspartyserverpy.duckdns.org/live-timing?server=6" 
+                           class="neon-hover neon-text-blue text-center text-sm" target="_blank">
+                            📌 Live Timing
+                        </a>
+                        <a href="https://acstuff.ru/s/q:race/online/join?httpPort=8087&ip=190.104.185.85" 
+                           class="racing-button text-center" target="_blank">
+                            👉 ENTRAR AL SERVIDOR
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Friendly Races -->
+                <div class="neon-card neon-border-blue">
+                    <div class="flex items-center mb-4">
+                        <span class="neon-text-racing text-3xl mr-4">🚩</span>
+                        <div>
+                            <h3 class="neon-text-blue text-2xl font-bold">CARRERAS CONTINUAS</h3>
+                            <p class="neon-text-racing text-xl font-bold">� Friendly Races</p>
+                        </div>
+                    </div>
+                    
+                    <div class="mb-6 space-y-2">
+                        <p class="card-readable-text text-blue-300 font-semibold">
+                            😎 Para pasar el rato - Ambiente relajado
+                        </p>
+                        <p class="card-readable-text"><strong>📝 Requisitos:</strong></p>
+                        <div class="ml-4 space-y-1">
+                            <p class="card-readable-text">✅ Licencia "No Requiere"</p>
+                            <p class="card-readable-text">✅ Safety Rating "No Requiere"</p>
+                        </div>
+                        
+                        <div class="mt-4 space-y-1">
+                            <p class="card-readable-text"><strong>🏁 Formato:</strong></p>
+                            <p class="card-readable-text text-sm ml-4">• Clasificación: 7 minutos</p>
+                            <p class="card-readable-text text-sm ml-4">• Carrera: 12 minutos</p>
+                        </div>
+                    </div>
+                    
+                    <div class="grid grid-cols-1 gap-2">
+                        <p class="text-blue-300 text-center font-semibold">
+                            🏆 Registro "No necesario" - Solo entra y corre
+                        </p>
+                        <a href="https://friendsparty.servegame.com/live-timing" 
+                           class="neon-hover neon-text-blue text-center text-sm" target="_blank">
+                            📌 Live Timing
+                        </a>
+                        <a href="https://acstuff.ru/s/q:race/online/join?httpPort=8081&ip=168.138.144.68" 
+                           class="racing-button text-center" target="_blank">
+                            👉 ENTRAR AL SERVIDOR
+                        </a>
+                    </div>
+                </div>
+                
+            </div>
+        </section>
+
+        <!-- Enlaces Útiles -->
+        <section class="mb-16">
+            <h2 class="neon-text-purple text-3xl md:text-4xl font-bold text-center mb-8 pulse-neon">
+                🔗 ENLACES ÚTILES
+            </h2>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <div class="neon-card neon-border-racing text-center">
+                    <h3 class="neon-text-racing text-xl font-bold mb-4">💡 TODOS LOS SERVERS</h3>
+                    <a href="https://linktr.ee/FriendsPartyServer" 
+                       class="racing-button inline-block" target="_blank">
+                        LINKTR.EE
+                    </a>
+                </div>
+                
+                <div class="neon-card neon-border-blue text-center">
+                    <h3 class="neon-text-blue text-xl font-bold mb-4">📌 DISCORD</h3>
+                    <a href="https://discord.gg/MvbtDSaE3c" 
+                       class="racing-button inline-block" target="_blank">
+                        UNIRSE
+                    </a>
+                </div>
+                
+                <div class="neon-card neon-border-green text-center">
+                    <h3 class="neon-text-green text-xl font-bold mb-4">📌 WHATSAPP</h3>
+                    <a href="https://chat.whatsapp.com/L0HFxOazhdRHuRqaun49Y0" 
+                       class="racing-button inline-block" target="_blank">
+                        COMUNIDAD
+                    </a>
+                </div>
+            </div>
+        </section>
+                        <button class="racing-button flex-1">VER TABLA</button>
+                    </div>
+                </div>
+
+                <!-- Evento Especial -->
+                <div class="neon-card neon-border-blue">
+                    <h3 class="neon-text-blue text-2xl font-bold mb-4">⚡ FÓRMULA 1 LEGENDS</h3>
+                    <div class="space-y-3 mb-6">
+                        <p class="card-readable-text"><strong>🏁 Fecha:</strong> Sábados 22:00 hs</p>
+                        <p class="card-readable-text"><strong>🏎️ Categoría:</strong> F1 Clásicos 90s-2000s</p>
+                        <p class="card-readable-text"><strong>🏟️ Próxima Pista:</strong> Monza Historic</p>
+                        <p class="card-readable-text"><strong>⏱️ Duración:</strong> 60 minutos</p>
+                        <p class="card-readable-text"><strong>🎯 Estado:</strong> Inscripciones Abiertas</p>
+                    </div>
+                    <div class="flex gap-4">
+                        <button class="racing-button flex-1">INSCRIBIRSE</button>
+                        <button class="racing-button flex-1">VER AUTOS</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Sección Próximos Eventos -->
+        <section class="mb-16">
+            <h2 class="neon-text-blue text-3xl md:text-4xl font-bold text-center mb-8 pulse-neon">
+                📅 CALENDARIO DE EVENTOS
+            </h2>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <!-- Evento 1 -->
+                <div class="neon-card neon-border-green text-center">
+                    <h4 class="neon-text-green text-xl font-bold mb-3">MX-5 SPEC SERIES</h4>
+                    <div class="space-y-2">
+                        <p class="card-readable-text"><strong>📅 Cuando:</strong> Domingos 20:00</p>
+                        <p class="card-readable-text"><strong>🏟️ Pista:</strong> Road America</p>
+                        <p class="card-readable-text"><strong>👥 Inscriptos:</strong> 18/24</p>
+                    </div>
+                    <div class="mt-4">
+                        <span class="text-green-400 text-sm">🟢 ABIERTO</span>
+                    </div>
+                </div>
+
+                <!-- Evento 2 -->
+                <div class="neon-card neon-border-pink text-center">
+                    <h4 class="neon-text-pink text-xl font-bold mb-3">TOURING CARS CLASSIC</h4>
+                    <div class="space-y-2">
+                        <p class="card-readable-text"><strong>📅 Cuando:</strong> Miércoles 21:30</p>
+                        <p class="card-readable-text"><strong>🏟️ Pista:</strong> Bathurst</p>
+                        <p class="card-readable-text"><strong>👥 Inscriptos:</strong> 12/20</p>
+                    </div>
+                    <div class="mt-4">
+                        <span class="text-green-400 text-sm">🟢 ABIERTO</span>
+                    </div>
+                </div>
+
+                <!-- Evento 3 -->
+                <div class="neon-card neon-border-purple text-center">
+                    <h4 class="neon-text-purple text-xl font-bold mb-3">PROTOTIPOS ENDURANCE</h4>
+                    <div class="space-y-2">
+                        <p class="card-readable-text"><strong>📅 Cuando:</strong> Sábados 19:00</p>
+                        <p class="card-readable-text"><strong>🏟️ Pista:</strong> Le Mans</p>
+                        <p class="card-readable-text"><strong>👥 Inscriptos:</strong> 24/30</p>
+                    </div>
+                    <div class="mt-4">
+                        <span class="text-yellow-400 text-sm">🟡 CASI LLENO</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer NEON -->
+    <footer class="neon-footer py-12 mt-16">
+        <div class="container mx-auto px-4 text-center">
+            <div class="mb-6">
+                <h3 class="neon-text-pink text-2xl font-bold mb-4 pulse-neon">
+                    ⚡ FRIENDS PARTY SERVER SIMRACING ⚡
+                </h3>
+                <p class="text-lg text-gray-300">
+                    La comunidad de SimRacing más grande de Sudamérica
+                </p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mb-8">
+                <div>
+                    <h4 class="neon-text-blue text-xl font-bold mb-3">NAVEGACIÓN</h4>
+                    <div class="space-y-2">
+                        <a href="/pages/core/servers.html" class="block hover:text-cyan-400 transition">Servidores</a>
+                        <a href="/pages/core/eventos.html" class="block hover:text-cyan-400 transition">Eventos</a>
+                        <a href="/pages/core/reglamento.html" class="block hover:text-cyan-400 transition">Reglamento</a>
+                    </div>
+                </div>
+                
+                <div>
+                    <h4 class="neon-text-pink text-xl font-bold mb-3">EVENTOS</h4>
+                    <div class="space-y-2">
+                        <a href="#" class="block hover:text-cyan-400 transition">Calendario</a>
+                        <a href="#" class="block hover:text-cyan-400 transition">Inscripciones</a>
+                        <a href="#" class="block hover:text-cyan-400 transition">Resultados</a>
+                    </div>
+                </div>
+                
+                <div>
+                    <h4 class="neon-text-purple text-xl font-bold mb-3">COMUNIDAD</h4>
+                    <div class="space-y-2">
+                        <a href="/pages/info/redes.html" class="block hover:text-cyan-400 transition">Redes Sociales</a>
+                        <a href="/pages/info/about.html" class="block hover:text-cyan-400 transition">Sobre Nosotros</a>
+                        <a href="/pages/info/contact.html" class="block hover:text-cyan-400 transition">Contacto</a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="border-t border-gray-700 pt-6">
+                <p class="text-gray-400">
+                    © 2024 Friends Party Server SimRacing. Todos los derechos reservados.
+                </p>
+            </div>
+        </div>
     </footer>
+
+    <!-- Scripts adicionales para efectos NEON -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const cards = document.querySelectorAll('.neon-card');
+            cards.forEach(card => {
+                card.addEventListener('mouseenter', function() {
+                    this.style.transform = 'translateY(-5px) scale(1.02)';
+                    this.style.transition = 'all 0.4s ease';
+                });
+                card.addEventListener('mouseleave', function() {
+                    this.style.transform = 'translateY(0) scale(1)';
+                });
+            });
+
+            const gridLines = document.querySelector('.grid-lines');
+            let ticking = false;
+            
+            function updateParallax() {
+                const scrolled = window.pageYOffset;
+                const rate = scrolled * -0.1;
+                gridLines.style.transform = `translateY(${rate}px)`;
+                ticking = false;
+            }
+
+            window.addEventListener('scroll', function() {
+                if (!ticking) {
+                    requestAnimationFrame(updateParallax);
+                    ticking = true;
+                }
+            });
+        });
+    </script>
 </body>
 </html>
 

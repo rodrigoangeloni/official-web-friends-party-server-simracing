@@ -10,12 +10,12 @@
     <priority>1.0</priority>
     <image:image>
       <image:loc>https://friendspartyserver.duckdns.org/assets/images/Logo-FriendsPartyServerSR.webp</image:loc>
-      <image:title>FriendsPartyServer SimRacing Logo</image:title>
-      <image:caption>SimRacing para toda Latinoamérica desde Paraguay</image:caption>
+      <image:title>Friends Party Sim Racing</image:title>
+      <image:caption>Servidores premium Assetto Corsa Paraguay Argentina Brasil Chile Sudamérica</image:caption>
     </image:image>
   </url>
   
-  <!-- Páginas Core - Funcionalidades Principales -->
+  <!-- Páginas Core NEON - Funcionalidades Principales -->
   <url>
     <loc>https://friendspartyserver.duckdns.org/pages/core/servers.html</loc>
     <lastmod>2025-08-05</lastmod>
@@ -64,6 +64,21 @@
     <lastmod>2025-08-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
+  </url>
+  
+  <!-- Páginas específicas por país para SEO -->
+  <url>
+    <loc>https://friendspartyserver.duckdns.org/pages/landing/assetto-corsa-paraguay.html</loc>
+    <lastmod>2025-08-05</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  
+  <url>
+    <loc>https://friendspartyserver.duckdns.org/pages/landing/assetto-corsa-argentina.html</loc>
+    <lastmod>2025-08-05</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
   </url>
   
 </urlset>

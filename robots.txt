@@ -1,5 +1,6 @@
-# Robots.txt para FriendsPartyServer SimRacing
-# Optimizado para SimRacing Latinoamérica desde Paraguay
+# Robots.txt para Friends Party Sim Racing
+# Assetto Corsa Paraguay Argentina Brasil Chile Uruguay Bolivia Sudamérica
+# Servidores Premium - Campeonatos F1 F2 F3 GT3 GT2 MX5 LMP Porsche Cup
 
 User-agent: *
 Allow: /
@@ -12,7 +13,6 @@ Allow: /assets/
 # Bloquear archivos técnicos y privados
 Disallow: /scripts/
 Disallow: /config/
-Disallow: /docs/
 Disallow: /templates/
 Disallow: /.git/
 Disallow: /admin/

@@ -1,5 +1,5 @@
-# FriendsPartyServer SimRacing - GitIgnore
-# Archivos y carpetas a ignorar en el repositorio
+# FriendsPartyServer SimRacing NEON - GitIgnore
+# Archivos y carpetas a ignorar en el repositorio futurista
 
 # Archivos de sistema Windows
 Thumbs.db
@@ -97,6 +97,7 @@ cache/
 
 # Documentación local (no subir a GitHub - solo README.md)
 docs/
+informacion real del servidor.txt
 
 # Scripts de automatización y configuración (no subir a GitHub)
 scripts/

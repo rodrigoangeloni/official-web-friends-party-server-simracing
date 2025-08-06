@@ -1,34 +1,38 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="es">
 <head>
-    <!-- Meta tags idénticos a redes.html -->
-    <meta name="description" content="Friends Party Server SimRacing: Servidores de Assetto Corsa en Sudamérica.">
-    <meta name="keywords" content="Assetto Corsa, SimRacing, Friends Party Server, servidores, carreras, Sudamérica, Latino, Argentina, Paraguay.">
+    <meta name="description" content="Friends Party Server SimRacing: Reglamento y normas básicas para participar en nuestros servidores de Assetto Corsa.">
+    <meta name="keywords" content="Assetto Corsa, SimRacing, Friends Party Server, reglamento, normas, reglas, comportamiento, Sudamérica, Latino, Argentina, Paraguay.">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website">
-    <meta property="og:url" content="https://friendspartyserver.duckdns.org/about.html">
-    <meta property="og:title" content="Friends Party Server SimRacing">
-    <meta property="og:description" content="Friends Party Server SimRacing: Servidores de Assetto Corsa en Sudamérica.">
+    <meta property="og:url" content="https://friendspartyserver.duckdns.org/pages/core/reglamento.html">
+    <meta property="og:title" content="Friends Party Server SimRacing - Reglamento y Normas">
+    <meta property="og:description" content="Reglamento oficial de Friends Party Server SimRacing. Conoce nuestras normas para una competición limpia y justa.">
     <meta property="og:image" content="https://friendspartyserver.duckdns.org/assets/images/Logo-FriendsPartyServerSR.webp">
 
     <!-- Twitter -->
     <meta property="twitter:card" content="summary_large_image">
-    <meta property="twitter:url" content="https://friendspartyserver.duckdns.org/about.html">
-    <meta property="twitter:title" content="Friends Party Server SimRacing">
-    <meta property="twitter:description" content="Friends Party Server SimRacing: Servidores de Assetto Corsa en Sudamérica.">
+    <meta property="twitter:url" content="https://friendspartyserver.duckdns.org/pages/core/reglamento.html">
+    <meta property="twitter:title" content="Friends Party Server SimRacing - Reglamento y Normas">
+    <meta property="twitter:description" content="Reglamento oficial de Friends Party Server SimRacing. Conoce nuestras normas para una competición limpia y justa.">
     <meta property="twitter:image" content="https://friendspartyserver.duckdns.org/assets/images/Logo-FriendsPartyServerSR.webp">
 
-    <title>FriendsPartyServer SimRacing</title>
+    <title>FriendsPartyServer SimRacing - Reglamento NEON</title>
     <link rel="icon" type="image/x-icon" href="/assets/images/favicon.ico">
     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
     <link rel="stylesheet" href="/assets/css/main.css">
+    <link rel="stylesheet" href="/assets/css/neon-theme.css">
 
     <!-- Precarga de recursos -->
     <link rel="preload" href="/assets/css/main.css" as="style">
+    <link rel="preload" href="/assets/css/neon-theme.css" as="style">
     <link rel="preload" href="/assets/images/Logo-FriendsPartyServerSR.webp" as="image">
+
+    <!-- Configuración centralizada -->
+    <script src="/config/head-config.js"></script>
 
     <!-- Google Analytics 4 - FriendsPartyServer Paraguay -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-L6K2C49RW0"></script>
@@ -36,348 +40,321 @@
         window.dataLayer = window.dataLayer || [];
         function gtag(){dataLayer.push(arguments);}
         gtag('js', new Date());
-        gtag('config', 'G-L6K2C49RW0', {
-            // Configuración específica para Paraguay/Latinoamérica
-            country: 'PY',
-            custom_map: {
-                'custom_parameter_country': 'Paraguay',
-                'custom_parameter_region': 'Latin America'
-            }
-        });
-    </script></head>
+        
+        if (typeof CONFIG !== 'undefined' && typeof Utils !== 'undefined') {
+            gtag('config', CONFIG.ANALYTICS.GA4_ID, Utils.getGA4Config());
+        } else {
+            gtag('config', 'G-L6K2C49RW0', {
+                country: 'PY',
+                custom_map: {
+                    'custom_parameter_country': 'Paraguay',
+                    'custom_parameter_region': 'Latin America'
+                }
+            });
+        }
+    </script>
 
-<body class="bg-gray-900 text-gray-100">
-    <!-- Cabecera idéntica a redes.html -->
-    <header class="bg-gray-800 py-6 mb-8">
-        <div class="container mx-auto text-center">
-            <img src="/assets/images/Logo-FriendsPartyServerSR.webp" alt="Logo de Friends Party Server SimRacing" class="mx-auto w-32 mb-4">
-            <h1 class="text-4xl font-bold">Friends Party Server "SimRacing"</h1>
-            <p class="mt-2 text-gray-400">Servidores de Assetto Corsa en Sudamérica.</p>
+    <script src="/assets/js/analytics.js"></script>
+</head>
+
+<body>
+    <!-- Grid Lines Effect de Fondo -->
+    <div class="grid-lines"></div>
+
+    <!-- Cabecera NEON -->
+    <header class="neon-nav py-8 mb-12 relative">
+        <div class="container mx-auto text-center px-4">
+            <div class="holographic-effect mb-6">
+                <img src="/assets/images/Logo-FriendsPartyServerSR.webp" 
+                     alt="Logo de Friends Party Server SimRacing" 
+                     class="mx-auto w-40 md:w-48 transition-all duration-300 hover:scale-110">
+            </div>
+            <h1 class="glitch-effect text-4xl md:text-6xl font-bold mb-4" 
+                data-text="REGLAMENTO OFICIAL">
+                REGLAMENTO OFICIAL
+            </h1>
+            <h2 class="neon-text-pink text-2xl md:text-3xl font-bold uppercase tracking-wider mb-2">
+                FRIENDS PARTY SERVER
+            </h2>
+            <p class="neon-text-blue text-lg md:text-xl pulse-neon">
+                📋 NORMAS PARA UNA COMPETICIÓN LIMPIA 📋
+            </p>
         </div>
     </header>
 
-    <!-- Navegación -->
-    <nav class="bg-gray-800 py-4 shadow-lg">
-        <div class="container mx-auto flex flex-col md:flex-row justify-center space-y-4 md:space-y-0 md:space-x-6">
-            <a href="/index.html" class="text-gray-100 hover:text-yellow-400 transition duration-300 ease-in-out py-2 px-4 rounded-md hover:bg-gray-600">INICIO</a>
-            <a href="/pages/core/reglamento.html" class="text-gray-100 hover:text-yellow-400 transition duration-300 ease-in-out py-2 px-4 rounded-md hover:bg-gray-600">NORMAS BASICAS </a>
-            <a href="/pages/core/servers.html" class="text-gray-100 hover:text-yellow-400 transition duration-300 ease-in-out py-2 px-4 rounded-md hover:bg-gray-600">SERVIDORES</a>
-            <a href="/pages/core/eventos.html" class="text-gray-100 hover:text-yellow-400 transition duration-300 ease-in-out py-2 px-4 rounded-md hover:bg-gray-600">EVENTOS</a>
-            <a href="/pages/core/calculadora.html" class="text-gray-100 hover:text-yellow-400 transition duration-300 ease-in-out py-2 px-4 rounded-md hover:bg-gray-600">CALCULADORA</a>
-            <a href="/pages/info/redes.html" class="text-gray-100 hover:text-yellow-400 transition duration-300 ease-in-out py-2 px-4 rounded-md hover:bg-gray-600">REDES</a>
-            <a href="/pages/info/about.html" class="text-gray-100 hover:text-yellow-400 transition duration-300 ease-in-out py-2 px-4 rounded-md hover:bg-gray-600">ACERCA DE</a>
-            <a href="/pages/info/contact.html" class="text-gray-100 hover:text-yellow-400 transition duration-300 ease-in-out py-2 px-4 rounded-md hover:bg-gray-600">CONTACTO</a>
+    <!-- Navegación NEON -->
+    <nav class="neon-nav py-4 shadow-lg mb-12 sticky top-0 z-50">
+        <div class="container mx-auto px-4">
+            <div class="flex flex-col lg:flex-row justify-center items-center space-y-4 lg:space-y-0 lg:space-x-8">
+                <a href="/index.html" class="neon-hover neon-text-blue font-bold">🏠 INICIO</a>
+                <a href="/pages/core/reglamento.html" class="neon-hover neon-text-pink font-bold">📋 NORMAS BÁSICAS</a>
+                <a href="/pages/core/servers.html" class="neon-hover neon-text-purple font-bold">🖥️ SERVIDORES</a>
+                <a href="/pages/core/eventos.html" class="neon-hover neon-text-green font-bold">🏁 EVENTOS</a>
+                <a href="/pages/core/calculadora.html" class="neon-hover neon-text-racing font-bold">🧮 CALCULADORA</a>
+                <a href="/pages/info/redes.html" class="neon-hover text-yellow-400 font-bold">🌐 REDES</a>
+            </div>
         </div>
     </nav>
 
     <!-- Contenido Principal -->
     <main class="container mx-auto px-4 py-8">
-        <!-- Tarjeta Principal -->
-        <div class="bg-gray-800 rounded-xl shadow-2xl p-8 mb-12 border-2 border-yellow-600">
-            <section class="mb-8 text-center">
-                <h2 class="text-3xl font-bold mb-4 animate-pulse">🚥 Friends Party Server "SimRacing" 🚥</h2>
-                <div class="bg-blue-900 p-4 rounded-lg">
-                    <h3 class="text-xl font-semibold">📜 Normas & Reglamento CON ACSR 
-                        <a href="https://acsr.assettocorsaservers.com" 
-                           class="text-yellow-400 hover:text-yellow-300 underline">https://acsr.assettocorsaservers.com</a> 🏆
-                    </h3>
+        
+        <!-- Sección Normas Generales -->
+        <section class="mb-16">
+            <h2 class="neon-text-blue text-3xl md:text-4xl font-bold text-center mb-8 pulse-neon">
+                ⚖️ NORMAS GENERALES DE COMPORTAMIENTO
+            </h2>
+            
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
+                <!-- Respeto y Fair Play -->
+                <div class="neon-card neon-border-green">
+                    <h3 class="neon-text-green text-2xl font-bold mb-4">🤝 RESPETO Y FAIR PLAY</h3>
+                    <div class="space-y-3">
+                        <p class="card-readable-text">✅ <strong>Respeto mutuo:</strong> Tratá a todos los participantes con cortesía y respeto.</p>
+                        <p class="card-readable-text">✅ <strong>Comunicación:</strong> Mantené un lenguaje apropiado en chat y vocal.</p>
+                        <p class="card-readable-text">✅ <strong>Fair Play:</strong> Jugá limpio, sin trucos ni ventajas desleales.</p>
+                        <p class="card-readable-text">✅ <strong>Deportividad:</strong> Aceptá las decisiones de los comisarios deportivos.</p>
+                    </div>
                 </div>
-            </section>
 
-            <!-- Sección de Licencias -->
-            <section class="mb-12">
-                <div class="bg-gray-700 p-6 rounded-lg border-2 border-yellow-600">
-                    <h3 class="text-2xl font-bold text-center mb-6">📜 LICENCIAS & SAFETY RATING 📜</h3>
-                    <p class="mb-6 text-center text-lg">LICENCIA A* >=35.01 "Solo 30 pilotos lo tienen actualmente en el mundo"</p>
-                    
-                    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
-                        <div class="bg-gray-600 p-4 rounded-lg">
-                            <p class="text-yellow-400 font-bold">LICENCIA A*</p>
-                            <p>>=35.01</p>
-                        </div>
-                        <div class="bg-gray-600 p-4 rounded-lg">
-                            <p class="text-yellow-400 font-bold">LICENCIA A+</p>
-                            <p>32.01 a 35.00</p>
-                        </div>
-                        <div class="bg-gray-600 p-4 rounded-lg">
-                            <p class="text-yellow-400 font-bold">LICENCIA A</p>
-                            <p>29.01 a 32.00</p>
-                        </div>
-                        <div class="bg-gray-600 p-4 rounded-lg">
-                            <p class="text-yellow-400 font-bold">LICENCIA B</p>
-                            <p>26.01 a 29.00</p>
-                        </div>
-                        <div class="bg-gray-600 p-4 rounded-lg">
-                            <p class="text-yellow-400 font-bold">LICENCIA C</p>
-                            <p>24.01 a 26.00</p>
-                        </div>
-                        <div class="bg-gray-600 p-4 rounded-lg">
-                            <p class="text-yellow-400 font-bold">LICENCIA D</p>
-                            <p>20.01 a 24.00</p>
+                <!-- Prohibiciones -->
+                <div class="neon-card neon-border-red">
+                    <h3 class="neon-text-red text-2xl font-bold mb-4">🚫 COMPORTAMIENTOS PROHIBIDOS</h3>
+                    <div class="space-y-3">
+                        <p class="card-readable-text">❌ <strong>Insultos o agresiones:</strong> Cualquier tipo de violencia verbal está prohibida.</p>
+                        <p class="card-readable-text">❌ <strong>Discriminación:</strong> No toleramos racismo, sexismo o cualquier discriminación.</p>
+                        <p class="card-readable-text">❌ <strong>Spam o flood:</strong> No saturés los chats con mensajes repetitivos.</p>
+                        <p class="card-readable-text">❌ <strong>Trolling:</strong> No molestes intencionalmente a otros pilotos.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Sección Normas de Pista -->
+        <section class="mb-16">
+            <h2 class="neon-text-pink text-3xl md:text-4xl font-bold text-center mb-8 pulse-neon">
+                🏁 NORMAS EN PISTA
+            </h2>
+            
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                <!-- Adelantamientos -->
+                <div class="neon-card neon-border-blue text-center">
+                    <h4 class="neon-text-blue text-xl font-bold mb-4">🏎️ ADELANTAMIENTOS</h4>
+                    <div class="space-y-3">
+                        <p class="card-readable-text"><strong>✓ Contacto mínimo</strong></p>
+                        <p class="card-readable-text"><strong>✓ Espacio suficiente</strong></p>
+                        <p class="card-readable-text"><strong>✓ Líneas claras</strong></p>
+                        <p class="card-readable-text"><strong>✓ Respeto por el defending</strong></p>
+                    </div>
+                </div>
+
+                <!-- Defending -->
+                <div class="neon-card neon-border-purple text-center">
+                    <h4 class="neon-text-purple text-xl font-bold mb-4">🛡️ DEFENSA DE POSICIÓN</h4>
+                    <div class="space-y-3">
+                        <p class="card-readable-text"><strong>✓ Un movimiento máximo</strong></p>
+                        <p class="card-readable-text"><strong>✓ Línea de carrera limpia</strong></p>
+                        <p class="card-readable-text"><strong>✓ No bloqueo agresivo</strong></p>
+                        <p class="card-readable-text"><strong>✓ Espacio en curvas</strong></p>
+                    </div>
+                </div>
+
+                <!-- Incidentes -->
+                <div class="neon-card neon-border-racing text-center">
+                    <h4 class="neon-text-racing text-xl font-bold mb-4">⚠️ GESTIÓN DE INCIDENTES</h4>
+                    <div class="space-y-3">
+                        <p class="card-readable-text"><strong>✓ Reportar incidentes</strong></p>
+                        <p class="card-readable-text"><strong>✓ Esperar penalizaciones</strong></p>
+                        <p class="card-readable-text"><strong>✓ Devolver posiciones</strong></p>
+                        <p class="card-readable-text"><strong>✓ Colaborar con stewards</strong></p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Sección Sistema de Penalizaciones -->
+        <section class="mb-16">
+            <h2 class="neon-text-blue text-3xl md:text-4xl font-bold text-center mb-8 pulse-neon">
+                ⚡ SISTEMA DE PENALIZACIONES
+            </h2>
+            
+            <div class="neon-card neon-border-racing">
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                    <div>
+                        <h3 class="neon-text-racing text-2xl font-bold mb-6">📊 TIPOS DE SANCIONES</h3>
+                        <div class="space-y-4">
+                            <div class="p-4 bg-yellow-900/20 border-l-4 border-yellow-400">
+                                <h4 class="text-yellow-400 font-bold">⚠️ ADVERTENCIA</h4>
+                                <p class="card-readable-text">Infracciones menores o primera vez</p>
+                            </div>
+                            
+                            <div class="p-4 bg-orange-900/20 border-l-4 border-orange-400">
+                                <h4 class="text-orange-400 font-bold">⏱️ PENALIZACIÓN DE TIEMPO</h4>
+                                <p class="card-readable-text">5-30 segundos según la gravedad</p>
+                            </div>
+                            
+                            <div class="p-4 bg-red-900/20 border-l-4 border-red-400">
+                                <h4 class="text-red-400 font-bold">🚫 SUSPENSIÓN TEMPORAL</h4>
+                                <p class="card-readable-text">1-7 días fuera de los servidores</p>
+                            </div>
+                            
+                            <div class="p-4 bg-gray-900/20 border-l-4 border-gray-400">
+                                <h4 class="text-gray-400 font-bold">🔨 BAN PERMANENTE</h4>
+                                <p class="card-readable-text">Infracciones graves repetidas</p>
+                            </div>
                         </div>
                     </div>
                     
-                    <div class="mt-6 text-center">
-                        <a href="https://acsr.assettocorsaservers.com/index" 
-                           class="bg-blue-600 text-white px-6 py-3 rounded-lg hover:bg-blue-700 transition duration-300">
-                            Ver Ratings Globales
-                        </a>
+                    <div>
+                        <h3 class="neon-text-pink text-2xl font-bold mb-6">⚖️ PROCESO DE APELACIÓN</h3>
+                        <div class="space-y-4">
+                            <div class="card-readable-text">
+                                <strong>1. Reporte del incidente</strong><br>
+                                Los stewards reciben y analizan el reporte
+                            </div>
+                            
+                            <div class="card-readable-text">
+                                <strong>2. Revisión de evidencia</strong><br>
+                                Se analizan replays y testimonios
+                            </div>
+                            
+                            <div class="card-readable-text">
+                                <strong>3. Decisión inicial</strong><br>
+                                Se comunica la sanción al piloto
+                            </div>
+                            
+                            <div class="card-readable-text">
+                                <strong>4. Derecho a apelación</strong><br>
+                                48hs para apelar con nueva evidencia
+                            </div>
+                            
+                            <div class="card-readable-text">
+                                <strong>5. Decisión final</strong><br>
+                                Resolución definitiva del caso
+                            </div>
+                        </div>
                     </div>
                 </div>
-            </section>
+            </div>
+        </section>
 
-<!-- Sección de Normas -->
-<section class="mb-12">
-    <div class="bg-gray-700 p-6 rounded-lg border-2 border-yellow-600">
-        <h3 class="text-2xl font-bold text-center mb-6">📜 NORMAS BÁSICAS DE COMPORTAMIENTO 📜</h3>
-        
-        <!-- Grid de Tarjetas -->
-        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+        <!-- Sección Contacto Stewards -->
+        <section class="mb-16">
+            <h2 class="neon-text-pink text-3xl md:text-4xl font-bold text-center mb-8 pulse-neon">
+                👥 CONTACTO STEWARDS
+            </h2>
             
-            <!-- Conducción -->
-            <div class="bg-gray-600 p-4 rounded-lg transform hover:scale-[1.02] transition-transform">
-                <h4 class="text-lg font-bold text-yellow-400 mb-4">🚗 Conducción</h4>
-                <ul class="space-y-3">
-                    <li class="flex items-start">
-                        <span class="text-red-500 mr-2">❌</span>
-                        No conduzcas en dirección prohibida
-                    </li>
-                    <li class="flex items-start">
-                        <span class="text-red-500 mr-2">❌</span>
-                        No conduzcas marcha atrás
-                    </li>
-                    <li class="flex items-start">
-                        <span class="text-red-500 mr-2">❌</span>
-                        Evita bloquear la carretera
-                    </li>
-                    <li class="flex items-start">
-                        <span class="text-green-500 mr-2">✅</span>
-                        Mantén distancia de seguridad
-                    </li>
-                    <li class="flex items-start">
-                        <span class="text-green-500 mr-2">✅</span>
-                        Deja pasar a pilotos más rápidos
-                    </li>
-                    <li class="flex items-start">
-                        <span class="text-green-500 mr-2">✅</span>
-                        Cede espacio al ser adelantado
-                    </li>
-                    <li class="flex items-start">
-                        <span class="text-green-500 mr-2">✅</span>
-                        Conducción elegante sin maniobras bruscas
-                    </li>
-                    <li class="flex items-start">
-                        <span class="text-green-500 mr-2">✅</span>
-                        Ceder posición si eres rezagado
-                    </li>
-                </ul>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <div class="neon-card neon-border-blue text-center">
+                    <h3 class="neon-text-blue text-2xl font-bold mb-4">📢 REPORTAR INCIDENTES</h3>
+                    <div class="space-y-4">
+                        <p class="card-readable-text">Para reportar incidentes durante las carreras:</p>
+                        <div class="space-y-2">
+                            <p class="card-readable-text">🎮 <strong>Discord:</strong> Canal #stewards</p>
+                            <p class="card-readable-text">📧 <strong>Email:</strong> stewards@friendspartyserver.com</p>
+                            <p class="card-readable-text">📱 <strong>WhatsApp:</strong> +595 XXX XXX XXX</p>
+                        </div>
+                        <button class="racing-button w-full">REPORTAR INCIDENTE</button>
+                    </div>
+                </div>
+
+                <div class="neon-card neon-border-green text-center">
+                    <h3 class="neon-text-green text-2xl font-bold mb-4">❓ CONSULTAS GENERALES</h3>
+                    <div class="space-y-4">
+                        <p class="card-readable-text">Para dudas sobre el reglamento:</p>
+                        <div class="space-y-2">
+                            <p class="card-readable-text">💬 <strong>Discord:</strong> Canal #consultas</p>
+                            <p class="card-readable-text">📝 <strong>FAQ:</strong> Preguntas frecuentes</p>
+                            <p class="card-readable-text">📚 <strong>Wiki:</strong> Guías detalladas</p>
+                        </div>
+                        <button class="racing-button w-full">IR A CONSULTAS</button>
+                    </div>
+                </div>
             </div>
+        </section>
 
-            <!-- Comportamiento -->
-            <div class="bg-gray-600 p-4 rounded-lg transform hover:scale-[1.02] transition-transform">
-                <h4 class="text-lg font-bold text-yellow-400 mb-4">💬 Comportamiento</h4>
-                <ul class="space-y-3">
-                    <li class="flex items-start">
-                        <span class="text-red-500 mr-2">❌</span>
-                        No insultes ni faltes el respeto
-                    </li>
-                    <li class="flex items-start">
-                        <span class="text-red-500 mr-2">❌</span>
-                        Evita conducta antideportiva
-                    </li>
-                    <li class="flex items-start">
-                        <span class="text-green-500 mr-2">✅</span>
-                        Respeta a organizadores
-                    </li>
-                    <li class="flex items-start">
-                        <span class="text-green-500 mr-2">✅</span>
-                        Mantén actitud deportiva
-                    </li>
-                </ul>
-            </div>
-
-            <!-- Seguridad -->
-            <div class="bg-gray-600 p-4 rounded-lg transform hover:scale-[1.02] transition-transform">
-                <h4 class="text-lg font-bold text-yellow-400 mb-4">🛡️ Seguridad</h4>
-                <ul class="space-y-3">
-                    <li class="flex items-start">
-                        <span class="text-red-500 mr-2">❌</span>
-                        No golpees a otros jugadores
-                    </li>
-                    <li class="flex items-start">
-                        <span class="text-green-500 mr-2">✅</span>
-                        Precaución al salir del Pit
-                    </li>
-                    <li class="flex items-start">
-                        <span class="text-green-500 mr-2">✅</span>
-                        Luces obligatorias de noche
-                    </li>
-                </ul>
-            </div>
-
-            <!-- Técnico -->
-            <div class="bg-gray-600 p-4 rounded-lg transform hover:scale-[1.02] transition-transform">
-                <h4 class="text-lg font-bold text-yellow-400 mb-4">🔧 Técnico</h4>
-                <ul class="space-y-3">
-                    <li class="flex items-start">
-                        <span class="text-green-500 mr-2">✅</span>
-                        Verifica conexión y equipo
-                    </li>
-                    <li class="flex items-start">
-                        <span class="text-green-500 mr-2">✅</span>
-                        Usa nombre identificable
-                    </li>
-                </ul>
-            </div>
-
-            <!-- Otros -->
-            <div class="bg-gray-600 p-4 rounded-lg transform hover:scale-[1.02] transition-transform">
-                <h4 class="text-lg font-bold text-yellow-400 mb-4">📌 Otros</h4>
-                <ul class="space-y-3">
-                    <li class="flex items-start">
-                        <span class="text-green-500 mr-2">✅</span>
-                        Respeta límites de pista
-                    </li>
-                    <li class="flex items-start">
-                        <span class="text-red-500 mr-2">❌</span>
-                        No uses hacks o trampas
-                    </li>
-                </ul>
-            </div>
-
-            <!-- Sanciones -->
-            <div class="bg-gray-600 p-4 rounded-lg transform hover:scale-[1.02] transition-transform border-2 border-red-500">
-                <h4 class="text-lg font-bold text-yellow-400 mb-4">⚖️ Sanciones</h4>
-                <ul class="space-y-3">
-                    <li class="flex items-start">
-                        <span class="text-red-500 mr-2">❌</span>
-                        Penalizaciones por incumplimiento
-                    </li>
-                    <li class="flex items-start">
-                        <span class="text-red-500 mr-2">❌</span>
-                        Expulsión permanente reincidente
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </div>
-</section>
-
-<!-- Reglamento Básico de Carrera -->
-<section class="mb-12">
-    <div class="bg-gray-700 p-6 rounded-lg border-2 border-yellow-600">
-        <h3 class="text-2xl font-bold text-center mb-6">📜 REGLAMENTO BÁSICO DE CARRERA 📜</h3>
-        
-        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
-            
-            <!-- Líneas de Carrera -->
-            <div class="bg-gray-600 p-4 rounded-lg">
-                <h4 class="text-lg font-bold text-yellow-400 mb-4">1. Líneas de Carrera</h4>
-                <p>Respetar trayectorias y evitar movimientos bruscos que pongan en peligro a otros.</p>
-            </div>
-
-            <!-- Zonas de Frenado -->
-            <div class="bg-gray-600 p-4 rounded-lg">
-                <h4 class="text-lg font-bold text-yellow-400 mb-4">2. Zonas de Frenado</h4>
-                <p>El piloto detrás debe frenar a tiempo. Prohibido frenar abruptamente sin motivo.</p>
-            </div>
-
-            <!-- Adelantamiento -->
-            <div class="bg-gray-600 p-4 rounded-lg">
-                <h4 class="text-lg font-bold text-yellow-400 mb-4">3. Adelantamiento</h4>
-                <p>Eje delantero debe estar al nivel del trasero rival antes de la curva para considerarse válido.</p>
-            </div>
-
-            <!-- Defensa -->
-            <div class="bg-gray-600 p-4 rounded-lg">
-                <h4 class="text-lg font-bold text-yellow-400 mb-4">4. Defensa</h4>
-                <p>Solo un cambio de trayectoria permitido. No bloquear en frenada.</p>
-            </div>
-
-            <!-- Colisiones -->
-            <div class="bg-gray-600 p-4 rounded-lg">
-                <h4 class="text-lg font-bold text-yellow-400 mb-4">5. Colisiones</h4>
-                <p>Responsabilidad del piloto detrás excepto si adelantado frena erráticamente.</p>
-            </div>
-
-            <!-- Reincorporación -->
-            <div class="bg-gray-600 p-4 rounded-lg">
-                <h4 class="text-lg font-bold text-yellow-400 mb-4">6. Reincorporación</h4>
-                <p>Volver a pista de forma segura sin obstruir a otros.</p>
-            </div>
-
-            <!-- Sanciones -->
-            <div class="bg-gray-600 p-4 rounded-lg border-2 border-red-500">
-                <h4 class="text-lg font-bold text-yellow-400 mb-4">7. Sanciones</h4>
-                <p>Contactos graves pueden resultar en penalizaciones de tiempo o posición.</p>
-            </div>
-
-            <!-- Culpa -->
-            <div class="bg-gray-600 p-4 rounded-lg">
-                <h4 class="text-lg font-bold text-yellow-400 mb-4">❓ Responsabilidad</h4>
-                <ul class="space-y-2">
-                    <li>🔴 Piloto detrás: Responsabilidad principal</li>
-                    <li>🔵 Adelantado: Solo si frena sin motivo</li>
-                </ul>
-            </div>
-        </div>
-    </div>
-</section>
-
-<!-- Normas del Servidor -->
-<section class="mb-12">
-    <div class="bg-gray-700 p-6 rounded-lg border-2 border-yellow-600">
-        <h3 class="text-2xl font-bold text-center mb-6">📢 NORMAS DEL SERVIDOR 📢</h3>
-        
-        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
-            
-            <!-- Mods -->
-            <div class="bg-gray-600 p-4 rounded-lg border-2 border-red-500">
-                <h4 class="text-lg font-bold text-yellow-400 mb-4">🚫 Mods de Pago</h4>
-                <p>Prohibida su distribución o compartición.</p>
-            </div>
-
-            <!-- Spam -->
-            <div class="bg-gray-600 p-4 rounded-lg">
-                <h4 class="text-lg font-bold text-yellow-400 mb-4">🔇 Spam</h4>
-                <p>No promocionar otros servidores o juegos.</p>
-            </div>
-
-            <!-- Denuncias -->
-            <div class="bg-gray-600 p-4 rounded-lg">
-                <h4 class="text-lg font-bold text-yellow-400 mb-4">📣 Denuncias</h4>
-                <p>Solo en canales oficiales, no por privado.</p>
-            </div>
-
-            <!-- Sanciones -->
-            <div class="bg-gray-600 p-4 rounded-lg border-2 border-red-500">
-                <h4 class="text-lg font-bold text-yellow-400 mb-4">⚖️ Sanciones</h4>
-                <p>Reincidencia = Baneo permanente de todos los servicios.</p>
-            </div>
-        </div>
-
-        <div class="mt-6 bg-blue-900 p-4 rounded-lg text-center">
-            <p class="text-yellow-400">🏁 La colaboración de todos es esencial para mantener un ambiente respetuoso 🏁</p>
-        </div>
-    </div>
-</section>
-
-            <!-- Otras Secciones con mismo estilo -->
-            <!-- ... (mantener el mismo patrón para las demás secciones) ... -->
-            
-        </div>
     </main>
 
-    <!-- Botón de apoyo idéntico a redes.html -->
-    <a href="https://www.buymeacoffee.com/friendspartyserver" class="fixed bottom-4 right-4 z-10">
-        <img src="https://img.buymeacoffee.com/button-api/?text=Apoya%20al%20Server%20%3B%29&emoji=%F0%9F%8D%BA&slug=friendspartyserver&button_colour=FFDD00&font_colour=000000&font_family=Poppins&outline_colour=000000&coffee_colour=ffffff" alt="Apoya al Server">
-    </a>
-
-    <!-- Pie de página idéntico -->
-    <footer class="bg-blue-800 text-white py-4 text-center">
-        <p>&copy; 2025 Friends Party SimRacing. Todos los derechos reservados.</p>
+    <!-- Footer NEON -->
+    <footer class="neon-footer py-12 mt-16">
+        <div class="container mx-auto px-4 text-center">
+            <div class="mb-6">
+                <h3 class="neon-text-pink text-2xl font-bold mb-4 pulse-neon">
+                    ⚡ FRIENDS PARTY SERVER SIMRACING ⚡
+                </h3>
+                <p class="text-lg text-gray-300">
+                    La comunidad de SimRacing más grande de Sudamérica
+                </p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mb-8">
+                <div>
+                    <h4 class="neon-text-blue text-xl font-bold mb-3">NAVEGACIÓN</h4>
+                    <div class="space-y-2">
+                        <a href="/pages/core/servers.html" class="block hover:text-cyan-400 transition">Servidores</a>
+                        <a href="/pages/core/eventos.html" class="block hover:text-cyan-400 transition">Eventos</a>
+                        <a href="/pages/core/reglamento.html" class="block hover:text-cyan-400 transition">Reglamento</a>
+                    </div>
+                </div>
+                
+                <div>
+                    <h4 class="neon-text-pink text-xl font-bold mb-3">REGLAMENTO</h4>
+                    <div class="space-y-2">
+                        <a href="#" class="block hover:text-cyan-400 transition">Normas Generales</a>
+                        <a href="#" class="block hover:text-cyan-400 transition">Penalizaciones</a>
+                        <a href="#" class="block hover:text-cyan-400 transition">Apelaciones</a>
+                    </div>
+                </div>
+                
+                <div>
+                    <h4 class="neon-text-purple text-xl font-bold mb-3">STEWARDS</h4>
+                    <div class="space-y-2">
+                        <a href="#" class="block hover:text-cyan-400 transition">Reportar Incidente</a>
+                        <a href="#" class="block hover:text-cyan-400 transition">Consultas</a>
+                        <a href="#" class="block hover:text-cyan-400 transition">FAQ</a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="border-t border-gray-700 pt-6">
+                <p class="text-gray-400">
+                    © 2024 Friends Party Server SimRacing. Todos los derechos reservados.
+                </p>
+            </div>
+        </div>
     </footer>
+
+    <!-- Scripts adicionales para efectos NEON -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const cards = document.querySelectorAll('.neon-card');
+            cards.forEach(card => {
+                card.addEventListener('mouseenter', function() {
+                    this.style.transform = 'translateY(-5px) scale(1.02)';
+                    this.style.transition = 'all 0.4s ease';
+                });
+                card.addEventListener('mouseleave', function() {
+                    this.style.transform = 'translateY(0) scale(1)';
+                });
+            });
+
+            const gridLines = document.querySelector('.grid-lines');
+            let ticking = false;
+            
+            function updateParallax() {
+                const scrolled = window.pageYOffset;
+                const rate = scrolled * -0.1;
+                gridLines.style.transform = `translateY(${rate}px)`;
+                ticking = false;
+            }
+
+            window.addEventListener('scroll', function() {
+                if (!ticking) {
+                    requestAnimationFrame(updateParallax);
+                    ticking = true;
+                }
+            });
+        });
+    </script>
 </body>
 </html>
-
-
